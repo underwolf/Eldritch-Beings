@@ -34,7 +34,6 @@ public class SceneControl : MonoBehaviour
 
         for(float f = 0; f < 1; f += Time.deltaTime / 0.25f)
         {
-            Debug.Log(f);
             fader.color = new Color(0, 0, 0, Mathf.Lerp(0,1.2f,f));
             yield return null;
         }
