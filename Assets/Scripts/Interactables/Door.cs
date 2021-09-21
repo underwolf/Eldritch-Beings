@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class Door : Interactable
 {
-    public GameObject target;
+    public string target;
+    public GameObject SceneManager;
 
     public override void Interact()
     {
-        SceneControl.Transitionplayer(target.transform.position);
+        //SceneControl.Transitionplayer(target.transform.position);
+        SceneManager.GetComponent<ScreenManager>().LoadLevel(target);
     }
 }
