@@ -12,7 +12,7 @@ public class StunBell : Interactable
     public override void Interact()
     {
         sr = stunArea.GetComponent<SpriteRenderer>();
-        StartCoroutine(StunSequence());
+        StartCoroutine(CreateStunArea());
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -25,7 +25,7 @@ public class StunBell : Interactable
         }
     }
 
-    private IEnumerator StunSequence()
+    private IEnumerator CreateStunArea()
     {
         yield return new WaitForSeconds(0.1f);
 

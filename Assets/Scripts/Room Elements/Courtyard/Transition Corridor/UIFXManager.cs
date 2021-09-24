@@ -8,7 +8,7 @@ public class UIFXManager : MonoBehaviour
     public float dist;
 
     public Image scaryUIFX;
-    private Color scaryUIFXColor;
+    public Color scaryUIFXColor;
 
     public GameObject corridorApparition;
     public GameObject proximityPoint;
