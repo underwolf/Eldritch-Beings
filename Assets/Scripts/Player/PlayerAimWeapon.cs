@@ -5,13 +5,13 @@ using CodeMonkey.Utils;
 
 public class PlayerAimWeapon : MonoBehaviour
 {
-    private Transform aimTransform;
+    public Transform aimTransform;
     public GameObject aimObject;
     public GameObject firepoint;
 
     private void Awake()
     {
-        aimTransform = transform.Find("Aim");
+        //aimTransform = transform.Find("Aim");
     }
 
     // Update is called once per frame
