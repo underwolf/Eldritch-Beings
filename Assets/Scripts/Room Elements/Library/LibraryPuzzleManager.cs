@@ -9,6 +9,8 @@ public class LibraryPuzzleManager : MonoBehaviour
     public bool[] puzzleStateBool = { false, false, false, false};
     public bool puzzleState;
 
+    public GameObject azathotSeal;
+
     private void Awake()
     {
         
@@ -44,7 +46,11 @@ public class LibraryPuzzleManager : MonoBehaviour
 
         if (puzzleState)
         {
-            //do the thing
+            foreach (GameObject trophy in puzzleTrophies)
+            {
+                trophy.transform.GetChild(0).gameObject.GetComponent<ParticleSystem>().Play();
+            }
+            azathotSeal.GetComponent<LibraryAzathothSeal>().PuzzleSucceed();
         }
         else
         {
@@ -52,6 +58,8 @@ public class LibraryPuzzleManager : MonoBehaviour
             {
                 trophy.GetComponent<AnimalTrophies>().ResetPuzzle();
             }
+
+            azathotSeal.GetComponent<LibraryAzathothSeal>().PuzzleFail();
 
             puzzleTrophies.Clear();
         }

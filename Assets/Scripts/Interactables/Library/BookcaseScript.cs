@@ -6,6 +6,7 @@ public class BookcaseScript : Interactable
 {
     public GameObject noteUI;
     public bool isActive = false;
+    public int bookcaseID;
 
     public override void Interact()
     { 
@@ -24,6 +25,7 @@ public class BookcaseScript : Interactable
 
     private void ShowNote()
     {
+        noteUI.GetComponent<NoteText>().SetNote(bookcaseID);
         noteUI.GetComponent<MoveUI>().Enable();
     }
 
