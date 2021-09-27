@@ -8,6 +8,8 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 40f;
     public GameObject aimObj;
 
+    public Animator animator;
+
     float horizontal = 0f;
     bool jump = false,crouch=false,canMove=true;
 
@@ -42,26 +44,18 @@ public class PlayerMovement : MonoBehaviour
             controller.Move(horizontal * Time.fixedDeltaTime, crouch, jump);
             jump = false;
             horizontal = Input.GetAxisRaw("Horizontal") * speed;
-
+            animator.SetFloat("Speed", Mathf.Abs(horizontal));
             if (Input.GetButtonDown("Jump"))
             {
+               
                 jump = true;
+                
             }
             if (Input.GetButtonUp("Jump"))
             {
                 controller.CancelJump();
             }
 
-            if (Input.GetButtonDown("Crouch"))
-            {
-                transform.localScale = new Vector3(transform.localScale.x / 2, transform.localScale.y / 2, transform.localScale.z / 2);
-                crouch = true;
-            }
-            else if (Input.GetButtonUp("Crouch"))
-            {
-                transform.localScale = new Vector3(transform.localScale.x * 2, transform.localScale.y * 2, transform.localScale.z * 2);
-                crouch = false;
-            }
         }
         else
         {
