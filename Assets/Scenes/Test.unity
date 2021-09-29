@@ -2809,11 +2809,17 @@ MonoBehaviour:
   m_GroundCheck: {fileID: 793097937}
   m_CeilingCheck: {fileID: 847675403}
   m_CrouchDisableCollider: {fileID: 1685619331}
+  m_FacingRight: 1
   canMove: 1
   useAnimator: 0
   isAiming: 0
+  isMoving: 0
+  movementSpeed: 40
   groundCollider: {fileID: 0}
   slopeCheckDistance: 0
+  slopeSideAngle: 0
+  onSlopeMaterial: {fileID: 0}
+  OfSlopeMaterial: {fileID: 0}
   OnLandEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -2972,6 +2978,7 @@ MonoBehaviour:
   playerNormalSprites: {fileID: 0}
   useAnimator: 0
   animator: {fileID: 0}
+  directionWasFacing: 0
 --- !u!114 &1685619337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2990,6 +2997,7 @@ MonoBehaviour:
   IK_TARGET: {fileID: 0}
   animator: {fileID: 0}
   tragetTransform: {fileID: 0}
+  firstTimeEnter: 0
 --- !u!114 &1685619338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3021,6 +3029,7 @@ MonoBehaviour:
   BulletPos: {fileID: 816545176}
   timeToCraft: 3
   amountCrafted: 2
+  infiniteAmmo: 1
 --- !u!1 &1739128887
 GameObject:
   m_ObjectHideFlags: 0
