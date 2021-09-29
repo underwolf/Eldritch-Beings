@@ -12,13 +12,11 @@ public class PlayerAimWeapon : MonoBehaviour
     public Animator animator;
 
     public Transform tragetTransform;
-
+    public bool firstTimeEnter = false;
     // Update is called once per frame
     void Update()
     {
         Vector3 mousePos=UtilsClass.GetMouseWorldPosition();
-        
-
         Vector3 aimDirection = (mousePos - transform.position).normalized;
         float angle = Mathf.Atan2(aimDirection.y, aimDirection.x)*Mathf.Rad2Deg;
         Vector3 aimLocalScale = Vector3.one;
@@ -31,17 +29,18 @@ public class PlayerAimWeapon : MonoBehaviour
                 aimLocalScale.y = -1f;
                 aimLocalScale.x = -1f;
                 theScale.x = -1;
-                
-                transform.localScale = theScale;
+                // Debug.Log("Esquerda");
+                FindObjectOfType<CharacterController2D>().m_FacingRight = false;
             }
             else
             {
                 aimLocalScale.y = +1f;
                 aimLocalScale.x = +1f;
                 theScale.x = +1;
-                
-                transform.localScale = theScale;
+                FindObjectOfType<CharacterController2D>().m_FacingRight = true;
+                //Debug.Log("Direita");
             }
+            transform.localScale = theScale;
         }
         aimTransform.localScale = aimLocalScale;
         firepoint.transform.localScale = aimLocalScale;

@@ -17,7 +17,7 @@ public class CharacterController2D : MonoBehaviour
 	private bool m_Grounded;            // Whether or not the player is grounded.
 	const float k_CeilingRadius = .2f; // Radius of the overlap circle to determine if the player can stand up
 	private Rigidbody2D m_Rigidbody2D;
-	private bool m_FacingRight = true;  // For determining which way the player is currently facing.
+	public bool m_FacingRight = true;  // For determining which way the player is currently facing.
 	private Vector3 m_Velocity = Vector3.zero;
     private float hangCounter;
     public bool canMove;
@@ -171,6 +171,8 @@ public class CharacterController2D : MonoBehaviour
             groundCollider.sharedMaterial = OfSlopeMaterial;
         }
 
+        Debug.Log("facing rigth?" + m_FacingRight);
+
     }
 
 
@@ -232,6 +234,7 @@ public class CharacterController2D : MonoBehaviour
                     // ... flip the player.
                     Flip();
                 }
+
                 // Otherwise if the input is moving the player left and the player is facing right...
                 else if (move < 0 && m_FacingRight)
                 {
@@ -272,9 +275,23 @@ public class CharacterController2D : MonoBehaviour
 
 	public void Flip()
 	{
-       m_FacingRight = !m_FacingRight;
-       transform.Rotate(new Vector3(0, 180, 0));
+        m_FacingRight = !m_FacingRight;
+        Vector3 theScale = transform.localScale;
+        if (m_FacingRight)
+        {
+            theScale.x = 1;
+        }
+        else
+        {
+            theScale.x = -1;
+        }
 
+        transform.localScale =theScale;
+
+    }
+    public void CancelMovement()
+    {
+        m_Rigidbody2D.velocity = new Vector2(0, m_Rigidbody2D.velocity.y);
     }
 
     public void CancelJump()
@@ -283,7 +300,6 @@ public class CharacterController2D : MonoBehaviour
         {
             m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x, m_Rigidbody2D.velocity.y * .5f);
         }
-       
     }
 
 }

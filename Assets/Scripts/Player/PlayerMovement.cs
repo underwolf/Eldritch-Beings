@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public GameObject aimObj,playerAimSprites,playerNormalSprites;
     public bool useAnimator;
     public Animator animator;
-
+    public bool directionWasFacing;
     float horizontal = 0f;
     bool jump = false,crouch=false,canMove=true;
 
@@ -22,19 +22,18 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (Input.GetButtonDown("Fire2"))
         {
+            controller.CancelMovement();
             canMove = false;
             controller.canMove = false;
             controller.isAiming = true;
             aimObj.SetActive(true);
             playerAimSprites.SetActive(true);
-            playerNormalSprites.SetActive(false);
-            useAnimator = false;
-
+            playerNormalSprites.SetActive(false); 
+            useAnimator = false;           
             FindObjectOfType<CharacterController2D>().useAnimator = false;
-
-
         }
         if (Input.GetButtonUp("Fire2"))
         {
@@ -45,6 +44,7 @@ public class PlayerMovement : MonoBehaviour
             playerAimSprites.SetActive(false);
             playerNormalSprites.SetActive(true);
             useAnimator = true;
+            
             FindObjectOfType<CharacterController2D>().useAnimator = true;
         }
         Movement();
