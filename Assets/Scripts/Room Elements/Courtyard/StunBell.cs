@@ -17,8 +17,8 @@ public class StunBell : Interactable
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //change "Untagged" to "Bullet" when bullet gets a tag
-        if (collision.tag == "Untagged")
+       
+        if (collision.tag == "Bullet")
         {
             Interact();
             Destroy(collision.gameObject);

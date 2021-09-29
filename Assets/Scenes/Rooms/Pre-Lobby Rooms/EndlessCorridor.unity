@@ -1509,7 +1509,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 236189126}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.2658367, y: 1.853035, z: 0.1490097}
+  m_LocalPosition: {x: -7.1781836, y: 1.853035, z: 0.1490097}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 172049595}
@@ -3875,7 +3875,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3c97f6dd7dac144b99880213a12185d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 201749755}
+  target: 
+  SceneManager: {fileID: 0}
 --- !u!61 &1242241497
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4185,7 +4186,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1519599949}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.2658367, y: 1.853035, z: 0.1490097}
+  m_LocalPosition: {x: -7.1781836, y: 1.853035, z: 0.1490097}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 679814127}
@@ -5325,6 +5326,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c09633c7f6b80114e80a92bbf736a32c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  aimTransform: {fileID: 1382395263}
   aimObject: {fileID: 1382395262}
   firepoint: {fileID: 791153781}
 --- !u!114 &2020908863

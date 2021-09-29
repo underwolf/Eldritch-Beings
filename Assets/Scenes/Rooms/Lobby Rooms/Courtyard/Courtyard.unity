@@ -842,6 +842,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1944752427}
     m_Modifications:
+    - target: {fileID: 1619600454633765339, guid: 7db163c173734854b9f60c78f941c0e7, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1619600455229021204, guid: 7db163c173734854b9f60c78f941c0e7, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -889,6 +893,10 @@ PrefabInstance:
     - target: {fileID: 1619600455229021211, guid: 7db163c173734854b9f60c78f941c0e7, type: 3}
       propertyPath: m_Name
       value: StunBell
+      objectReference: {fileID: 0}
+    - target: {fileID: 1619600455229021211, guid: 7db163c173734854b9f60c78f941c0e7, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7db163c173734854b9f60c78f941c0e7, type: 3}
@@ -1157,7 +1165,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 439972626}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platforms
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1634,6 +1642,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1944752427}
     m_Modifications:
+    - target: {fileID: 1619600454633765339, guid: 7db163c173734854b9f60c78f941c0e7, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1619600455229021204, guid: 7db163c173734854b9f60c78f941c0e7, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -1682,6 +1694,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StunBell (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1619600455229021211, guid: 7db163c173734854b9f60c78f941c0e7, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7db163c173734854b9f60c78f941c0e7, type: 3}
 --- !u!4 &657606544 stripped
@@ -1696,6 +1712,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1944752427}
     m_Modifications:
+    - target: {fileID: 1619600454633765339, guid: 7db163c173734854b9f60c78f941c0e7, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1619600455229021204, guid: 7db163c173734854b9f60c78f941c0e7, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -1743,6 +1763,10 @@ PrefabInstance:
     - target: {fileID: 1619600455229021211, guid: 7db163c173734854b9f60c78f941c0e7, type: 3}
       propertyPath: m_Name
       value: StunBell (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1619600455229021211, guid: 7db163c173734854b9f60c78f941c0e7, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7db163c173734854b9f60c78f941c0e7, type: 3}
@@ -2145,7 +2169,7 @@ GameObject:
   m_Component:
   - component: {fileID: 795853181}
   - component: {fileID: 795853182}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (1)
   m_TagString: Clue
   m_Icon: {fileID: 0}
@@ -2228,7 +2252,7 @@ GameObject:
   - component: {fileID: 799985175}
   - component: {fileID: 799985177}
   - component: {fileID: 799985176}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: EnterDoor
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -2707,7 +2731,7 @@ Camera:
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 12.71
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2798,7 +2822,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 842808301}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.491308, y: 0.18647385, z: 0.1490097}
+  m_LocalPosition: {x: 4.371155, y: -4.8791385, z: 10.14901}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 709030870}
@@ -4216,7 +4240,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1375468003}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -45.44, y: -6.57, z: 0}
+  m_LocalPosition: {x: -45.9, y: -6.48, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1597739246}
@@ -4333,7 +4357,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 1637141246157882012, guid: d4967d090b7abf94fa7b080c5bcd216b, type: 3}
   BulletPos: {fileID: 1815321461}
-  timeToCraft: 3
+  timeToCraft: 30
   amountCrafted: 2
 --- !u!114 &1375468011
 MonoBehaviour:
@@ -4362,6 +4386,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c09633c7f6b80114e80a92bbf736a32c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  aimTransform: {fileID: 1372682118}
   aimObject: {fileID: 1372682117}
   firepoint: {fileID: 198998968}
 --- !u!114 &1375468013
@@ -4387,7 +4412,7 @@ MonoBehaviour:
   m_GroundCheck: {fileID: 2057179687}
   m_CeilingCheck: {fileID: 1597739246}
   m_CrouchDisableCollider: {fileID: 1375468009}
-  canMove: 0
+  canMove: 1
   OnLandEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -5155,6 +5180,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1944752427}
     m_Modifications:
+    - target: {fileID: 1619600454633765339, guid: 7db163c173734854b9f60c78f941c0e7, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1619600455229021204, guid: 7db163c173734854b9f60c78f941c0e7, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -5202,6 +5231,10 @@ PrefabInstance:
     - target: {fileID: 1619600455229021211, guid: 7db163c173734854b9f60c78f941c0e7, type: 3}
       propertyPath: m_Name
       value: StunBell (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1619600455229021211, guid: 7db163c173734854b9f60c78f941c0e7, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7db163c173734854b9f60c78f941c0e7, type: 3}
@@ -5598,6 +5631,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1944752427}
     m_Modifications:
+    - target: {fileID: 1619600454633765339, guid: 7db163c173734854b9f60c78f941c0e7, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1619600455229021204, guid: 7db163c173734854b9f60c78f941c0e7, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -5646,6 +5683,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StunBell (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1619600455229021211, guid: 7db163c173734854b9f60c78f941c0e7, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7db163c173734854b9f60c78f941c0e7, type: 3}
 --- !u!4 &1736219819 stripped
@@ -5678,7 +5719,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1753098206}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.491308, y: 0.18647385, z: 0.1490097}
+  m_LocalPosition: {x: -8.863658, y: 0.276474, z: 0.1490097}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 296314446}
@@ -5814,7 +5855,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1760857737}
   - component: {fileID: 1760857738}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square
   m_TagString: Clue
   m_Icon: {fileID: 0}
@@ -6271,6 +6312,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1944752427}
     m_Modifications:
+    - target: {fileID: 1619600454633765339, guid: 7db163c173734854b9f60c78f941c0e7, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1619600455229021204, guid: 7db163c173734854b9f60c78f941c0e7, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -6319,6 +6364,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StunBell (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1619600455229021211, guid: 7db163c173734854b9f60c78f941c0e7, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7db163c173734854b9f60c78f941c0e7, type: 3}
 --- !u!4 &1929050475 stripped
@@ -6335,7 +6384,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1944752427}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Map
   m_TagString: Untagged
   m_Icon: {fileID: 0}

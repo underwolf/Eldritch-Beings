@@ -51,10 +51,4 @@ public class PlayerFire : MonoBehaviour
 
     }
 
-    /*Shooting with PREFABS
-     *     void Shoot()
-    {
-
-       
-    }*/
 }

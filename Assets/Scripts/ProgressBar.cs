@@ -36,6 +36,10 @@ public class ProgressBar : MonoBehaviour
     {
         float fillAmount = current / maximum;
         mask.fillAmount=fillAmount;
+        if (current>=maximum)
+        {
+            FindObjectOfType<CraftBullet>().ForceCraft();
+        }
  
     }
     public void hideCraft()

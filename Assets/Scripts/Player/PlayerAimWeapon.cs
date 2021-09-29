@@ -8,11 +8,10 @@ public class PlayerAimWeapon : MonoBehaviour
     public Transform aimTransform;
     public GameObject aimObject;
     public GameObject firepoint;
+    public GameObject IK_TARGET;
+    public Animator animator;
 
-    private void Awake()
-    {
-        //aimTransform = transform.Find("Aim");
-    }
+    public Transform tragetTransform;
 
     // Update is called once per frame
     void Update()
@@ -22,9 +21,10 @@ public class PlayerAimWeapon : MonoBehaviour
 
         Vector3 aimDirection = (mousePos - transform.position).normalized;
         float angle = Mathf.Atan2(aimDirection.y, aimDirection.x)*Mathf.Rad2Deg;
-        aimTransform.eulerAngles = new Vector3(0, 0, angle);
         Vector3 aimLocalScale = Vector3.one;
         Vector3 theScale = transform.localScale;
+        aimTransform.eulerAngles = new Vector3(0, 0, angle);
+        firepoint.transform.eulerAngles = new Vector3(0, 0, angle);
         if (aimObject.activeSelf) { 
             if (angle>90 || angle < -90)
             {
@@ -44,6 +44,8 @@ public class PlayerAimWeapon : MonoBehaviour
             }
         }
         aimTransform.localScale = aimLocalScale;
+        firepoint.transform.localScale = aimLocalScale;
 
     }
+
 }

@@ -21,6 +21,21 @@ public class CharacterController2D : MonoBehaviour
 	private Vector3 m_Velocity = Vector3.zero;
     private float hangCounter;
     public bool canMove;
+    public bool useAnimator;
+    public bool isAiming;
+    public bool isMoving;
+    public float movementSpeed=40f;
+
+    //SLOPE VARIABLES
+    public CapsuleCollider2D groundCollider;
+    private Vector2 colliderSize;
+    [SerializeField] private float slopeCheckDistance, slopeSideAngle;
+    private float slopeDownAngle;
+    private Vector2 slopeNormalPerp;
+    private bool isOnSlope;
+    private float slopeDownAngleOld;
+    public PhysicsMaterial2D onSlopeMaterial, OfSlopeMaterial;
+
 
 	[Header("Events")]
 	[Space]
@@ -39,6 +54,14 @@ public class CharacterController2D : MonoBehaviour
 	{
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
 
+        useAnimator = true;
+        canMove = true;
+
+        //SLOPE CODE
+        groundCollider = GetComponent<CapsuleCollider2D>();
+        colliderSize = groundCollider.size;
+        
+
         if (OnLandEvent == null)
 			OnLandEvent = new UnityEvent();
 
@@ -46,12 +69,72 @@ public class CharacterController2D : MonoBehaviour
 			OnCrouchEvent = new BoolEvent();
 	}
 
-	private void FixedUpdate()
+    //SLOPE FUNCTION
+    private void SlopeCheck()
+    {
+        Vector2 checkPos = transform.position - new Vector3(0.0f, colliderSize.y / 2);
+        SlopeCheckVertical(checkPos);
+        SlopeCheckHorizontal(checkPos);
+    }
+    private void SlopeCheckHorizontal(Vector2 checkPos)
+    {
+        RaycastHit2D slopeHitFront = Physics2D.Raycast(checkPos, transform.right, slopeCheckDistance, m_WhatIsGround);
+        RaycastHit2D slopeHitBack = Physics2D.Raycast(checkPos, -transform.right, slopeCheckDistance, m_WhatIsGround);
+
+        if (slopeHitFront)
+        {
+            isOnSlope = true;
+
+            slopeSideAngle = Vector2.Angle(slopeHitFront.normal, Vector2.up);
+
+        }
+        else if (slopeHitBack)
+        {
+            isOnSlope = true;
+
+            slopeSideAngle = Vector2.Angle(slopeHitBack.normal, Vector2.up);
+        }
+        else
+        {
+            slopeSideAngle = 0.0f;
+            isOnSlope = false;
+        }
+
+    }
+    private void SlopeCheckVertical(Vector2 checkPos)
+    {
+
+        RaycastHit2D hit = Physics2D.Raycast(checkPos, Vector2.down,slopeCheckDistance,m_WhatIsGround);
+        if (hit)
+        {
+            slopeNormalPerp = Vector2.Perpendicular(hit.normal).normalized;
+            slopeDownAngle = Vector2.Angle(hit.normal,Vector2.up);
+            if (slopeDownAngle != slopeDownAngleOld)
+            {
+                isOnSlope = true;
+
+            }
+            slopeDownAngleOld = slopeDownAngle;
+
+
+            Debug.DrawRay(hit.point, slopeNormalPerp, Color.red);
+            Debug.DrawRay(hit.point, hit.normal,Color.green);
+        }
+        
+    }
+
+    private void FixedUpdate()
 	{
+
 		bool wasGrounded = m_Grounded;
 		m_Grounded = false;
-        animator.SetBool("Grounded", false);
 
+        if (useAnimator)
+        {
+            animator.SetBool("Grounded", false);
+        }
+
+        SlopeCheck();
         // The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
         // This can be done using layers instead but Sample Assets will not overwrite your project settings.
         Collider2D[] colliders = Physics2D.OverlapCircleAll(m_GroundCheck.position, k_GroundedRadius, m_WhatIsGround);
@@ -60,7 +143,12 @@ public class CharacterController2D : MonoBehaviour
 			if (colliders[i].gameObject != gameObject)
 			{
 				m_Grounded = true;
-                animator.SetBool("Grounded",true);
+
+                if (useAnimator)
+                {
+                    animator.SetBool("Grounded", true);
+                }
+
                 if (!wasGrounded)
 					OnLandEvent.Invoke();
 			}
@@ -70,14 +158,26 @@ public class CharacterController2D : MonoBehaviour
 	}
     private void Update()
     {
-        animator.SetFloat("VerticalSpeed", m_Rigidbody2D.velocity.y);
+        if (useAnimator && !isOnSlope)
+        {
+            animator.SetFloat("VerticalSpeed", m_Rigidbody2D.velocity.y);
+        }
+        if (isOnSlope && !isMoving)
+        {
+            Debug.Log("is On Slope");
+            groundCollider.sharedMaterial = onSlopeMaterial;
+        }if(isOnSlope && isMoving)
+        {
+            groundCollider.sharedMaterial = OfSlopeMaterial;
+        }
+
     }
 
 
     public void Move(float move, bool crouch, bool jump)
 	{
-		// If crouching, check to see if the character can stand up
-		if (!crouch)
+        // If crouching, check to see if the character can stand up
+        if (!crouch)
 		{
 			// If the character has a ceiling preventing them from standing up, keep them crouching
 			if (Physics2D.OverlapCircle(m_CeilingCheck.position, k_CeilingRadius, m_WhatIsGround))
@@ -119,28 +219,37 @@ public class CharacterController2D : MonoBehaviour
                 }
 			}
 
-			// Move the character by finding the target velocity
+			/// Move the character by finding the target velocity
 			Vector3 targetVelocity = new Vector2(move * 10f, m_Rigidbody2D.velocity.y);
 			// And then smoothing it out and applying it to the character
 			m_Rigidbody2D.velocity = Vector3.SmoothDamp(m_Rigidbody2D.velocity, targetVelocity, ref m_Velocity, m_MovementSmoothing);
 
-			// If the input is moving the player right and the player is facing left...
-			if (move > 0 && !m_FacingRight)
-			{
-				// ... flip the player.
-				Flip();
-			}
-			// Otherwise if the input is moving the player left and the player is facing right...
-			else if (move < 0 && m_FacingRight)
-			{
-				// ... flip the player.
-				Flip();
-			}
+            if (canMove)
+            {
+                // If the input is moving the player right and the player is facing left...
+                if (move > 0 && !m_FacingRight)
+                {
+                    // ... flip the player.
+                    Flip();
+                }
+                // Otherwise if the input is moving the player left and the player is facing right...
+                else if (move < 0 && m_FacingRight)
+                {
+                    // ... flip the player.
+                    Flip();
+                }
+            }
+
 		}
 
         if (m_Grounded)
         {
             hangCounter = m_hangTime;
+            if (!isAiming)
+            {
+                canMove = true;
+            }
+
         }
         else
         {
@@ -151,25 +260,20 @@ public class CharacterController2D : MonoBehaviour
 		{
 			// Add a vertical force to the player.
 			m_Grounded = false;
-            animator.SetBool("Grounded", false);
+            if (useAnimator){
+                animator.SetBool("Grounded", false);
+            }
+            canMove = false;
             m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
 		}
 
 	}
 
 
-	private void Flip()
+	public void Flip()
 	{
-        if (canMove)
-        {
-            // Switch the way the player is labelled as facing.
-            m_FacingRight = !m_FacingRight;
-
-            // Multiply the player's x local scale by -1.
-            Vector3 theScale = transform.localScale;
-            theScale.x *= -1;
-            transform.localScale = theScale;
-        }
+       m_FacingRight = !m_FacingRight;
+       transform.Rotate(new Vector3(0, 180, 0));
 
     }
 

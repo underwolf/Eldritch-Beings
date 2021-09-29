@@ -116,7 +116,7 @@ public class CourtyardEntity : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //Change to bullet after
-        if (collision.tag == "Untagged")
+        if (collision.tag == "Bullet")
         {
             if (health > 0)
             {

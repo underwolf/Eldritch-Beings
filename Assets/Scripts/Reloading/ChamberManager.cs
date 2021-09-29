@@ -38,7 +38,7 @@ public class ChamberManager : MonoBehaviour
 
     public bool FiredChamber()
     {
-        Debug.Log("chamber" + chambers[activeChamber].name);
+
 
         switch (activeChamber)
         {

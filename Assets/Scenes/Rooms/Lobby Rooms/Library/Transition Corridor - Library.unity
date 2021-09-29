@@ -943,7 +943,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 522605852}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.491308, y: 0.18647385, z: 0.1490097}
+  m_LocalPosition: {x: -8.403655, y: 0.18647385, z: 0.1490097}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1028654145}
@@ -4064,6 +4064,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c09633c7f6b80114e80a92bbf736a32c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  aimTransform: {fileID: 0}
   aimObject: {fileID: 288579508}
   firepoint: {fileID: 1867696137}
 --- !u!114 &1659133012
