@@ -1,0 +1,141 @@
+Using pre-set license
+Built from '2020.2/release' branch; Version is '2020.2.1f1 (270dd8c3da1c) revision 2559448'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.0) 64bit' Language: 'pt' Physical Memory: 8173 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.2.1f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+C:/Users/Sergio/Documents/Unity/Eldritch-Beings
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+64996
+Successfully changed project path to: C:/Users/Sergio/Documents/Unity/Eldritch-Beings
+C:/Users/Sergio/Documents/Unity/Eldritch-Beings
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 116.06 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.2.1f1 (270dd8c3da1c)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Sergio/Documents/Unity/Eldritch-Beings/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GT 610 (ID=0x104a)
+    Vendor:   
+    VRAM:     2000 MB
+    Driver:   23.21.13.8813
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56272
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004580 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 124.72 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.354 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.005617 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 128.20 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.399 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.32 seconds
+Refreshing native plugins compatible for Editor in 1.20 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3229 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 143.5 MB.
+System memory in use after: 143.7 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3677.
+Total: 4.571100 ms (FindLiveObjects: 0.687000 ms CreateObjectMapping: 0.239000 ms MarkObjects: 3.531100 ms  DeleteObjects: 0.112300 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Scripts/Room Elements/Attic/SlidingObstacle.cs
+  artifactKey: Guid(87cd92c65fa1f0a4e812ce4363ca6c76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Room Elements/Attic/SlidingObstacle.cs using Guid(87cd92c65fa1f0a4e812ce4363ca6c76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94051ef2bd7a6acb4a919213d6348733') in 0.532603 seconds
+  Import took 1.068555 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 166.674972 seconds.
+  path: Assets/Scripts/Room Elements/Attic/SlidingObstacle.cs
+  artifactKey: Guid(87cd92c65fa1f0a4e812ce4363ca6c76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Room Elements/Attic/SlidingObstacle.cs using Guid(87cd92c65fa1f0a4e812ce4363ca6c76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f21a2e19dcadbb551b02da48d201508') in 0.006031 seconds
+  Import took 0.197395 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.616762 seconds.
+  path: Assets/Scripts/Room Elements/Attic/SlidingObstacle.cs
+  artifactKey: Guid(87cd92c65fa1f0a4e812ce4363ca6c76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Room Elements/Attic/SlidingObstacle.cs using Guid(87cd92c65fa1f0a4e812ce4363ca6c76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f21a2e19dcadbb551b02da48d201508') in 0.008315 seconds
+  Import took 0.208020 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 63.112852 seconds.
+  path: Assets/Scripts/Room Elements/Attic/SlidingObstacle.cs
+  artifactKey: Guid(87cd92c65fa1f0a4e812ce4363ca6c76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Room Elements/Attic/SlidingObstacle.cs using Guid(87cd92c65fa1f0a4e812ce4363ca6c76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b05daebe6b23c3b2dd599a4aede907bd') in 1.428344 seconds
+  Import took 1.680964 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.071440 seconds.
+  path: Assets/Scripts/Room Elements/Attic/SlidingObstacle.cs
+  artifactKey: Guid(87cd92c65fa1f0a4e812ce4363ca6c76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Room Elements/Attic/SlidingObstacle.cs using Guid(87cd92c65fa1f0a4e812ce4363ca6c76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b05daebe6b23c3b2dd599a4aede907bd') in 0.286754 seconds
+  Import took 0.295860 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.045406 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.02 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.761 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.15 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3097 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 136.9 MB.
+System memory in use after: 137.1 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3680.
+Total: 4.800700 ms (FindLiveObjects: 0.735000 ms CreateObjectMapping: 0.237300 ms MarkObjects: 3.795400 ms  DeleteObjects: 0.030900 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

@@ -1,242 +1,2345 @@
 Using pre-set license
 Built from '2020.2/release' branch; Version is '2020.2.1f1 (270dd8c3da1c) revision 2559448'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10  (10.0.0) 64bit' Language: 'pt' Physical Memory: 16318 MB
+OS: 'Windows 10  (10.0.0) 64bit' Language: 'pt' Physical Memory: 8173 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
-D:\unity\2020.2.1f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2020.2.1f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-D:/unity/Games/eldritch beings/Eldritch-Beings
+C:/Users/Sergio/Documents/Unity/Eldritch-Beings
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-52419
-Successfully changed project path to: D:/unity/Games/eldritch beings/Eldritch-Beings
-D:/unity/Games/eldritch beings/Eldritch-Beings
+63124
+Successfully changed project path to: C:/Users/Sergio/Documents/Unity/Eldritch-Beings
+C:/Users/Sergio/Documents/Unity/Eldritch-Beings
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 58.97 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 162.14 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.1f1 (270dd8c3da1c)
-[Subsystems] Discovering subsystems at path D:/unity/2020.2.1f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/unity/Games/eldritch beings/Eldritch-Beings/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Sergio/Documents/Unity/Eldritch-Beings/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
-    Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 2060 SUPER (ID=0x1f06)
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GT 610 (ID=0x104a)
     Vendor:   
-    VRAM:     8031 MB
-    Driver:   30.0.14.7168
+    VRAM:     2000 MB
+    Driver:   23.21.13.8813
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Initialize mono
-Mono path[0] = 'D:/unity/2020.2.1f1/Editor/Data/Managed'
-Mono path[1] = 'D:/unity/2020.2.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'D:/unity/2020.2.1f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56140
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56776
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: D:/unity/2020.2.1f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
-Register platform support module: D:/unity/2020.2.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Register platform support module: D:/unity/2020.2.1f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.002624 seconds.
-Native extension for LinuxStandalone target not found
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.010424 seconds.
 Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 63.32 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 114.85 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.721 seconds
+- Completed reload, in  2.442 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002171 seconds.
+Registered in 0.005233 seconds.
 Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 82.29 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 127.00 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.063 seconds
+- Completed reload, in  3.713 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.95 ms, found 1 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.40 seconds
+Refreshing native plugins compatible for Editor in 1.01 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3225 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 142.8 MB.
-System memory in use after: 140.9 MB.
+Unloading 3230 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 143.7 MB.
+System memory in use after: 143.9 MB.
 
-Unloading 54 unused Assets to reduce memory usage. Loaded Objects now: 3641.
-Total: 4.988800 ms (FindLiveObjects: 0.360400 ms CreateObjectMapping: 0.266000 ms MarkObjects: 2.707300 ms  DeleteObjects: 1.653000 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Scripts/Player/PlayerMovement.cs
-  artifactKey: Guid(b7cb24d67439b984aacb5a030c0c64ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Player/PlayerMovement.cs using Guid(b7cb24d67439b984aacb5a030c0c64ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c930ab79557c8689e8d9e883a6ab12b0') in 0.052173 seconds
-  Import took 0.062101 seconds .
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3678.
+Total: 4.980900 ms (FindLiveObjects: 0.790200 ms CreateObjectMapping: 0.216300 ms MarkObjects: 3.869300 ms  DeleteObjects: 0.103800 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000198 seconds.
-  path: Assets/Scripts/Player/PlayerAimWeapon.cs
-  artifactKey: Guid(c09633c7f6b80114e80a92bbf736a32c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Player/PlayerAimWeapon.cs using Guid(c09633c7f6b80114e80a92bbf736a32c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd726660a68c71edb7af5e0ea99b85334') in 0.002676 seconds
-  Import took 0.010715 seconds .
+  path: 
+  artifactKey: Guid(76c8d327b58e7284798f6bf98bc003f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(76c8d327b58e7284798f6bf98bc003f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000123 seconds
+  ERROR: Unknown asset with GUID '76c8d327b58e7284798f6bf98bc003f7'
+  Import took 0.008161 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005521 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.17 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.173 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3097 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.0 MB.
+System memory in use after: 137.2 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3680.
+Total: 5.750200 ms (FindLiveObjects: 1.136500 ms CreateObjectMapping: 0.509200 ms MarkObjects: 4.066500 ms  DeleteObjects: 0.036500 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 45.522250 seconds.
-  path: Assets/Scripts/Interactables/InteractWithObject.cs
-  artifactKey: Guid(f5faef723d625744089e95dc6fcfff99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Interactables/InteractWithObject.cs using Guid(f5faef723d625744089e95dc6fcfff99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ebf85b9ddbf123506df0272c9c4c103') in 0.002127 seconds
-  Import took 0.006821 seconds .
+  Time since last request: 247.563153 seconds.
+  path: Assets/Animations/testingAnimations
+  artifactKey: Guid(99eb96abc64e19e40bfbbe0e06619132) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations using Guid(99eb96abc64e19e40bfbbe0e06619132) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2f42bd88a72b483d7ecaba39232a825') in 0.039370 seconds
+  Import took 0.078988 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 21.325630 seconds.
-  path: Assets/Images/testingStuff/Jerso Testing
-  artifactKey: Guid(cd3761c3ef338244b8b0bb22964dd70f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Images/testingStuff/Jerso Testing using Guid(cd3761c3ef338244b8b0bb22964dd70f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fee3ee5e5f94e4160a9cbbf5bc4f60c') in 0.002190 seconds
-  Import took 0.006930 seconds .
+  Time since last request: 38.149757 seconds.
+  path: Assets/Animations/testingAnimations/Attic
+  artifactKey: Guid(65fdaa03fad80304db9d793d6ae6b840) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic using Guid(65fdaa03fad80304db9d793d6ae6b840) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '361a9aa626b055c114806cd8e89682a3') in 0.005409 seconds
+  Import took 0.049731 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000347 seconds.
-  path: Assets/Images/testingStuff/Jerso Testing
-  artifactKey: Guid(cd3761c3ef338244b8b0bb22964dd70f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Images/testingStuff/Jerso Testing using Guid(cd3761c3ef338244b8b0bb22964dd70f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fee3ee5e5f94e4160a9cbbf5bc4f60c') in 0.002209 seconds
-  Import took 0.007519 seconds .
+  Time since last request: 273.733764 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slidingPlatform.anim
+  artifactKey: Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slidingPlatform.anim using Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.067974 seconds
+  ERROR: Build asset version error: assets/animations/testinganimations/attic/slidingplatform.anim in SourceAssetDB has modification time of '2021-10-03T18:28:34.977344Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.081592 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.044559 seconds.
-  path: Assets/Images/testingStuff/Jerso Testing/animalHead1.png
-  artifactKey: Guid(24977f059036cae4491c66ade7c67f05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Images/testingStuff/Jerso Testing/animalHead1.png using Guid(24977f059036cae4491c66ade7c67f05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b17708be95cf44dd697100604956243') in 0.150374 seconds
-  Import took 0.155062 seconds .
+  Time since last request: 0.046352 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slidingPlatform.anim
+  artifactKey: Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slidingPlatform.anim using Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000732 seconds
+  ERROR: Build asset version error: assets/animations/testinganimations/attic/slidingplatform.anim in SourceAssetDB has modification time of '2021-10-03T18:28:34.977344Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.008103 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000273 seconds.
-  path: Assets/Images/testingStuff/Jerso Testing/doorClosed.png
-  artifactKey: Guid(310191e4ad38c51489490a9466d22f04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Images/testingStuff/Jerso Testing/doorClosed.png using Guid(310191e4ad38c51489490a9466d22f04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f29c93109eb11e582593d80ae2bd44cb') in 0.044974 seconds
-  Import took 0.064921 seconds .
+  Time since last request: 0.034381 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slidingPlatform.anim
+  artifactKey: Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slidingPlatform.anim using Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000756 seconds
+  ERROR: Build asset version error: assets/animations/testinganimations/attic/slidingplatform.anim in SourceAssetDB has modification time of '2021-10-03T18:28:34.977344Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.008391 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000309 seconds.
-  path: Assets/Images/testingStuff/Jerso Testing/interactableIcon.png
-  artifactKey: Guid(3debee2bfed9703428c61aa08ac4407b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Images/testingStuff/Jerso Testing/interactableIcon.png using Guid(3debee2bfed9703428c61aa08ac4407b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3db620ca734d91a8cefea09b4650c40') in 0.027945 seconds
-  Import took 0.032635 seconds .
+  Time since last request: 0.034617 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slidingPlatform.anim
+  artifactKey: Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slidingPlatform.anim using Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000621 seconds
+  ERROR: Build asset version error: assets/animations/testinganimations/attic/slidingplatform.anim in SourceAssetDB has modification time of '2021-10-03T18:28:34.977344Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.007732 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000198 seconds.
-  path: Assets/Images/testingStuff/Jerso Testing/corridorApparition.png
-  artifactKey: Guid(751ab240cff1d064fb6d46b70cb54de9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Images/testingStuff/Jerso Testing/corridorApparition.png using Guid(751ab240cff1d064fb6d46b70cb54de9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6a7ef51989207b42d01a7e957da7100') in 0.039354 seconds
-  Import took 0.044092 seconds .
+  Time since last request: 0.034151 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slidingPlatform.anim
+  artifactKey: Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slidingPlatform.anim using Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000593 seconds
+  ERROR: Build asset version error: assets/animations/testinganimations/attic/slidingplatform.anim in SourceAssetDB has modification time of '2021-10-03T18:28:34.977344Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.008166 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000260 seconds.
-  path: Assets/Images/testingStuff/Jerso Testing/secretDoor.png
-  artifactKey: Guid(fba28b467299fe74c9cf87e9a4a4df9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Images/testingStuff/Jerso Testing/secretDoor.png using Guid(fba28b467299fe74c9cf87e9a4a4df9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2243e191197dcac7546eb34a3882dd5') in 0.035419 seconds
-  Import took 0.040182 seconds .
+  Time since last request: 0.041510 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slidingPlatform.anim
+  artifactKey: Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slidingPlatform.anim using Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000628 seconds
+  ERROR: Build asset version error: assets/animations/testinganimations/attic/slidingplatform.anim in SourceAssetDB has modification time of '2021-10-03T18:28:34.977344Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.007866 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000269 seconds.
-  path: Assets/Images/testingStuff/Jerso Testing/noteVisual.png
-  artifactKey: Guid(9a6c2c5bfefc30d4d8c50c56b3bd20d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Images/testingStuff/Jerso Testing/noteVisual.png using Guid(9a6c2c5bfefc30d4d8c50c56b3bd20d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49b978d4a5d32bfc20ff2cbaee3b36ff') in 0.118015 seconds
-  Import took 0.122892 seconds .
+  Time since last request: 0.035397 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slidingPlatform.anim
+  artifactKey: Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slidingPlatform.anim using Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000616 seconds
+  ERROR: Build asset version error: assets/animations/testinganimations/attic/slidingplatform.anim in SourceAssetDB has modification time of '2021-10-03T18:28:34.977344Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.007941 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000186 seconds.
-  path: Assets/Images/testingStuff/Jerso Testing/SwitchOn.png
-  artifactKey: Guid(600119053ff6b8c42934939cca39007b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Images/testingStuff/Jerso Testing/SwitchOn.png using Guid(600119053ff6b8c42934939cca39007b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00584a5fac62bc6023d707d439883351') in 0.060335 seconds
-  Import took 0.064944 seconds .
+  Time since last request: 0.034241 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slidingPlatform.anim
+  artifactKey: Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slidingPlatform.anim using Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000683 seconds
+  ERROR: Build asset version error: assets/animations/testinganimations/attic/slidingplatform.anim in SourceAssetDB has modification time of '2021-10-03T18:28:34.977344Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.008677 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000293 seconds.
-  path: Assets/Images/testingStuff/Jerso Testing/UIScaryFX.png
-  artifactKey: Guid(36ff8471b464b9a4dbae5388acc31c49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Images/testingStuff/Jerso Testing/UIScaryFX.png using Guid(36ff8471b464b9a4dbae5388acc31c49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55ba8e646eb53ad7f9c2f2a646b5918e') in 0.093341 seconds
-  Import took 0.098246 seconds .
+  Time since last request: 0.036245 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slidingPlatform.anim
+  artifactKey: Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slidingPlatform.anim using Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000604 seconds
+  ERROR: Build asset version error: assets/animations/testinganimations/attic/slidingplatform.anim in SourceAssetDB has modification time of '2021-10-03T18:28:34.977344Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.007695 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000163 seconds.
-  path: Assets/Images/testingStuff/Jerso Testing/toppng.com-golden-bell-433x600.png
-  artifactKey: Guid(68f6013472c2fc2428806764ca820fbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Images/testingStuff/Jerso Testing/toppng.com-golden-bell-433x600.png using Guid(68f6013472c2fc2428806764ca820fbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '747be2b08dbf2f4418c410e2f155a22c') in 0.058249 seconds
-  Import took 0.063065 seconds .
+  Time since last request: 0.033874 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slidingPlatform.anim
+  artifactKey: Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slidingPlatform.anim using Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000597 seconds
+  ERROR: Build asset version error: assets/animations/testinganimations/attic/slidingplatform.anim in SourceAssetDB has modification time of '2021-10-03T18:28:34.977344Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.007664 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000184 seconds.
-  path: Assets/Images/testingStuff/Jerso Testing/SwitchOff.png
-  artifactKey: Guid(00311afc54ec6c048a4b0aee1f86832f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Images/testingStuff/Jerso Testing/SwitchOff.png using Guid(00311afc54ec6c048a4b0aee1f86832f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcfb93611892e1abcf54b7c55ca8c2c6') in 0.054436 seconds
-  Import took 0.059175 seconds .
+  Time since last request: 0.034231 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slidingPlatform.anim
+  artifactKey: Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slidingPlatform.anim using Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000626 seconds
+  ERROR: Build asset version error: assets/animations/testinganimations/attic/slidingplatform.anim in SourceAssetDB has modification time of '2021-10-03T18:28:34.977344Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.008464 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000247 seconds.
-  path: Assets/Images/testingStuff/Jerso Testing/doorOpen.png
-  artifactKey: Guid(b9feca1d7a75abe4b8eaf7a19a3ba69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Images/testingStuff/Jerso Testing/doorOpen.png using Guid(b9feca1d7a75abe4b8eaf7a19a3ba69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd45a98754ac5baf053817fab94b0ccaa') in 0.034945 seconds
-  Import took 0.039287 seconds .
+  Time since last request: 0.053708 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slidingPlatform.anim
+  artifactKey: Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slidingPlatform.anim using Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000616 seconds
+  ERROR: Build asset version error: assets/animations/testinganimations/attic/slidingplatform.anim in SourceAssetDB has modification time of '2021-10-03T18:28:34.977344Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.008631 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000234 seconds.
-  path: Assets/Images/testingStuff/Jerso Testing/wallMonster.png
-  artifactKey: Guid(d1e6c84e4e9adde43bbfb88b447bc490) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Images/testingStuff/Jerso Testing/wallMonster.png using Guid(d1e6c84e4e9adde43bbfb88b447bc490) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83398434e10a238cd95b5c676a711e37') in 0.034500 seconds
-  Import took 0.038936 seconds .
+  Time since last request: 0.033041 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slidingPlatform.anim
+  artifactKey: Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slidingPlatform.anim using Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000586 seconds
+  ERROR: Build asset version error: assets/animations/testinganimations/attic/slidingplatform.anim in SourceAssetDB has modification time of '2021-10-03T18:28:34.977344Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.007941 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000316 seconds.
-  path: Assets/Images/testingStuff/Jerso Testing/bookcase.png
-  artifactKey: Guid(e73941e27716ecd45b85769cda3fef46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Images/testingStuff/Jerso Testing/bookcase.png using Guid(e73941e27716ecd45b85769cda3fef46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14fe7889714ef1713e10a3c5ae042643') in 0.075196 seconds
-  Import took 0.079578 seconds .
+  Time since last request: 0.035299 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slidingPlatform.anim
+  artifactKey: Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slidingPlatform.anim using Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000582 seconds
+  ERROR: Build asset version error: assets/animations/testinganimations/attic/slidingplatform.anim in SourceAssetDB has modification time of '2021-10-03T18:28:34.977344Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.008367 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000234 seconds.
-  path: Assets/Images/testingStuff/Jerso Testing/animalHead1Activated.png
-  artifactKey: Guid(dc06c3042990d8f4291b164f69eba511) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Images/testingStuff/Jerso Testing/animalHead1Activated.png using Guid(dc06c3042990d8f4291b164f69eba511) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3974d92555060f1323c5a00828f9556') in 0.061052 seconds
-  Import took 0.065365 seconds .
+  Time since last request: 0.035010 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slidingPlatform.anim
+  artifactKey: Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slidingPlatform.anim using Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000557 seconds
+  ERROR: Build asset version error: assets/animations/testinganimations/attic/slidingplatform.anim in SourceAssetDB has modification time of '2021-10-03T18:28:34.977344Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.007485 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000159 seconds.
-  path: Assets/Images/testingStuff/Jerso Testing/courtyardEntity.png
-  artifactKey: Guid(aa1c00eddb847604ab09f1de76668335) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Images/testingStuff/Jerso Testing/courtyardEntity.png using Guid(aa1c00eddb847604ab09f1de76668335) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fa8ae7ec1fde015e15257a2f114a0f0') in 0.041645 seconds
-  Import took 0.046286 seconds .
+  Time since last request: 0.032512 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slidingPlatform.anim
+  artifactKey: Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slidingPlatform.anim using Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000591 seconds
+  ERROR: Build asset version error: assets/animations/testinganimations/attic/slidingplatform.anim in SourceAssetDB has modification time of '2021-10-03T18:28:34.977344Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.008410 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 0.034634 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slidingPlatform.anim
+  artifactKey: Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slidingPlatform.anim using Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000567 seconds
+  ERROR: Build asset version error: assets/animations/testinganimations/attic/slidingplatform.anim in SourceAssetDB has modification time of '2021-10-03T18:28:34.977344Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.007665 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.038318 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slidingPlatform.anim
+  artifactKey: Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slidingPlatform.anim using Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000566 seconds
+  ERROR: Build asset version error: assets/animations/testinganimations/attic/slidingplatform.anim in SourceAssetDB has modification time of '2021-10-03T18:28:34.977344Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.007952 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.063301 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slidingPlatform.anim
+  artifactKey: Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slidingPlatform.anim using Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000537 seconds
+  ERROR: Build asset version error: assets/animations/testinganimations/attic/slidingplatform.anim in SourceAssetDB has modification time of '2021-10-03T18:28:34.977344Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.007421 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.033521 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slidingPlatform.anim
+  artifactKey: Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slidingPlatform.anim using Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000716 seconds
+  ERROR: Build asset version error: assets/animations/testinganimations/attic/slidingplatform.anim in SourceAssetDB has modification time of '2021-10-03T18:28:34.977344Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.008261 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.032712 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slidingPlatform.anim
+  artifactKey: Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slidingPlatform.anim using Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000595 seconds
+  ERROR: Build asset version error: assets/animations/testinganimations/attic/slidingplatform.anim in SourceAssetDB has modification time of '2021-10-03T18:28:34.977344Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.007860 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.034677 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slidingPlatform.anim
+  artifactKey: Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slidingPlatform.anim using Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000583 seconds
+  ERROR: Build asset version error: assets/animations/testinganimations/attic/slidingplatform.anim in SourceAssetDB has modification time of '2021-10-03T18:28:34.977344Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.008382 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.037774 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slidingPlatform.anim
+  artifactKey: Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slidingPlatform.anim using Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000572 seconds
+  ERROR: Build asset version error: assets/animations/testinganimations/attic/slidingplatform.anim in SourceAssetDB has modification time of '2021-10-03T18:28:34.977344Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.008449 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.043552 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slidingPlatform.anim
+  artifactKey: Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slidingPlatform.anim using Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000571 seconds
+  ERROR: Build asset version error: assets/animations/testinganimations/attic/slidingplatform.anim in SourceAssetDB has modification time of '2021-10-03T18:28:34.977344Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.007750 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.040246 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slidingPlatform.anim
+  artifactKey: Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slidingPlatform.anim using Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000788 seconds
+  ERROR: Build asset version error: assets/animations/testinganimations/attic/slidingplatform.anim in SourceAssetDB has modification time of '2021-10-03T18:28:34.977344Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.010543 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.036937 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slidingPlatform.anim
+  artifactKey: Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slidingPlatform.anim using Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000575 seconds
+  ERROR: Build asset version error: assets/animations/testinganimations/attic/slidingplatform.anim in SourceAssetDB has modification time of '2021-10-03T18:28:34.977344Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.007756 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.035264 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slidingPlatform.anim
+  artifactKey: Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slidingPlatform.anim using Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000633 seconds
+  ERROR: Build asset version error: assets/animations/testinganimations/attic/slidingplatform.anim in SourceAssetDB has modification time of '2021-10-03T18:28:34.977344Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.008107 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.049012 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slidingPlatform.anim
+  artifactKey: Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slidingPlatform.anim using Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000566 seconds
+  ERROR: Build asset version error: assets/animations/testinganimations/attic/slidingplatform.anim in SourceAssetDB has modification time of '2021-10-03T18:28:34.977344Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.007680 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.037502 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slidingPlatform.anim
+  artifactKey: Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slidingPlatform.anim using Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000583 seconds
+  ERROR: Build asset version error: assets/animations/testinganimations/attic/slidingplatform.anim in SourceAssetDB has modification time of '2021-10-03T18:28:34.977344Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.007794 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.036301 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slidingPlatform.anim
+  artifactKey: Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slidingPlatform.anim using Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000642 seconds
+  ERROR: Build asset version error: assets/animations/testinganimations/attic/slidingplatform.anim in SourceAssetDB has modification time of '2021-10-03T18:28:34.977344Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.009709 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.039261 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slidingPlatform.anim
+  artifactKey: Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slidingPlatform.anim using Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000615 seconds
+  ERROR: Build asset version error: assets/animations/testinganimations/attic/slidingplatform.anim in SourceAssetDB has modification time of '2021-10-03T18:28:34.977344Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.008023 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.036564 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slidingPlatform.anim
+  artifactKey: Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slidingPlatform.anim using Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000758 seconds
+  ERROR: Build asset version error: assets/animations/testinganimations/attic/slidingplatform.anim in SourceAssetDB has modification time of '2021-10-03T18:28:34.977344Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.010697 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.039980 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slidingPlatform.anim
+  artifactKey: Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slidingPlatform.anim using Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000593 seconds
+  ERROR: Build asset version error: assets/animations/testinganimations/attic/slidingplatform.anim in SourceAssetDB has modification time of '2021-10-03T18:28:34.977344Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.008643 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.034000 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slidingPlatform.anim
+  artifactKey: Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slidingPlatform.anim using Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000577 seconds
+  ERROR: Build asset version error: assets/animations/testinganimations/attic/slidingplatform.anim in SourceAssetDB has modification time of '2021-10-03T18:28:34.977344Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.008434 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.034240 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slidingPlatform.anim
+  artifactKey: Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slidingPlatform.anim using Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000568 seconds
+  ERROR: Build asset version error: assets/animations/testinganimations/attic/slidingplatform.anim in SourceAssetDB has modification time of '2021-10-03T18:28:34.977344Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.008178 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.035992 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slidingPlatform.anim
+  artifactKey: Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slidingPlatform.anim using Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000618 seconds
+  ERROR: Build asset version error: assets/animations/testinganimations/attic/slidingplatform.anim in SourceAssetDB has modification time of '2021-10-03T18:28:34.977344Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.007854 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.038126 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slidingPlatform.anim
+  artifactKey: Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slidingPlatform.anim using Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000793 seconds
+  ERROR: Build asset version error: assets/animations/testinganimations/attic/slidingplatform.anim in SourceAssetDB has modification time of '2021-10-03T18:28:34.977344Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.009167 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.041601 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slidingPlatform.anim
+  artifactKey: Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slidingPlatform.anim using Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000583 seconds
+  ERROR: Build asset version error: assets/animations/testinganimations/attic/slidingplatform.anim in SourceAssetDB has modification time of '2021-10-03T18:28:34.977344Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.007888 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.033757 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slidingPlatform.anim
+  artifactKey: Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slidingPlatform.anim using Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000599 seconds
+  ERROR: Build asset version error: assets/animations/testinganimations/attic/slidingplatform.anim in SourceAssetDB has modification time of '2021-10-03T18:28:34.977344Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.007711 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.032535 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slidingPlatform.anim
+  artifactKey: Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slidingPlatform.anim using Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000576 seconds
+  ERROR: Build asset version error: assets/animations/testinganimations/attic/slidingplatform.anim in SourceAssetDB has modification time of '2021-10-03T18:28:34.977344Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.007657 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.033338 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slidingPlatform.anim
+  artifactKey: Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slidingPlatform.anim using Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000821 seconds
+  ERROR: Build asset version error: assets/animations/testinganimations/attic/slidingplatform.anim in SourceAssetDB has modification time of '2021-10-03T18:28:34.977344Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.009347 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.043592 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slidingPlatform.anim
+  artifactKey: Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slidingPlatform.anim using Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000679 seconds
+  ERROR: Build asset version error: assets/animations/testinganimations/attic/slidingplatform.anim in SourceAssetDB has modification time of '2021-10-03T18:28:34.977344Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.007773 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.526230 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slidingPlatform.anim
+  artifactKey: Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slidingPlatform.anim using Guid(af119d6de266807409d858a274fae38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000588 seconds
+  ERROR: Build asset version error: assets/animations/testinganimations/attic/slidingplatform.anim in SourceAssetDB has modification time of '2021-10-03T18:28:34.977344Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.008131 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.144436 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slideUp.anim
+  artifactKey: Guid(4b687065a082dcc4a96045c59e5b0002) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slideUp.anim using Guid(4b687065a082dcc4a96045c59e5b0002) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b0d78843de584f30de64bbcb31f0535') in 0.021219 seconds
+  Import took 0.048771 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.055692 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slideUp.anim
+  artifactKey: Guid(4b687065a082dcc4a96045c59e5b0002) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slideUp.anim using Guid(4b687065a082dcc4a96045c59e5b0002) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b0d78843de584f30de64bbcb31f0535') in 0.004879 seconds
+  Import took 0.012554 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.368886 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slideDown.anim
+  artifactKey: Guid(e4b26d91d276e4543a0b8d791ee58716) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slideDown.anim using Guid(e4b26d91d276e4543a0b8d791ee58716) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ecbec4bf410d9491e1da07abfe95d7b') in 0.007975 seconds
+  Import took 0.031620 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 729.593351 seconds.
+  path: Assets/Animations/testingAnimations/Attic/Obstacle1.controller
+  artifactKey: Guid(0fd0539aae8eb2742977ea878bbf9b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/Obstacle1.controller using Guid(0fd0539aae8eb2742977ea878bbf9b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '810bdf5eae6e13f22e7f87df7ea4da20') in 0.012762 seconds
+  Import took 0.039994 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.269534 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slidingObstacles.anim
+  artifactKey: Guid(e1484cd623898284aae137cc1ad5f244) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slidingObstacles.anim using Guid(e1484cd623898284aae137cc1ad5f244) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64a62357e41b1862d57674d0be7ffce4') in 0.008353 seconds
+  Import took 0.061648 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.767373 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slideUp.anim
+  artifactKey: Guid(4b687065a082dcc4a96045c59e5b0002) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slideUp.anim using Guid(4b687065a082dcc4a96045c59e5b0002) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67d894a709f41d0b7d9deee34a9cb9b1') in 0.008543 seconds
+  Import took 0.033325 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.646678 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slideDown.anim
+  artifactKey: Guid(e4b26d91d276e4543a0b8d791ee58716) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slideDown.anim using Guid(e4b26d91d276e4543a0b8d791ee58716) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '105df51ea12a3436c78cb84f4c4be4a4') in 0.008710 seconds
+  Import took 0.018086 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.009638 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slideDown.anim
+  artifactKey: Guid(e4b26d91d276e4543a0b8d791ee58716) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slideDown.anim using Guid(e4b26d91d276e4543a0b8d791ee58716) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '105df51ea12a3436c78cb84f4c4be4a4') in 0.006760 seconds
+  Import took 0.014914 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 185.548821 seconds.
+  path: Assets/Animations/testingAnimations/Attic/SlidingObstacles.controller
+  artifactKey: Guid(2485cdb9ca826854296f90ffef553f71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/SlidingObstacles.controller using Guid(2485cdb9ca826854296f90ffef553f71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '185c43a1849b02290cf93cafa2891b38') in 0.008671 seconds
+  Import took 0.038413 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.164517 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slideObstacleUp.anim
+  artifactKey: Guid(8fc6bf623a211e54b9bfcd1ab57b093f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slideObstacleUp.anim using Guid(8fc6bf623a211e54b9bfcd1ab57b093f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1ec41e20bb6a42a97edec9eba7a0a23') in 0.009158 seconds
+  Import took 0.034896 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.560726 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slideObstacleDown.anim
+  artifactKey: Guid(0e67bfba721dd2a4ea65db564b9f5468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slideObstacleDown.anim using Guid(0e67bfba721dd2a4ea65db564b9f5468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e97cfc9caef49e32fbeded6c921ed85') in 0.007022 seconds
+  Import took 0.032101 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006258 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slideObstacleDown.anim
+  artifactKey: Guid(0e67bfba721dd2a4ea65db564b9f5468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slideObstacleDown.anim using Guid(0e67bfba721dd2a4ea65db564b9f5468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e97cfc9caef49e32fbeded6c921ed85') in 0.006493 seconds
+  Import took 0.014826 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.089552 seconds.
+  path: Assets/Animations/testingAnimations/Attic/SlidingObstacles.controller
+  artifactKey: Guid(2485cdb9ca826854296f90ffef553f71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/SlidingObstacles.controller using Guid(2485cdb9ca826854296f90ffef553f71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8f959a847ab07b85061b74a2fc2d8d5') in 0.006916 seconds
+  Import took 0.032767 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.061472 seconds.
+  path: Assets/Animations/testingAnimations/Attic/SlideObstacleUp.anim
+  artifactKey: Guid(8fc6bf623a211e54b9bfcd1ab57b093f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/SlideObstacleUp.anim using Guid(8fc6bf623a211e54b9bfcd1ab57b093f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49dd40a0c5acf6f29ec1a5201e2a4de7') in 0.008325 seconds
+  Import took 0.032012 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 131.076357 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slideObjectUp.anim
+  artifactKey: Guid(30ace04d2b938b543bf11ffd0b8a05d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slideObjectUp.anim using Guid(30ace04d2b938b543bf11ffd0b8a05d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dc7dc7ff50cc78bb33bbd355702458a') in 0.010793 seconds
+  Import took 0.037945 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.517220 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slideObject1Up.anim
+  artifactKey: Guid(c56fb707b9e1d7142a619a8534cce461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slideObject1Up.anim using Guid(c56fb707b9e1d7142a619a8534cce461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5786e5f48180b20aa909b65f43994259') in 0.028737 seconds
+  Import took 0.061580 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.558640 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slideObstacle1Up.anim
+  artifactKey: Guid(c56fb707b9e1d7142a619a8534cce461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slideObstacle1Up.anim using Guid(c56fb707b9e1d7142a619a8534cce461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d10bea38ab9dd68348cc320e2216b10') in 0.007212 seconds
+  Import took 0.040256 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 285.541715 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slideObstacle1Down.anim
+  artifactKey: Guid(a87ac157ea52f164a96026f6f86665de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slideObstacle1Down.anim using Guid(a87ac157ea52f164a96026f6f86665de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc7d88518c1e9b08457fc1b45d7dca14') in 0.008459 seconds
+  Import took 0.027079 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.906333 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slideObstacle2Down.anim
+  artifactKey: Guid(574baa411740e5c4ab41b5fef2940047) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slideObstacle2Down.anim using Guid(574baa411740e5c4ab41b5fef2940047) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4632c33bf740a23d54f36ffa73a2c982') in 0.009213 seconds
+  Import took 0.029842 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.384164 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slideObstacle2Up.anim
+  artifactKey: Guid(665950b61762df64ebbd6bf1e8f13131) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slideObstacle2Up.anim using Guid(665950b61762df64ebbd6bf1e8f13131) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dcfb7f99099f9d52d2b8d895eef37e3') in 0.008678 seconds
+  Import took 0.035403 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.437503 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slideObstacle3Down.anim
+  artifactKey: Guid(56a8893b5f87fcd4d9edc9a7a1efff2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slideObstacle3Down.anim using Guid(56a8893b5f87fcd4d9edc9a7a1efff2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c336e0fcaebe6e31a5f1ce3abc7e8055') in 0.009218 seconds
+  Import took 0.034353 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.358588 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slideObstacle3Up.anim
+  artifactKey: Guid(299c850ad5e6518408977be3703bd873) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slideObstacle3Up.anim using Guid(299c850ad5e6518408977be3703bd873) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4237f42c57e16d9b62d0d3601e97fa82') in 0.007753 seconds
+  Import took 0.022444 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.013192 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slideObstacle3Up.anim
+  artifactKey: Guid(299c850ad5e6518408977be3703bd873) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slideObstacle3Up.anim using Guid(299c850ad5e6518408977be3703bd873) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4237f42c57e16d9b62d0d3601e97fa82') in 0.007446 seconds
+  Import took 0.016865 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 349.131955 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slideObstacle5Up.anim
+  artifactKey: Guid(8fd0dce2a03277c4daf6ad0802585610) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slideObstacle5Up.anim using Guid(8fd0dce2a03277c4daf6ad0802585610) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13660ef0be9cad01dbfde5eaa14c8610') in 0.007633 seconds
+  Import took 0.024480 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012199 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slideObstacle5Up.anim
+  artifactKey: Guid(8fd0dce2a03277c4daf6ad0802585610) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slideObstacle5Up.anim using Guid(8fd0dce2a03277c4daf6ad0802585610) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13660ef0be9cad01dbfde5eaa14c8610') in 0.007946 seconds
+  Import took 0.017167 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.317065 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slideObstacle6Down.anim
+  artifactKey: Guid(f899077e375c45a42b418a8e60b6240c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slideObstacle6Down.anim using Guid(f899077e375c45a42b418a8e60b6240c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f66c6a8bfe54514f5176713d8c321c1') in 0.009921 seconds
+  Import took 0.029673 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.185776 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slideObstacle4Down.anim
+  artifactKey: Guid(ce8a94116d8e17f4ab99bcb2c89f568c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slideObstacle4Down.anim using Guid(ce8a94116d8e17f4ab99bcb2c89f568c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04af9dee1fe8eadb1fe8993344fa966b') in 0.007816 seconds
+  Import took 0.033952 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005697 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slideObstacle4Down.anim
+  artifactKey: Guid(ce8a94116d8e17f4ab99bcb2c89f568c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slideObstacle4Down.anim using Guid(ce8a94116d8e17f4ab99bcb2c89f568c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04af9dee1fe8eadb1fe8993344fa966b') in 0.006160 seconds
+  Import took 0.014469 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.632154 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slideObstacle5Down.anim
+  artifactKey: Guid(ae464fde6aa63414ca7bc80eba590737) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slideObstacle5Down.anim using Guid(ae464fde6aa63414ca7bc80eba590737) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b06c7f0907128bd14211a4e7f0219ea9') in 0.007064 seconds
+  Import took 0.015226 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 323.971614 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slideDown6.anim
+  artifactKey: Guid(2edf731d413f7fc40b28aa636670f3bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slideDown6.anim using Guid(2edf731d413f7fc40b28aa636670f3bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9774958c3018bb805897dc1231cad524') in 0.009818 seconds
+  Import took 0.032978 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 69.269306 seconds.
+  path: Assets/Animations/testingAnimations/Attic/slideUp7.anim
+  artifactKey: Guid(88f90910f1f9f5e4db6d7e12792d688e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/slideUp7.anim using Guid(88f90910f1f9f5e4db6d7e12792d688e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37f2e255e59e7f1c83c938340d4d628a') in 0.009363 seconds
+  Import took 0.033041 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005674 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.22 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.469 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.15 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3097 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.1 MB.
+System memory in use after: 137.3 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3683.
+Total: 4.267800 ms (FindLiveObjects: 0.672900 ms CreateObjectMapping: 0.207600 ms MarkObjects: 3.344300 ms  DeleteObjects: 0.041500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006393 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.01 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.068 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.19 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3097 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.1 MB.
+System memory in use after: 137.3 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3686.
+Total: 4.612500 ms (FindLiveObjects: 0.820500 ms CreateObjectMapping: 0.280400 ms MarkObjects: 3.476200 ms  DeleteObjects: 0.033700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 557.715616 seconds.
+  path: Assets/Animations/testingAnimations/Attic/Obstacle1/Obstacle1.controller
+  artifactKey: Guid(0fd0539aae8eb2742977ea878bbf9b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/Obstacle1/Obstacle1.controller using Guid(0fd0539aae8eb2742977ea878bbf9b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce7814b93a0ec752e970103cb6f0e1be') in 0.031492 seconds
+  Import took 0.040127 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.712803 seconds.
+  path: Assets/Animations/testingAnimations/Attic/Obstacle2/slideDown.anim
+  artifactKey: Guid(30161ed24a8afbe4ab9ffe0bbcfeffa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/Obstacle2/slideDown.anim using Guid(30161ed24a8afbe4ab9ffe0bbcfeffa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d876a491fa6336a6d9432a3c1b83db7') in 0.006870 seconds
+  Import took 0.052931 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.004032 seconds.
+  path: Assets/Animations/testingAnimations/Attic/Obstacle2/slideUp.anim
+  artifactKey: Guid(24ea9cc65d146ad45b3e0330a843fa91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/Obstacle2/slideUp.anim using Guid(24ea9cc65d146ad45b3e0330a843fa91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8622f6eafa79cac77977904ebc425625') in 0.008946 seconds
+  Import took 0.056474 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.786593 seconds.
+  path: Assets/Animations/testingAnimations/Attic/Obstacle3/slideDown.anim
+  artifactKey: Guid(9716a005489a53e40b2942b9b8727949) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/Obstacle3/slideDown.anim using Guid(9716a005489a53e40b2942b9b8727949) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6773a8af038cfa74471a4830d529ffff') in 0.012324 seconds
+  Import took 0.020406 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.583122 seconds.
+  path: Assets/Animations/testingAnimations/Attic/Obstacle3/slideUp.anim
+  artifactKey: Guid(127b94a7bfb14304a92920b9d4ea66e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/Obstacle3/slideUp.anim using Guid(127b94a7bfb14304a92920b9d4ea66e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03e64d9a5532630443c0af50c6fb7ea8') in 0.008824 seconds
+  Import took 0.016602 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.118999 seconds.
+  path: Assets/Animations/testingAnimations/Attic/Obstacle4/slideDown.anim
+  artifactKey: Guid(ccc2ae5bdd814ab4cbcba6c055cafc51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/Obstacle4/slideDown.anim using Guid(ccc2ae5bdd814ab4cbcba6c055cafc51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ba97730a5427c7c940e6bee86b4359d') in 0.009140 seconds
+  Import took 0.030242 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.339560 seconds.
+  path: Assets/Animations/testingAnimations/Attic/Obstacle4/slideUp.anim
+  artifactKey: Guid(44c97677f2608dc4e843b2bdea1040ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/Obstacle4/slideUp.anim using Guid(44c97677f2608dc4e843b2bdea1040ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a66d0b19619be2dcb95b81fad5731f66') in 0.006848 seconds
+  Import took 0.014801 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.831168 seconds.
+  path: Assets/Animations/testingAnimations/Attic/Obstacle5/slideDown.anim
+  artifactKey: Guid(446417307690958408efa1e054bd7ea1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/Obstacle5/slideDown.anim using Guid(446417307690958408efa1e054bd7ea1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1465916d113520cd0a1630cf8e55120d') in 0.009399 seconds
+  Import took 0.017078 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.435408 seconds.
+  path: Assets/Animations/testingAnimations/Attic/Obstacle5/slideUp.anim
+  artifactKey: Guid(0deb73547fba78b4d90cfb59b37735ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/Obstacle5/slideUp.anim using Guid(0deb73547fba78b4d90cfb59b37735ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94e778f4a859a3b642011269d2ad1a97') in 0.009209 seconds
+  Import took 0.026661 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.425939 seconds.
+  path: Assets/Animations/testingAnimations/Attic/Obstacle6/slideDown.anim
+  artifactKey: Guid(2edf731d413f7fc40b28aa636670f3bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/Obstacle6/slideDown.anim using Guid(2edf731d413f7fc40b28aa636670f3bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e28e97ca049e8daca782931a44baa55') in 0.009492 seconds
+  Import took 0.034423 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002162 seconds.
+  path: Assets/Animations/testingAnimations/Attic/Obstacle6/slideDown.anim
+  artifactKey: Guid(2edf731d413f7fc40b28aa636670f3bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/Obstacle6/slideDown.anim using Guid(2edf731d413f7fc40b28aa636670f3bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e28e97ca049e8daca782931a44baa55') in 0.006881 seconds
+  Import took 0.015109 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.253316 seconds.
+  path: Assets/Animations/testingAnimations/Attic/Obstacle6/slideUp.anim
+  artifactKey: Guid(9cd2b9b3498ca514d9c5fd0bc2c9261e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/Obstacle6/slideUp.anim using Guid(9cd2b9b3498ca514d9c5fd0bc2c9261e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84e377577d0464fbea29cf221854019d') in 0.008776 seconds
+  Import took 0.028855 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.001114 seconds.
+  path: Assets/Animations/testingAnimations/Attic/Obstacle7/slideDown.anim
+  artifactKey: Guid(38b5087ec6ccea14c9f8c27e06029361) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/Obstacle7/slideDown.anim using Guid(38b5087ec6ccea14c9f8c27e06029361) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2370377ce2d3600505a9a0ed092bce0d') in 0.008154 seconds
+  Import took 0.017713 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.566058 seconds.
+  path: Assets/Animations/testingAnimations/Attic/Obstacle7/slideUp.anim
+  artifactKey: Guid(88f90910f1f9f5e4db6d7e12792d688e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/Obstacle7/slideUp.anim using Guid(88f90910f1f9f5e4db6d7e12792d688e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0a666530e8295b1df4b564e7dfced6e') in 0.008337 seconds
+  Import took 0.016342 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.664169 seconds.
+  path: Assets/Animations/testingAnimations/Attic/Obstacle8/slideDown.anim
+  artifactKey: Guid(07b40911b7f20744881a7ac3871928a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/Obstacle8/slideDown.anim using Guid(07b40911b7f20744881a7ac3871928a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d5d7494273c1c258c043acf8585e607') in 0.006932 seconds
+  Import took 0.015298 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.783638 seconds.
+  path: Assets/Animations/testingAnimations/Attic/Obstacle8/slideUp.anim
+  artifactKey: Guid(9b7d017e423ede746a03c818fc1656fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/testingAnimations/Attic/Obstacle8/slideUp.anim using Guid(9b7d017e423ede746a03c818fc1656fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3c06e431400b1b139f372c119cde8b9') in 0.008810 seconds
+  Import took 0.016741 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005461 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.06 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.949 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.13 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3097 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.2 MB.
+System memory in use after: 137.5 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3689.
+Total: 4.283700 ms (FindLiveObjects: 0.669400 ms CreateObjectMapping: 0.208200 ms MarkObjects: 3.371400 ms  DeleteObjects: 0.033300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005501 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.02 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.319 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.04 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3097 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.3 MB.
+System memory in use after: 137.5 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3692.
+Total: 5.135700 ms (FindLiveObjects: 0.753300 ms CreateObjectMapping: 0.272200 ms MarkObjects: 4.079100 ms  DeleteObjects: 0.029200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005178 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.15 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.937 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.13 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3098 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.3 MB.
+System memory in use after: 137.5 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3696.
+Total: 5.232400 ms (FindLiveObjects: 0.831700 ms CreateObjectMapping: 0.340600 ms MarkObjects: 4.029100 ms  DeleteObjects: 0.028900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 177.216376 seconds.
+  path: Assets/Scripts/Room Elements/Attic/ResetBell.cs
+  artifactKey: Guid(cb58c3250982bf3429e9c6e0b5ea9630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Room Elements/Attic/ResetBell.cs using Guid(cb58c3250982bf3429e9c6e0b5ea9630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58453c0a58d4c6a370858c631d30e3b8') in 0.047979 seconds
+  Import took 0.069871 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005670 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.01 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.562 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.30 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3098 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.3 MB.
+System memory in use after: 137.5 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3699.
+Total: 6.426300 ms (FindLiveObjects: 0.847700 ms CreateObjectMapping: 0.339500 ms MarkObjects: 5.191200 ms  DeleteObjects: 0.045500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005586 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.14 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.139 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.10 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3098 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.3 MB.
+System memory in use after: 137.5 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3702.
+Total: 4.652100 ms (FindLiveObjects: 0.680800 ms CreateObjectMapping: 0.202700 ms MarkObjects: 3.736400 ms  DeleteObjects: 0.030600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 126.634791 seconds.
+  path: Assets/Scripts/Room Elements/Attic/ResetBell.cs
+  artifactKey: Guid(cb58c3250982bf3429e9c6e0b5ea9630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Room Elements/Attic/ResetBell.cs using Guid(cb58c3250982bf3429e9c6e0b5ea9630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60df690bb9a8a1b898dda31bc372e72f') in 0.010712 seconds
+  Import took 0.040563 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006359 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.39 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.594 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.17 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3098 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.3 MB.
+System memory in use after: 137.5 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3705.
+Total: 5.517900 ms (FindLiveObjects: 0.774400 ms CreateObjectMapping: 0.291000 ms MarkObjects: 4.410600 ms  DeleteObjects: 0.039800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006690 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.449 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.12 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3098 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.3 MB.
+System memory in use after: 137.6 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3708.
+Total: 5.041300 ms (FindLiveObjects: 0.761500 ms CreateObjectMapping: 0.277800 ms MarkObjects: 3.971000 ms  DeleteObjects: 0.029200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007298 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.20 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.373 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.11 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3098 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.3 MB.
+System memory in use after: 137.6 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3711.
+Total: 4.216000 ms (FindLiveObjects: 0.651000 ms CreateObjectMapping: 0.194900 ms MarkObjects: 3.343600 ms  DeleteObjects: 0.025000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 253.187510 seconds.
+  path: Assets/Scenes/Rooms/Lobby Rooms/Attic/Attic.unity
+  artifactKey: Guid(4cb021820a28258488f278347120ec5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Rooms/Lobby Rooms/Attic/Attic.unity using Guid(4cb021820a28258488f278347120ec5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b192713c23eb2547aecd8e40a8c0e1b') in 0.027318 seconds
+  Import took 0.036833 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 60.234908 seconds.
+  path: Assets/Scripts/Room Elements/Courtyard/DoorSeal.cs
+  artifactKey: Guid(2ad0a4e76b7291d4dbc594745d1ad7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Room Elements/Courtyard/DoorSeal.cs using Guid(2ad0a4e76b7291d4dbc594745d1ad7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cd8bf12fafd9639557be98e1d1e04a7') in 0.008866 seconds
+  Import took 0.028807 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.949923 seconds.
+  path: Assets/Scripts/Room Elements/Library/LibraryPuzzleManager.cs
+  artifactKey: Guid(eb5f0a3cba36d794baa1eae9d40decbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Room Elements/Library/LibraryPuzzleManager.cs using Guid(eb5f0a3cba36d794baa1eae9d40decbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78a267dd99f46905fa89b515f80dbed4') in 0.007157 seconds
+  Import took 0.015322 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.342815 seconds.
+  path: Assets/Scripts/Room Elements/Library/LibraryDoorSeal.cs
+  artifactKey: Guid(b2ff4e4553cb455418c789fc95f12412) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Room Elements/Library/LibraryDoorSeal.cs using Guid(b2ff4e4553cb455418c789fc95f12412) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f680161731cb908f6ed38b74443f64fa') in 0.008678 seconds
+  Import took 0.028281 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.067763 seconds.
+  path: Assets/Scripts/Room Elements/Attic/AtticDoorSeal.cs
+  artifactKey: Guid(7806d973217bc3144be90af4d61c7703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Room Elements/Attic/AtticDoorSeal.cs using Guid(7806d973217bc3144be90af4d61c7703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8053923e1a019327565ee99250c914ec') in 0.009229 seconds
+  Import took 0.036607 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006131 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.09 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.119 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.14 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3099 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.4 MB.
+System memory in use after: 137.6 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3715.
+Total: 4.041100 ms (FindLiveObjects: 0.653100 ms CreateObjectMapping: 0.208000 ms MarkObjects: 3.148600 ms  DeleteObjects: 0.029800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.236242 seconds.
+  path: Assets/Scripts/Room Elements/Attic/New Folder
+  artifactKey: Guid(3bad0a94adaab5049a6b45d55657ba27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Room Elements/Attic/New Folder using Guid(3bad0a94adaab5049a6b45d55657ba27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8432813c72bdb66fb1ce9299692552a6') in 0.025882 seconds
+  Import took 0.043778 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.147522 seconds.
+  path: Assets/Scripts/Room Elements/Attic/Transition Corridor
+  artifactKey: Guid(3bad0a94adaab5049a6b45d55657ba27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Room Elements/Attic/Transition Corridor using Guid(3bad0a94adaab5049a6b45d55657ba27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60a7bcd74f184fed70b90fc63e3f113a') in 0.015269 seconds
+  Import took 0.023159 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005451 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.05 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.184 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3099 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.4 MB.
+System memory in use after: 137.6 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3718.
+Total: 4.491000 ms (FindLiveObjects: 0.730300 ms CreateObjectMapping: 0.270900 ms MarkObjects: 3.441900 ms  DeleteObjects: 0.045800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.421448 seconds.
+  path: Assets/Scripts/Room Elements/Attic/AtticPlayerPosition.cs
+  artifactKey: Guid(2d6c8ca3449eb5a4e8f032494968fd07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Room Elements/Attic/AtticPlayerPosition.cs using Guid(2d6c8ca3449eb5a4e8f032494968fd07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e53b5ebbe8d8670773fb8c76d6c8a13') in 0.017561 seconds
+  Import took 0.025602 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005183 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.19 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.350 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.42 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3099 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.4 MB.
+System memory in use after: 137.6 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3721.
+Total: 5.796900 ms (FindLiveObjects: 0.766800 ms CreateObjectMapping: 0.275100 ms MarkObjects: 4.724200 ms  DeleteObjects: 0.028800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005817 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.08 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.463 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.07 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3099 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.4 MB.
+System memory in use after: 137.6 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3724.
+Total: 5.608200 ms (FindLiveObjects: 1.088800 ms CreateObjectMapping: 0.324600 ms MarkObjects: 4.164000 ms  DeleteObjects: 0.028000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006999 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.05 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.607 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.18 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3099 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.4 MB.
+System memory in use after: 137.6 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3727.
+Total: 5.564700 ms (FindLiveObjects: 0.795800 ms CreateObjectMapping: 0.276400 ms MarkObjects: 4.455500 ms  DeleteObjects: 0.035400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 206.973160 seconds.
+  path: Assets/Scenes/Rooms/Lobby Rooms/Attic/Attic.unity
+  artifactKey: Guid(4cb021820a28258488f278347120ec5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Rooms/Lobby Rooms/Attic/Attic.unity using Guid(4cb021820a28258488f278347120ec5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d7aec2e1f69ddc4dbfcc9519a91c151') in 0.027083 seconds
+  Import took 0.035413 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 46.685232 seconds.
+  path: Assets/Scripts/Room Elements/Library/LibraryAzathothSeal.cs
+  artifactKey: Guid(506580ce844f95b438fb1508f8e60319) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Room Elements/Library/LibraryAzathothSeal.cs using Guid(506580ce844f95b438fb1508f8e60319) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f880e24ce5eed7ebd448b8ee0e4fc083') in 0.005625 seconds
+  Import took 0.024313 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000852 seconds.
+  path: Assets/Scripts/Room Elements/Library/LibraryAzathothSeal.cs
+  artifactKey: Guid(506580ce844f95b438fb1508f8e60319) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Room Elements/Library/LibraryAzathothSeal.cs using Guid(506580ce844f95b438fb1508f8e60319) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f880e24ce5eed7ebd448b8ee0e4fc083') in 0.004913 seconds
+  Import took 0.013003 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005099 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.28 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.035 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.15 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3099 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.4 MB.
+System memory in use after: 137.7 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3730.
+Total: 4.319400 ms (FindLiveObjects: 0.667600 ms CreateObjectMapping: 0.209900 ms MarkObjects: 3.414900 ms  DeleteObjects: 0.025300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007903 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.04 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.297 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.09 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3100 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.4 MB.
+System memory in use after: 137.7 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3734.
+Total: 4.400200 ms (FindLiveObjects: 0.643900 ms CreateObjectMapping: 0.191800 ms MarkObjects: 3.527100 ms  DeleteObjects: 0.036000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 46.628333 seconds.
+  path: Assets/Scripts/Room Elements/Attic/AtticAzathothSeal.cs
+  artifactKey: Guid(8231771b229261a4f85e9cc2190af6de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Room Elements/Attic/AtticAzathothSeal.cs using Guid(8231771b229261a4f85e9cc2190af6de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdbcd37d959c4aa060f70e875c32e588') in 0.014786 seconds
+  Import took 0.049137 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005982 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.02 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.384 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3100 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.4 MB.
+System memory in use after: 137.7 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3737.
+Total: 4.079100 ms (FindLiveObjects: 0.651200 ms CreateObjectMapping: 0.190900 ms MarkObjects: 3.206400 ms  DeleteObjects: 0.029100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 136.417921 seconds.
+  path: Assets/Scripts/Room Elements/Attic/AtticAzathothSeal.cs
+  artifactKey: Guid(8231771b229261a4f85e9cc2190af6de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Room Elements/Attic/AtticAzathothSeal.cs using Guid(8231771b229261a4f85e9cc2190af6de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e29b1721f8283031dac9f673dc68e42') in 0.013344 seconds
+  Import took 0.022715 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 558.299606 seconds.
+  path: Assets/Scenes/Rooms/Lobby Rooms/Attic/Transition Corridor - Attic.unity
+  artifactKey: Guid(4498cf4e0b7dcc7449632af6e34c0cd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Rooms/Lobby Rooms/Attic/Transition Corridor - Attic.unity using Guid(4498cf4e0b7dcc7449632af6e34c0cd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cb232903a157cca0b0d59616fc7df23') in 0.037491 seconds
+  Import took 0.060993 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.715027 seconds.
+  path: Assets/Scripts/Room Elements/Attic/Transition Corridor/MirrorApparition.cs
+  artifactKey: Guid(21fa3d0b81ba56848b79a093ec4422f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Room Elements/Attic/Transition Corridor/MirrorApparition.cs using Guid(21fa3d0b81ba56848b79a093ec4422f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93cf1b827a3f7dd31403b968b87878c5') in 0.005925 seconds
+  Import took 0.024489 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005808 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.18 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.473 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.15 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3100 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.5 MB.
+System memory in use after: 137.7 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3740.
+Total: 5.466300 ms (FindLiveObjects: 0.815300 ms CreateObjectMapping: 0.478500 ms MarkObjects: 4.135000 ms  DeleteObjects: 0.035500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005433 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.05 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.909 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.13 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3100 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.5 MB.
+System memory in use after: 137.7 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3743.
+Total: 4.543700 ms (FindLiveObjects: 0.722800 ms CreateObjectMapping: 0.197000 ms MarkObjects: 3.587500 ms  DeleteObjects: 0.034900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 540.314036 seconds.
+  path: Assets/Scripts/Room Elements/Attic/Transition Corridor/FakeMirror.cs
+  artifactKey: Guid(1d9887aa0cc951a4bac6441907e2a9cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Room Elements/Attic/Transition Corridor/FakeMirror.cs using Guid(1d9887aa0cc951a4bac6441907e2a9cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e29e700410344da1720d1326043293d8') in 0.013333 seconds
+  Import took 0.023597 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.849066 seconds.
+  path: Assets/Scripts/Room Elements/Attic/Transition Corridor/MirrorApparition.cs
+  artifactKey: Guid(21fa3d0b81ba56848b79a093ec4422f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Room Elements/Attic/Transition Corridor/MirrorApparition.cs using Guid(21fa3d0b81ba56848b79a093ec4422f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4733281bd36289ca41e410bb0984ba6') in 0.004973 seconds
+  Import took 0.025189 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005315 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.12 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.895 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.13 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3101 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.5 MB.
+System memory in use after: 137.7 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3747.
+Total: 4.043000 ms (FindLiveObjects: 0.646300 ms CreateObjectMapping: 0.196100 ms MarkObjects: 3.174200 ms  DeleteObjects: 0.024900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005388 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.26 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.209 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.05 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3101 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.5 MB.
+System memory in use after: 137.8 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3750.
+Total: 4.236300 ms (FindLiveObjects: 0.644900 ms CreateObjectMapping: 0.199900 ms MarkObjects: 3.364100 ms  DeleteObjects: 0.026000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 107.338314 seconds.
+  path: Assets/Scripts/Room Elements/Attic/Transition Corridor/FakeMirror.cs
+  artifactKey: Guid(1d9887aa0cc951a4bac6441907e2a9cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Room Elements/Attic/Transition Corridor/FakeMirror.cs using Guid(1d9887aa0cc951a4bac6441907e2a9cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab911a96c6ac4a0bd0d4a0dc22fcc254') in 0.012233 seconds
+  Import took 0.039716 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007703 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.50 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.301 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.37 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3101 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.5 MB.
+System memory in use after: 137.8 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3753.
+Total: 7.841600 ms (FindLiveObjects: 1.187600 ms CreateObjectMapping: 0.341100 ms MarkObjects: 6.264900 ms  DeleteObjects: 0.045600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 177.958164 seconds.
+  path: Assets/Scenes/Rooms/Lobby Rooms/Attic/Attic.unity
+  artifactKey: Guid(4cb021820a28258488f278347120ec5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Rooms/Lobby Rooms/Attic/Attic.unity using Guid(4cb021820a28258488f278347120ec5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4aa9cea056416eeae64f5eabd023982') in 0.063694 seconds
+  Import took 0.076390 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005957 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.43 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.672 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.31 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3101 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.5 MB.
+System memory in use after: 137.8 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3756.
+Total: 6.370900 ms (FindLiveObjects: 0.782000 ms CreateObjectMapping: 0.306500 ms MarkObjects: 5.230300 ms  DeleteObjects: 0.049900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.011730 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  6.599 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3101 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.5 MB.
+System memory in use after: 137.8 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3759.
+Total: 4.052100 ms (FindLiveObjects: 0.652600 ms CreateObjectMapping: 0.237100 ms MarkObjects: 3.134300 ms  DeleteObjects: 0.026600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006514 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.31 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.506 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.99 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3101 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.5 MB.
+System memory in use after: 137.8 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3762.
+Total: 4.693800 ms (FindLiveObjects: 0.732300 ms CreateObjectMapping: 0.192100 ms MarkObjects: 3.602000 ms  DeleteObjects: 0.165600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005523 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.21 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.513 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 2.13 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3101 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.6 MB.
+System memory in use after: 137.8 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3765.
+Total: 5.181100 ms (FindLiveObjects: 0.655600 ms CreateObjectMapping: 0.412500 ms MarkObjects: 4.071200 ms  DeleteObjects: 0.040100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008638 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.30 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.007 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.63 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3101 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.6 MB.
+System memory in use after: 137.8 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3768.
+Total: 5.074500 ms (FindLiveObjects: 0.833600 ms CreateObjectMapping: 0.197300 ms MarkObjects: 4.012300 ms  DeleteObjects: 0.029500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.714398 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.16 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.220 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 2.00 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3101 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.6 MB.
+System memory in use after: 137.8 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3771.
+Total: 5.634800 ms (FindLiveObjects: 0.792100 ms CreateObjectMapping: 0.298000 ms MarkObjects: 4.470600 ms  DeleteObjects: 0.072000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 5765.698226 seconds.
+  path: Assets/Scenes/Rooms/Lobby Rooms/Attic/Transition Corridor - Attic.unity
+  artifactKey: Guid(4498cf4e0b7dcc7449632af6e34c0cd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Rooms/Lobby Rooms/Attic/Transition Corridor - Attic.unity using Guid(4498cf4e0b7dcc7449632af6e34c0cd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b9d606bf46633a78bb2417b7746078b') in 0.061318 seconds
+  Import took 0.101838 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009622 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.705 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.29 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3101 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.6 MB.
+System memory in use after: 137.8 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3774.
+Total: 4.522900 ms (FindLiveObjects: 0.876700 ms CreateObjectMapping: 0.239400 ms MarkObjects: 3.368600 ms  DeleteObjects: 0.036000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 345.842975 seconds.
+  path: Assets/Scenes/Rooms/Lobby Rooms/Attic/Attic.unity
+  artifactKey: Guid(4cb021820a28258488f278347120ec5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Rooms/Lobby Rooms/Attic/Attic.unity using Guid(4cb021820a28258488f278347120ec5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b03d98fb542268cdd1481673f2f4882') in 0.070305 seconds
+  Import took 0.098236 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.011422 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.720 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3101 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.6 MB.
+System memory in use after: 137.8 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3777.
+Total: 7.021300 ms (FindLiveObjects: 0.965900 ms CreateObjectMapping: 0.314100 ms MarkObjects: 5.696200 ms  DeleteObjects: 0.041900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010675 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.41 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.819 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.75 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3101 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.6 MB.
+System memory in use after: 137.8 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3780.
+Total: 7.980300 ms (FindLiveObjects: 1.199600 ms CreateObjectMapping: 0.466000 ms MarkObjects: 6.260400 ms  DeleteObjects: 0.051100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006049 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.38 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.933 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.69 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3101 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.6 MB.
+System memory in use after: 137.8 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3783.
+Total: 7.165100 ms (FindLiveObjects: 1.549100 ms CreateObjectMapping: 0.440500 ms MarkObjects: 5.124300 ms  DeleteObjects: 0.048000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010030 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.23 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.903 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.54 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3101 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.6 MB.
+System memory in use after: 137.8 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3786.
+Total: 7.504800 ms (FindLiveObjects: 0.885100 ms CreateObjectMapping: 0.233000 ms MarkObjects: 6.332500 ms  DeleteObjects: 0.050100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 214.922774 seconds.
+  path: Assets/Scenes/Rooms/Lobby Rooms/Attic/Attic.unity
+  artifactKey: Guid(4cb021820a28258488f278347120ec5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Rooms/Lobby Rooms/Attic/Attic.unity using Guid(4cb021820a28258488f278347120ec5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52dd76725dc38ae187fb694a95fdaba0') in 0.054087 seconds
+  Import took 0.076375 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009491 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.99 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.338 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.58 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3101 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.6 MB.
+System memory in use after: 137.9 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3789.
+Total: 5.938800 ms (FindLiveObjects: 0.908600 ms CreateObjectMapping: 0.281300 ms MarkObjects: 4.705500 ms  DeleteObjects: 0.040700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 273.826828 seconds.
+  path: Assets/Scenes/Rooms/Lobby Rooms/Attic/GameObject.controller
+  artifactKey: Guid(5b8086c98afd93d4ca36d503f81cbf1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Rooms/Lobby Rooms/Attic/GameObject.controller using Guid(5b8086c98afd93d4ca36d503f81cbf1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '548d49019c204d351bf02c354b5afd21') in 0.081203 seconds
+  Import took 0.108915 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.582931 seconds.
+  path: Assets/Scenes/Rooms/Lobby Rooms/Attic/slideUp.anim
+  artifactKey: Guid(69bdb2e83fadee54b9bafc226ec02263) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Rooms/Lobby Rooms/Attic/slideUp.anim using Guid(69bdb2e83fadee54b9bafc226ec02263) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3b55ed8202ca52fbf1b698568a02a2b') in 0.011167 seconds
+  Import took 0.023637 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004702 seconds.
+  path: Assets/Scenes/Rooms/Lobby Rooms/Attic/slideUp.anim
+  artifactKey: Guid(69bdb2e83fadee54b9bafc226ec02263) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Rooms/Lobby Rooms/Attic/slideUp.anim using Guid(69bdb2e83fadee54b9bafc226ec02263) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3b55ed8202ca52fbf1b698568a02a2b') in 0.009827 seconds
+  Import took 0.022438 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009930 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 3.41 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.704 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.66 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3101 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.6 MB.
+System memory in use after: 137.9 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3792.
+Total: 4.950900 ms (FindLiveObjects: 0.781600 ms CreateObjectMapping: 0.292100 ms MarkObjects: 3.848900 ms  DeleteObjects: 0.025900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008994 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.68 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.736 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 2.07 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3101 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.6 MB.
+System memory in use after: 137.9 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3795.
+Total: 6.173500 ms (FindLiveObjects: 1.099900 ms CreateObjectMapping: 0.309100 ms MarkObjects: 4.726800 ms  DeleteObjects: 0.034400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008857 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.56 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.676 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.61 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3101 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.6 MB.
+System memory in use after: 137.9 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3798.
+Total: 6.548800 ms (FindLiveObjects: 0.937900 ms CreateObjectMapping: 0.308200 ms MarkObjects: 5.236900 ms  DeleteObjects: 0.061800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007921 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.568 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.40 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3101 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.7 MB.
+System memory in use after: 137.9 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3801.
+Total: 4.493400 ms (FindLiveObjects: 0.673500 ms CreateObjectMapping: 0.217400 ms MarkObjects: 3.569800 ms  DeleteObjects: 0.031300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007572 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.56 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.651 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3101 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.7 MB.
+System memory in use after: 137.9 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3804.
+Total: 10.230200 ms (FindLiveObjects: 1.652700 ms CreateObjectMapping: 0.434800 ms MarkObjects: 8.082900 ms  DeleteObjects: 0.056800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007825 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.30 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.790 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.44 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3101 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.7 MB.
+System memory in use after: 137.9 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3807.
+Total: 5.930600 ms (FindLiveObjects: 0.888300 ms CreateObjectMapping: 0.331500 ms MarkObjects: 4.669900 ms  DeleteObjects: 0.038700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008145 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.38 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.737 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.55 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3101 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.7 MB.
+System memory in use after: 137.9 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3810.
+Total: 5.896800 ms (FindLiveObjects: 1.026700 ms CreateObjectMapping: 0.417500 ms MarkObjects: 4.411400 ms  DeleteObjects: 0.038500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010626 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.48 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.750 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.44 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3101 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.7 MB.
+System memory in use after: 137.9 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3813.
+Total: 6.404700 ms (FindLiveObjects: 1.100900 ms CreateObjectMapping: 0.303900 ms MarkObjects: 4.950100 ms  DeleteObjects: 0.047500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009051 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.20 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.788 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.70 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3101 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.7 MB.
+System memory in use after: 137.9 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3816.
+Total: 4.744900 ms (FindLiveObjects: 0.803800 ms CreateObjectMapping: 0.286800 ms MarkObjects: 3.625300 ms  DeleteObjects: 0.027000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008874 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  5.079 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.56 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3101 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.7 MB.
+System memory in use after: 137.9 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3819.
+Total: 6.965600 ms (FindLiveObjects: 1.461100 ms CreateObjectMapping: 0.481300 ms MarkObjects: 4.976800 ms  DeleteObjects: 0.043000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009385 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.86 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.973 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.41 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3101 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.7 MB.
+System memory in use after: 137.9 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3822.
+Total: 5.510000 ms (FindLiveObjects: 0.780000 ms CreateObjectMapping: 0.241300 ms MarkObjects: 4.415600 ms  DeleteObjects: 0.070800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008436 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.28 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.816 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.66 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3101 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.7 MB.
+System memory in use after: 138.0 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3825.
+Total: 7.163700 ms (FindLiveObjects: 1.022200 ms CreateObjectMapping: 0.331500 ms MarkObjects: 5.761800 ms  DeleteObjects: 0.045100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010448 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.48 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.678 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.82 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3101 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.7 MB.
+System memory in use after: 138.0 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3828.
+Total: 5.682800 ms (FindLiveObjects: 0.723400 ms CreateObjectMapping: 0.314700 ms MarkObjects: 4.600000 ms  DeleteObjects: 0.042200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007685 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.66 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.916 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3101 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.7 MB.
+System memory in use after: 138.0 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3831.
+Total: 6.073200 ms (FindLiveObjects: 0.997600 ms CreateObjectMapping: 0.339500 ms MarkObjects: 4.692700 ms  DeleteObjects: 0.041100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1522.946385 seconds.
+  path: Assets/Scenes/Rooms/Lobby Rooms/Attic/Transition Corridor - Attic.unity
+  artifactKey: Guid(4498cf4e0b7dcc7449632af6e34c0cd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Rooms/Lobby Rooms/Attic/Transition Corridor - Attic.unity using Guid(4498cf4e0b7dcc7449632af6e34c0cd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c7b2f2e098de549fc75934e89f7c80d') in 0.041883 seconds
+  Import took 0.071069 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005935 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.24 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.119 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.26 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3101 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.8 MB.
+System memory in use after: 138.0 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3834.
+Total: 4.443000 ms (FindLiveObjects: 0.813800 ms CreateObjectMapping: 0.338800 ms MarkObjects: 3.262100 ms  DeleteObjects: 0.026300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 59.276396 seconds.
+  path: Assets/Scenes/Rooms/Lobby Rooms/Attic/Attic.unity
+  artifactKey: Guid(4cb021820a28258488f278347120ec5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Rooms/Lobby Rooms/Attic/Attic.unity using Guid(4cb021820a28258488f278347120ec5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63a29f95f060b1db5008493aeb885d1b') in 0.028995 seconds
+  Import took 0.036557 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006225 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.14 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.340 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.11 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3101 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.8 MB.
+System memory in use after: 138.0 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3837.
+Total: 4.894300 ms (FindLiveObjects: 0.676200 ms CreateObjectMapping: 0.201200 ms MarkObjects: 3.977300 ms  DeleteObjects: 0.038000 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
