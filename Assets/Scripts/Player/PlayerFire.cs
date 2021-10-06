@@ -27,7 +27,6 @@ public class PlayerFire : MonoBehaviour
         canfire=GameObject.Find("ChamberManager").GetComponent<ChamberManager>().FiredChamber();
         if (canfire)
         {
-            FindObjectOfType<FMODFire>().FMODFIREGUN();
             RaycastHit2D hit = Physics2D.Raycast(firepoint.transform.position, firepoint.transform.right);
             if (hit)
             {
@@ -47,7 +46,7 @@ public class PlayerFire : MonoBehaviour
         }
         else
         {
-            FindObjectOfType<FMODFire>().FMODDRYFIREGUN();
+            //click click
         }
 
     }
