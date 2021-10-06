@@ -273,6 +273,10 @@ public class CharacterController2D : MonoBehaviour
 	}
 
 
+    public float GetVelocity()
+    {
+        return m_Rigidbody2D.velocity.x;
+    }
 	public void Flip()
 	{
         m_FacingRight = !m_FacingRight;
