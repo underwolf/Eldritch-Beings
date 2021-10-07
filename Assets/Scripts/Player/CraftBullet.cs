@@ -1,10 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class CraftBullet : MonoBehaviour
 {
-
     public GameObject bullet;
     public Transform BulletPos;
     private Vector3 bulletNewPos;
@@ -31,6 +29,7 @@ public class CraftBullet : MonoBehaviour
             if(GameObject.Find("BulletOriginalPos").transform.childCount >= 10)
             {
                 GameObject.Find("CraftingCanvas").GetComponent<ProgressBar>().showWarning = true;
+                
             }
             else
             {
@@ -48,6 +47,8 @@ public class CraftBullet : MonoBehaviour
                 var bulletParent = Instantiate(bullet, bulletNewPos, Quaternion.identity);
                 bulletParent.transform.parent = BulletPos;
                 startTime = 0;
+                Debug.Log("CRAFTED BULLET");
+                FindObjectOfType<FMODFire>().FMODCRAFT();
             }
             GameObject.Find("CraftingCanvas").GetComponent<ProgressBar>().fillBar = false;
             GameObject.Find("CraftingCanvas").GetComponent<ProgressBar>().hideCraft();
@@ -64,6 +65,8 @@ public class CraftBullet : MonoBehaviour
         GameObject.Find("CraftingCanvas").GetComponent<ProgressBar>().fillBar = false;
         GameObject.Find("CraftingCanvas").GetComponent<ProgressBar>().hideCraft();
         filledBar = true;
+        Debug.Log("CRAFTED BULLET");
+        FindObjectOfType<FMODFire>().FMODCRAFT();
     }
 
 
