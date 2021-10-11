@@ -40,4 +40,21 @@ public class HurtPlayer : MonoBehaviour
         }
     }
 
+    public void Hurt(Collider2D c)
+    {
+        if(c.tag == "Player")
+        {
+            //do damage idk how that gonna work yet
+
+            var player = c.gameObject.GetComponent<ApplyKnockback>();
+            player.knockback = knockbackValue;
+            player.knockbackCount = player.knockbackLength;
+
+            if (c.transform.position.x < transform.position.x)
+                player.knockFromRight = true;
+            else
+                player.knockFromRight = false;
+        }
+    }
+
 }
