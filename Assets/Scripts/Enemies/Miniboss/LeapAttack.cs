@@ -13,18 +13,7 @@ public class LeapAttack : MonoBehaviour
     public GameObject projectileWarning;
     public GameObject leapPosition;
 
-    public bool testAttack = false;
-
-    private void Update()
-    {
-        if (testAttack)
-        {
-            testAttack = false;
-            Attack();
-        }
-    }
-
-    private void Attack()
+    public void Attack()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         rb = GetComponent<Rigidbody2D>();

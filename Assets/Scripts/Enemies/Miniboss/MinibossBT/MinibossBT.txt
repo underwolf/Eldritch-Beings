@@ -1,0 +1,33 @@
+tree("Root")
+	parallel
+		random(0.25, 0.25, 0.25, 0.25)
+			tree "ChargeAttack"
+			tree "SlashAttack"
+			tree "LeapAttack"
+			tree "ProjectileAttack"
+		Succeed
+
+tree "ChargeAttack"
+	sequence
+		ChargeAttack
+		Wait 7.0
+		Succeed
+
+tree "SlashAttack"
+	sequence
+		SlashAttack
+		Wait 7.0
+		Succeed
+
+tree "LeapAttack"
+	sequence
+		LeapAttack
+		Wait 8.0
+		Succeed
+
+tree "ProjectileAttack"
+	sequence
+		ProjectileAttack
+		Wait 14.0
+		Succeed
+
