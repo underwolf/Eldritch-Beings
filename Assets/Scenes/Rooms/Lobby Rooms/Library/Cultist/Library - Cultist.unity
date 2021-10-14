@@ -1052,7 +1052,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 304635765}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.213875, y: -0.30352592, z: 0.1490097}
+  m_LocalPosition: {x: -9.211127, y: -0.30352592, z: 0.1490097}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1029293206}
@@ -3285,6 +3285,7 @@ GameObject:
   - component: {fileID: 749780653}
   - component: {fileID: 749780655}
   - component: {fileID: 749780654}
+  - component: {fileID: 749780656}
   m_Layer: 0
   m_Name: AzathothSeal
   m_TagString: Obstacle
@@ -3301,7 +3302,7 @@ Transform:
   m_GameObject: {fileID: 749780652}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.79999924, y: 12, z: 0}
-  m_LocalScale: {x: 4.5, y: 4.5, z: 1}
+  m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 486391160}
   m_RootOrder: 2
@@ -3315,18 +3316,36 @@ MonoBehaviour:
   m_GameObject: {fileID: 749780652}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 506580ce844f95b438fb1508f8e60319, type: 3}
+  m_Script: {fileID: 11500000, guid: 3e48311e74ecc404c9ca9fdc57d7bcbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerLayer:
+  isActive: 0
+  m_Size: 0.5
+  m_Time: 0.3
+  m_Curve:
     serializedVersion: 2
-    m_Bits: 128
-  exitDoorSeal: {fileID: 2106310083}
-  bookcases:
-  - {fileID: 2129233527}
-  - {fileID: 328571408}
-  - {fileID: 1279196690}
-  - {fileID: 1147929264}
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!212 &749780655
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3378,6 +3397,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &749780656
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749780652}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4.3, y: 4.69}
+    newSize: {x: 4.3, y: 4.69}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.3, y: 4.69}
+  m_EdgeRadius: 0
 --- !u!1 &825098781
 GameObject:
   m_ObjectHideFlags: 0
@@ -9908,6 +9953,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Miniboss Elements
       objectReference: {fileID: 0}
+    - target: {fileID: 6252993244851071761, guid: f8322f9c8eb4a7a4298943894f8afe0b, type: 3}
+      propertyPath: azathothSeal
+      value: 
+      objectReference: {fileID: 749780652}
     - target: {fileID: 6252993244851071762, guid: f8322f9c8eb4a7a4298943894f8afe0b, type: 3}
       propertyPath: scripts.Array.data[0]
       value: 
@@ -20611,7 +20660,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1842384441}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.213875, y: -0.30352592, z: 0.1490097}
+  m_LocalPosition: {x: -9.211127, y: -0.30352592, z: 0.1490097}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 651217615}

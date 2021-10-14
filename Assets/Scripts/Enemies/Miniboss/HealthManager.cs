@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class HealthManager : MonoBehaviour
 {
-    private int health = 100;
+    private int health = 2;
     public bool isHealthy = true;
 
+    public GameObject azathothSeal;
     public GameObject bossElements;
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -17,6 +18,10 @@ public class HealthManager : MonoBehaviour
             if(health <= 0)
             {
                 isHealthy = false;
+
+                if (azathothSeal != null)
+                    azathothSeal.GetComponent<BreakableAzathothSeal>().Activate();
+
                 Destroy(bossElements);
             }
         }
