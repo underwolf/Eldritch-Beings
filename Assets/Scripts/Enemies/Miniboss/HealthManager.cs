@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HealthManager : MonoBehaviour
 {
-    private int health = 2;
+    private int health = 50;
     public bool isHealthy = true;
 
     public GameObject azathothSeal;
