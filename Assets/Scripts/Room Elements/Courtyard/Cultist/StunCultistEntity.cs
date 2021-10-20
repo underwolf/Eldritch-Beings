@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StunEntity : MonoBehaviour
+public class StunCultistEntity : MonoBehaviour
 {
     public void StunEnemy()
     {
@@ -11,13 +11,13 @@ public class StunEntity : MonoBehaviour
 
     private IEnumerator StunSequence()
     {
-        GetComponent<CourtyardEntity>().followEnabled = false;
+        GetComponent<CultistCourtyardEntity>().followEnabled = false;
         GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
         GetComponent<BoxCollider2D>().enabled = false;
 
         yield return new WaitForSeconds(3.5f);
 
-        GetComponent<CourtyardEntity>().followEnabled = true;
+        GetComponent<CultistCourtyardEntity>().followEnabled = true;
         GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
         GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
         GetComponent<BoxCollider2D>().enabled = true;
@@ -30,13 +30,13 @@ public class StunEntity : MonoBehaviour
 
     private IEnumerator StaggerSequence()
     {
-        GetComponent<CourtyardEntity>().followEnabled = false;
+        GetComponent<CultistCourtyardEntity>().followEnabled = false;
         GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
         GetComponent<BoxCollider2D>().enabled = false;
 
         yield return new WaitForSeconds(0.25f);
 
-        GetComponent<CourtyardEntity>().followEnabled = true;
+        GetComponent<CultistCourtyardEntity>().followEnabled = true;
         GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
         GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
         GetComponent<BoxCollider2D>().enabled = true;

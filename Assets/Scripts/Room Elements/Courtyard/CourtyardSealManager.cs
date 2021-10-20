@@ -18,6 +18,7 @@ public class CourtyardSealManager : MonoBehaviour
     {
         if (azathotSeal.GetComponent<SwitchScript>().switchState)
         {
+            PlayerPrefs.SetInt("CourtyardSeal", 1);
             azathotSeal.gameObject.SetActive(false);
 
             GetComponent<UIFXManager>().scaryUIFXColor.a = 1f;

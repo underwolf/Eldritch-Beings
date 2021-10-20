@@ -10,12 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 3312424166177303336}
   - component: {fileID: 3312424166177303337}
-  - component: {fileID: 3312424166177303334}
   - component: {fileID: 3312424166177303335}
   - component: {fileID: 3312424166177303332}
   - component: {fileID: 3312424166177303333}
   - component: {fileID: 3312424166177303330}
   - component: {fileID: 3312424166177303339}
+  - component: {fileID: 5734669257788017086}
   m_Layer: 0
   m_Name: CultistEntity
   m_TagString: Enemy
@@ -88,18 +88,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3312424166177303334
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3312424166177303331}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b78f1ef7a4d73949803115a076d3df4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &3312424166177303335
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -198,6 +186,7 @@ MonoBehaviour:
   followEnabled: 1
   jumpEnabled: 1
   directionLookEnabled: 1
+  enemySpawner: {fileID: 0}
   health: 20
 --- !u!114 &3312424166177303339
 MonoBehaviour:
@@ -212,3 +201,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   knockbackValue: 20
+--- !u!114 &5734669257788017086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3312424166177303331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80531c1d24693b9469f67608c7ad7458, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

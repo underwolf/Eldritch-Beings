@@ -17,6 +17,7 @@ public class WineCellarAzathothSeal : Interactable
 
     public override void Interact()
     {
+        PlayerPrefs.SetInt("WineCellarSeal", 1);
         world.gameObject.transform.rotation = Quaternion.Euler(new Vector3(0, 0, -180f));
         player.transform.position = playerNewPosition.transform.position;
 
