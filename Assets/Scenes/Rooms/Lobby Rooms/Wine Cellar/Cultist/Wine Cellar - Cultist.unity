@@ -778,7 +778,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 155045092}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e48311e74ecc404c9ca9fdc57d7bcbc, type: 3}
+  m_Script: {fileID: 11500000, guid: 83369b006e7763b4495507d05af46998, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isActive: 0
@@ -1780,7 +1780,7 @@ Camera:
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 10
+  orthographic size: 18
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1871,7 +1871,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 414671918}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.371155, y: -4.8791385, z: 10.14901}
+  m_LocalPosition: {x: 38.824787, y: -6.2903876, z: 0.1490097}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 810856121}
@@ -4989,7 +4989,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3c97f6dd7dac144b99880213a12185d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: SampleScene
+  target: Lobby - Cultist
   SceneManager: {fileID: 294438576}
 --- !u!61 &1403600535
 BoxCollider2D:

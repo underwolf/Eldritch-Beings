@@ -39,6 +39,8 @@ public class AtticBreakableSeal : MonoBehaviour
                     Destroy(enemy);
                 }
 
+                PlayerPrefs.SetInt("AtticSeal", 0);
+
                 Destroy(gameObject);
 
             }

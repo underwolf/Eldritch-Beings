@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CourtyardBreakableSeal : MonoBehaviour
+public class LibraryBreakableSeal : MonoBehaviour
 {
     public bool isActive;
 
-    public int health = 10;
+    private int health = 10;
 
     private BoxCollider2D bc;
 
@@ -20,8 +20,14 @@ public class CourtyardBreakableSeal : MonoBehaviour
 
     private void Start()
     {
-        isActive = true;
+        isActive = false;
         bc = GetComponent<BoxCollider2D>();
+        bc.enabled = false;
+    }
+
+    public void Activate()
+    {
+        isActive = true;
         bc.enabled = true;
     }
 
@@ -34,13 +40,8 @@ public class CourtyardBreakableSeal : MonoBehaviour
 
             if (health <= 0)
             {
-                foreach(GameObject enemy in GetComponent<EnemySpawner>().enemiesList)
-                {
-                    Destroy(enemy);
-                }
+                PlayerPrefs.SetInt("LibrarySeal", 0);
 
-                PlayerPrefs.SetInt("CourtyardSeal", 0);
-                
                 Destroy(gameObject);
 
             }
