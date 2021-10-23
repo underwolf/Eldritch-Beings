@@ -17,20 +17,30 @@ public class EnterDetectiveMode : MonoBehaviour
     ChromaticAberration cr;
     FilmGrain fg;
 
+    public GameObject[] objectsToActivate;
     bool isActive = false;
+
+
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKey(KeyCode.E))
         {
-           ActivateVolume();
-           SetObjectColors("#00FFFA");
-           isActive = true;
+            ActivateVolume();
+            foreach (GameObject ativadores in objectsToActivate)
+            {
+                ativadores.SetActive(true);
+            }
+            SetObjectColors("#00FFFA");
+            isActive = true;
         }
         else if(isActive)
         {
-            Debug.Log("Desativado");
             DeactivateVolume();
+            foreach (var ativadores in objectsToActivate)
+            {
+                ativadores.SetActive(false);
+            }
             SetObjectColors("#FDF400");
             isActive = false;
 

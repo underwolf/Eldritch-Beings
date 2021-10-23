@@ -24,7 +24,9 @@ public class CharacterController2D : MonoBehaviour
     public bool useAnimator;
     public bool isAiming;
     public bool isMoving;
+    public bool isCultist;
     public float movementSpeed=40f;
+
 
     //SLOPE VARIABLES
     public CapsuleCollider2D groundCollider;
@@ -171,13 +173,23 @@ public class CharacterController2D : MonoBehaviour
             groundCollider.sharedMaterial = OfSlopeMaterial;
         }
 
-        Debug.Log("facing rigth?" + m_FacingRight);
+        
 
     }
 
 
+    public void Dash(float dashDistance)
+    {
+
+        if (m_FacingRight)
+            m_Rigidbody2D.AddForce(Vector2.right * dashDistance, ForceMode2D.Impulse);
+        if (!m_FacingRight)
+            m_Rigidbody2D.AddForce(Vector2.left * dashDistance, ForceMode2D.Impulse);
+
+    }
     public void Move(float move, bool crouch, bool jump)
 	{
+
         // If crouching, check to see if the character can stand up
         if (!crouch)
 		{
@@ -280,17 +292,25 @@ public class CharacterController2D : MonoBehaviour
 	public void Flip()
 	{
         m_FacingRight = !m_FacingRight;
-        Vector3 theScale = transform.localScale;
-        if (m_FacingRight)
+        if (isCultist)
         {
-            theScale.x = 1;
+            transform.Rotate(0f, 180f, 0f);
         }
         else
         {
-            theScale.x = -1;
+            Vector3 theScale = transform.localScale;
+            if (m_FacingRight)
+            {
+                theScale.x = 1;
+            }
+            else
+            {
+                theScale.x = -1;
+            }
+
+            transform.localScale = theScale;
         }
 
-        transform.localScale =theScale;
 
     }
     public void CancelMovement()

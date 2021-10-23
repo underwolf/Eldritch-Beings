@@ -51,8 +51,6 @@ public class PlayerMovement : MonoBehaviour
 
         
     }
-
-
     private void Movement()
     {
         if (canMove)
