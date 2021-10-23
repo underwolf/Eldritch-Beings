@@ -46,6 +46,7 @@ public class LibraryAzathothSeal : MonoBehaviour
             note.GetComponent<BookcaseScript>().bookcaseID = 5;
         }
 
+        PlayerPrefs.SetInt("LibrarySeal", 1);
         exitDoorSeal.SetActive(false);
         gameObject.SetActive(false);
     }

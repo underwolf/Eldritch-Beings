@@ -9,6 +9,7 @@ public class WineCellarAzathothSeal : Interactable
     private GameObject player;
     public List<GameObject> movingPlatforms = new List<GameObject>();
     public List<GameObject> sinkingPlatforms = new List<GameObject>();
+    public GameObject exitDoor;
 
     private void Start()
     {
@@ -17,8 +18,11 @@ public class WineCellarAzathothSeal : Interactable
 
     public override void Interact()
     {
+        PlayerPrefs.SetInt("WineCellarSeal", 1);
         world.gameObject.transform.rotation = Quaternion.Euler(new Vector3(0, 0, -180f));
         player.transform.position = playerNewPosition.transform.position;
+
+        exitDoor.GetComponent<BoxCollider2D>().enabled = true;
 
         foreach (GameObject platform in movingPlatforms)
         {

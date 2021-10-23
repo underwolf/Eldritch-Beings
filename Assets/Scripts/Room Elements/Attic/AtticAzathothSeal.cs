@@ -8,6 +8,7 @@ public class AtticAzathothSeal : Interactable
 
     public override void Interact()
     {
+        PlayerPrefs.SetInt("AtticSeal", 1);
         exitDoorSeal.SetActive(false);
         gameObject.SetActive(false);
     }
