@@ -76,7 +76,7 @@ public class DragBullets : MonoBehaviour
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.tag != "Player" && collision.tag != "Obstacle")
+        if (collision.tag != "Player" && collision.tag != "Obstacle" && collision.tag != "Enemy")
         {
             Debug.Log("Entrou");
             isOnChamber = true;
