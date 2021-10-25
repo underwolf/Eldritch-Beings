@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
+using Fungus;
 
 public class CourtyardEntity : MonoBehaviour
 {
@@ -27,7 +28,10 @@ public class CourtyardEntity : MonoBehaviour
     bool isGrounded = false;
     Seeker seeker;
     Rigidbody2D rb;
-    public int health = 20;
+
+    [Header("Dialogue Options")]
+    public int health = 15;
+    public Flowchart flowchart;
 
     private void Start()
     {
@@ -128,6 +132,11 @@ public class CourtyardEntity : MonoBehaviour
                 Destroy(this.gameObject);
             }
 
+
+            if(flowchart != null && health == 12)
+            {
+                flowchart.ExecuteBlock("CombatDialogue");
+            }
 
             Destroy(collision.gameObject);
         }
