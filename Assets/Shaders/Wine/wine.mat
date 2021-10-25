@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: wine
+  m_Shader: {fileID: -6465566751694194690, guid: 522ef18ce514a184bb4a34b683ae975f, type: 3}
+  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_2719a54ac7a5463797c572bc8fc72fed:
+        m_Texture: {fileID: 8400000, guid: 82123dbd76fe73f4788768b2f0918563, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_c86e443d5d3f431b9df9faeefb9c4e52:
+        m_Texture: {fileID: 2800000, guid: 2b1005bd22cd80c4ea8d26a72cdc6b3f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_2b22762ecbb84c419a66b6fd753bc47e: 3
+    - Vector1_6ef121c964fa4fee85080b39d161e90a: 0.1
+    - Vector1_f97664e782644d66adece41c61b1c5ad: 2.5
+    m_Colors:
+    - Color_0aca5192c2d44619b6789b6948e954d4: {r: 0.5566038, g: 0.1654058, b: 0.2340291, a: 0}
+    - Vector3_ab54fc176e2140ec86c04dc95b2c081a: {r: 0, g: 0.05, b: 0, a: 0}
+  m_BuildTextureStacks: []
