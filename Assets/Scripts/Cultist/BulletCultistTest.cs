@@ -31,7 +31,7 @@ public class BulletCultistTest : MonoBehaviour
             var typetoStringPlayer = bulletType.ToString();
             if(string.Equals(typetoStringEnemy, typetoStringPlayer))
             {
-                Debug.Log("do dano no bicho");
+                enemy.GetComponent<HealthManager>().TakeDamage();
                 Destroy(gameObject);
             }
             else

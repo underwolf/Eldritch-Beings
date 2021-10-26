@@ -80,7 +80,8 @@ public class FireballHorizontalAttack : MonoBehaviour
 
             if (i != gap && i != gap+1 && i != gap + 2)
             {
-                GameObject projectileObj = Instantiate(projectile, spawnLocations[i].transform.position, Quaternion.identity);
+                GameObject projectileObj = Instantiate(projectile, 
+                    new Vector3(spawnLocations[i].transform.position.x, spawnLocations[i].transform.position.y, 0), Quaternion.identity);
                 projectileObj.GetComponent<Rigidbody2D>().velocity = new Vector2(projectileObj.GetComponent<FireballProjectile>().speed, 0);
             }
             i++;

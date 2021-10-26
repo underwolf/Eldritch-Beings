@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HealthManager : MonoBehaviour
+public class MinibossBreakableSealManager : MonoBehaviour
 {
     private int health = 50;
     public bool isHealthy = true;

@@ -47,7 +47,7 @@ public class MinibossBT : MonoBehaviour
     [Task]
     public bool IsHealthy()
     {
-        return GetComponent<HealthManager>().isHealthy;
+        return GetComponent<FinalBossHealthManager>().isHealthy;
     }
 
     [Task]
