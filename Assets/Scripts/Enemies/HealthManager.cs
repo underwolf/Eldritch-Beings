@@ -4,8 +4,15 @@ using UnityEngine;
 
 public class HealthManager : MonoBehaviour
 {
-    public void TakeDamage()
-    {
+    public int health;
 
+    public void SetHealth(int enemyHealth)
+    {
+        health = enemyHealth;
+    }
+
+    public void TakeDamage(int projectileDamage)
+    {
+        health = health - projectileDamage;
     }
 }

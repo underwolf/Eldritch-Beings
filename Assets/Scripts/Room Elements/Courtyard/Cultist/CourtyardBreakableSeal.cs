@@ -8,6 +8,8 @@ public class CourtyardBreakableSeal : MonoBehaviour
 
     public int health = 10;
 
+    public GameObject exitDoor;
+
     private BoxCollider2D bc;
 
     public float m_Size = 0.5f;
@@ -40,7 +42,9 @@ public class CourtyardBreakableSeal : MonoBehaviour
                 }
 
                 PlayerPrefs.SetInt("CourtyardSeal", 0);
-                
+
+                exitDoor.GetComponent<BoxCollider2D>().enabled = true;
+
                 Destroy(gameObject);
 
             }

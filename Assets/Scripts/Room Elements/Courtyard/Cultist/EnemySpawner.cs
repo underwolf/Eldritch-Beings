@@ -10,7 +10,7 @@ public class EnemySpawner : MonoBehaviour
     private SpriteRenderer sr;
     private GameObject player;
     private bool canSpawn = true;
-    private int enemyLimit = 7;
+    private int enemyLimit = 0;
 
     private void Start()
     {
@@ -39,7 +39,7 @@ public class EnemySpawner : MonoBehaviour
         entityObj.GetComponent<CultistCourtyardEntity>().target = player.transform;
         entityObj.GetComponent<CultistCourtyardEntity>().enemySpawner = gameObject;
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(8f);
 
         canSpawn = true;
     }

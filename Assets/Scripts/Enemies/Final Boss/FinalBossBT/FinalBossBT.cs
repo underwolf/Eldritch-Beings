@@ -27,9 +27,9 @@ public class FinalBossBT : MonoBehaviour
     [Task]
     public void RadialAttack()
     {
-        if (GetComponent<FinalBossHealthManager>().health >= 50)
+        if (GetComponent<HealthManager>().health >= 50)
             projectileAmount = 20;
-        if (GetComponent<FinalBossHealthManager>().health <= 50)
+        if (GetComponent<HealthManager>().health <= 50)
             projectileAmount = 70;
 
         GetComponent<EnemiesCultist>().SetDamageType(EnemiesCultist.DamageType.Triangle);

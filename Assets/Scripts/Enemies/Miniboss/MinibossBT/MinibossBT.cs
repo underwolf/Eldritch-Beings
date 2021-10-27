@@ -11,6 +11,7 @@ public class MinibossBT : MonoBehaviour
     [Task]
     public void ChargeAttack()
     {
+        GetComponent<EnemiesCultist>().SetDamageType(EnemiesCultist.DamageType.InvertedTriangle);
         GetComponent<ChargeAttack>().Attack();
         Task.current.Succeed();
     }
@@ -18,6 +19,7 @@ public class MinibossBT : MonoBehaviour
     [Task]
     public void SlashAttack()
     {
+        GetComponent<EnemiesCultist>().SetDamageType(EnemiesCultist.DamageType.Triangle);
         GetComponent<SlashAttack>().Attack();
         Task.current.Succeed();
     }
@@ -25,6 +27,7 @@ public class MinibossBT : MonoBehaviour
     [Task]
     public void LeapAttack()
     {
+        GetComponent<EnemiesCultist>().SetDamageType(EnemiesCultist.DamageType.Circle);
         GetComponent<LeapAttack>().Attack();
         Task.current.Succeed();
     }
@@ -32,6 +35,7 @@ public class MinibossBT : MonoBehaviour
     [Task]
     public void ProjectileAttack()
     {
+        GetComponent<EnemiesCultist>().SetDamageType(EnemiesCultist.DamageType.Star);
         projectileSpawner.GetComponent<ProjectileAttack>().Attack();
         Task.current.Succeed();
     }

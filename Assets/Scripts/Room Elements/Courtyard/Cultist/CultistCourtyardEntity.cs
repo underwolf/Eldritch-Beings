@@ -28,13 +28,13 @@ public class CultistCourtyardEntity : MonoBehaviour
     bool isGrounded = false;
     Seeker seeker;
     Rigidbody2D rb;
-    public int health;
+    public int health = 3;
 
     private void Start()
     {
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
-        health = 5;
+        GetComponent<HealthManager>().SetHealth(health);
         speed = 950f;
 
         InvokeRepeating("UpdatePath", 0f, pathUpdateSeconds);
@@ -48,7 +48,19 @@ public class CultistCourtyardEntity : MonoBehaviour
             PathFollow();
         }
 
+        if(GetComponent<HealthManager>().health <= 0)
+        {
+            if(enemySpawner != null)
+            {
+                if (enemySpawner.GetComponent<AtticEnemySpawner>() != null)
+                    enemySpawner.GetComponent<AtticEnemySpawner>().enemiesList.Remove(gameObject);
 
+                if (enemySpawner.GetComponent<EnemySpawner>() != null)
+                    enemySpawner.GetComponent<EnemySpawner>().enemiesList.Remove(gameObject);
+            }
+
+            Destroy(this.gameObject);
+        }
     }
 
     private void UpdatePath()
@@ -121,19 +133,10 @@ public class CultistCourtyardEntity : MonoBehaviour
         //Change to bullet after
         if (collision.tag == "Bullet")
         {
-            if (health > 0)
+            if (GetComponent<HealthManager>().health > 0)
             {
-                GetComponent<StunEntity>().StaggerEnemy();
-                health--;
+                GetComponent<StunCultistEntity>().StaggerEnemy();
             }
-            else
-            {
-                enemySpawner.GetComponent<EnemySpawner>().enemiesList.Remove(gameObject);
-                Destroy(this.gameObject);
-            }
-
-
-            Destroy(collision.gameObject);
         }
     }
 }
