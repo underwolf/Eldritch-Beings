@@ -7,6 +7,8 @@ public class FinalBossHealthManager : MonoBehaviour
     public int health = 100;
     public bool isHealthy = false;
 
+    public GameObject sceneManager;
+    public string target;
     private void Start()
     {
         GetComponent<HealthManager>().SetHealth(health);
@@ -15,6 +17,9 @@ public class FinalBossHealthManager : MonoBehaviour
     private void Update()
     {
         if (GetComponent<HealthManager>().health <= 0){
+
+            sceneManager.GetComponent<ScreenManager>().LoadLevel(target);
+
             Destroy(gameObject);
         }
     }
