@@ -7,18 +7,20 @@ public class FinalBossHealthManager : MonoBehaviour
     public int health = 100;
     public bool isHealthy = false;
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public GameObject sceneManager;
+    public string target;
+    private void Start()
     {
-        if(collision.tag == "Bullet")
-        {
-            health--;
-            if (health <= 0)
-            {
-                isHealthy = false;
+        GetComponent<HealthManager>().SetHealth(health);
+    }
 
-                //Death Animation
-                Destroy(gameObject);
-            }
+    private void Update()
+    {
+        if (GetComponent<HealthManager>().health <= 0){
+
+            sceneManager.GetComponent<ScreenManager>().LoadLevel(target);
+
+            Destroy(gameObject);
         }
     }
 }

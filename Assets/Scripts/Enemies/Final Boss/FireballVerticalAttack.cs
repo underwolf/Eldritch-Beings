@@ -55,8 +55,8 @@ public class FireballVerticalAttack : MonoBehaviour
 
         foreach (GameObject fireball in spawnLocations)
         {
-            GameObject warningObj = Instantiate(projectileWarning, new Vector2(spawnLocations[i].transform.position.x,
-                spawnLocations[i].transform.position.y - 20f), Quaternion.identity);
+            GameObject warningObj = Instantiate(projectileWarning, new Vector3(spawnLocations[i].transform.position.x,
+                spawnLocations[i].transform.position.y - 20f, 0), Quaternion.identity);
 
             i++;
 
@@ -69,8 +69,8 @@ public class FireballVerticalAttack : MonoBehaviour
 
         foreach (GameObject fireball in spawnLocations)
         {
-            GameObject warningObj = Instantiate(projectileWarning, new Vector2(spawnLocations[i].transform.position.x,
-                spawnLocations[i].transform.position.y - 20f), Quaternion.identity);
+            GameObject warningObj = Instantiate(projectileWarning, new Vector3(spawnLocations[i].transform.position.x,
+                spawnLocations[i].transform.position.y - 20f, 0), Quaternion.identity);
 
             i--;
 
@@ -86,8 +86,8 @@ public class FireballVerticalAttack : MonoBehaviour
 
         foreach (GameObject fireball in spawnLocations)
         {
-            GameObject warningObj = Instantiate(projectileWarning, new Vector2(spawnLocations[i].transform.position.x,
-                spawnLocations[i].transform.position.y - 20f), Quaternion.identity);
+            GameObject warningObj = Instantiate(projectileWarning, new Vector3(spawnLocations[i].transform.position.x,
+                spawnLocations[i].transform.position.y - 20f, 0), Quaternion.identity);
 
             i--;
 
@@ -100,8 +100,8 @@ public class FireballVerticalAttack : MonoBehaviour
 
         foreach (GameObject fireball in spawnLocations)
         {
-            GameObject warningObj = Instantiate(projectileWarning, new Vector2(spawnLocations[i].transform.position.x,
-                spawnLocations[i].transform.position.y - 20f), Quaternion.identity);
+            GameObject warningObj = Instantiate(projectileWarning, new Vector3(spawnLocations[i].transform.position.x,
+                spawnLocations[i].transform.position.y - 20f, 0), Quaternion.identity);
 
             i++;
 
@@ -123,7 +123,8 @@ public class FireballVerticalAttack : MonoBehaviour
                 yield return new WaitForSeconds(0.75f);
             }
 
-            GameObject projectileObj = Instantiate(projectile, spawnLocations[i].transform.position, Quaternion.AngleAxis(90f, new Vector3(0, 0, -90f)));
+            GameObject projectileObj = Instantiate(projectile,
+                new Vector3(spawnLocations[i].transform.position.x, spawnLocations[i].transform.position.y, 0), Quaternion.AngleAxis(90f, new Vector3(0, 0, -90f)));
 
             projectileObj.GetComponent<Rigidbody2D>().velocity = new Vector2(0, projectileObj.GetComponent<FireballProjectile>().speed * -1);
 
@@ -137,7 +138,8 @@ public class FireballVerticalAttack : MonoBehaviour
         foreach (GameObject fireball in spawnLocations)
         {
 
-            GameObject projectileObj = Instantiate(projectile, spawnLocations[i].transform.position, Quaternion.AngleAxis(90f, new Vector3(0, 0, -90f)));
+            GameObject projectileObj = Instantiate(projectile,
+                new Vector3(spawnLocations[i].transform.position.x, spawnLocations[i].transform.position.y, 0), Quaternion.AngleAxis(90f, new Vector3(0, 0, -90f)));
 
             projectileObj.GetComponent<Rigidbody2D>().velocity = new Vector2(0, projectileObj.GetComponent<FireballProjectile>().speed * -1);
 
@@ -159,7 +161,8 @@ public class FireballVerticalAttack : MonoBehaviour
                 yield return new WaitForSeconds(0.75f);
             }
 
-            GameObject projectileObj = Instantiate(darkProjectile, spawnLocations[i].transform.position, Quaternion.AngleAxis(90f, new Vector3(0, 0, -90f)));
+            GameObject projectileObj = Instantiate(darkProjectile,
+                new Vector3(spawnLocations[i].transform.position.x, spawnLocations[i].transform.position.y, 0), Quaternion.AngleAxis(90f, new Vector3(0, 0, -90f)));
 
             projectileObj.GetComponent<Rigidbody2D>().velocity = new Vector2(0, projectileObj.GetComponent<FireballProjectile>().speed * -1);
 
@@ -174,7 +177,8 @@ public class FireballVerticalAttack : MonoBehaviour
         {
 
 
-            GameObject projectileObj = Instantiate(darkProjectile, spawnLocations[i].transform.position, Quaternion.AngleAxis(90f, new Vector3(0, 0, -90f)));
+            GameObject projectileObj = Instantiate(darkProjectile,
+                new Vector3(spawnLocations[i].transform.position.x, spawnLocations[i].transform.position.y, 0), Quaternion.AngleAxis(90f, new Vector3(0, 0, -90f)));
 
             projectileObj.GetComponent<Rigidbody2D>().velocity = new Vector2(0, projectileObj.GetComponent<FireballProjectile>().speed * -1);
 

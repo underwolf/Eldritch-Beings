@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
+using Fungus;
 
 public class CourtyardEntity : MonoBehaviour
 {
@@ -27,12 +28,17 @@ public class CourtyardEntity : MonoBehaviour
     bool isGrounded = false;
     Seeker seeker;
     Rigidbody2D rb;
-    public int health = 20;
+
+    [Header("Dialogue Options")]
+    public int health = 15;
+    public Flowchart flowchart;
 
     private void Start()
     {
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
+
+        GetComponent<HealthManager>().SetHealth(health);
 
         InvokeRepeating("UpdatePath", 0f, pathUpdateSeconds);
     }
@@ -118,16 +124,21 @@ public class CourtyardEntity : MonoBehaviour
         //Change to bullet after
         if (collision.tag == "Bullet")
         {
-            if (health > 0)
+            if (GetComponent<HealthManager>().health > 0)
             {
                 GetComponent<StunEntity>().StaggerEnemy();
-                health--;
+                GetComponent<HealthManager>().TakeDamage(1);
             }
             else
             {
                 Destroy(this.gameObject);
             }
 
+
+            if(flowchart != null && GetComponent<HealthManager>().health == 12)
+            {
+                flowchart.ExecuteBlock("CombatDialogue");
+            }
 
             Destroy(collision.gameObject);
         }

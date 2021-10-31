@@ -10,7 +10,10 @@ public class LibraryDoor : Interactable
     public override void Interact()
     {
         if (PlayerPrefs.GetInt("LibrarySeal") == 1)
-            Debug.Log("It's probably flooded...");
+        {
+            SceneManager.GetComponent<GetRoomText>().SetNote(1);
+            SceneManager.GetComponent<LobbyDoorClosed>().DoorClosedDialogue(SceneManager.GetComponent<GetRoomText>().currentNoteText);
+        }
         else
             SceneManager.GetComponent<ScreenManager>().LoadLevel(target);
 

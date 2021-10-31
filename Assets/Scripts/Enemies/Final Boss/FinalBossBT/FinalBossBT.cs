@@ -11,6 +11,7 @@ public class FinalBossBT : MonoBehaviour
     [Task]
     public void HorizontalAttack()
     {
+        GetComponent<EnemiesCultist>().SetDamageType(EnemiesCultist.DamageType.Circle);
         GetComponent<FireballHorizontalAttack>().Attack();
         Task.current.Succeed();
     }
@@ -18,6 +19,7 @@ public class FinalBossBT : MonoBehaviour
     [Task]
     public void VerticalAttack()
     {
+        GetComponent<EnemiesCultist>().SetDamageType(EnemiesCultist.DamageType.Star);
         GetComponent<FireballVerticalAttack>().Attack();
         Task.current.Succeed();
     }
@@ -25,11 +27,12 @@ public class FinalBossBT : MonoBehaviour
     [Task]
     public void RadialAttack()
     {
-        if (GetComponent<FinalBossHealthManager>().health >= 50)
+        if (GetComponent<HealthManager>().health >= 50)
             projectileAmount = 20;
-        if (GetComponent<FinalBossHealthManager>().health <= 50)
+        if (GetComponent<HealthManager>().health <= 50)
             projectileAmount = 70;
 
+        GetComponent<EnemiesCultist>().SetDamageType(EnemiesCultist.DamageType.Triangle);
         GetComponent<FireballRadialAttack>().Attack(projectileAmount);
         Task.current.Succeed();
     }

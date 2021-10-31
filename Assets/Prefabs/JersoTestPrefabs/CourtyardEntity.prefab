@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 7675099706927450475}
   - component: {fileID: 7675099706927450474}
   - component: {fileID: 7675099706927450468}
+  - component: {fileID: 5151411046256496919}
   m_Layer: 8
   m_Name: CourtyardEntity
   m_TagString: Enemy
@@ -198,7 +199,8 @@ MonoBehaviour:
   followEnabled: 1
   jumpEnabled: 1
   directionLookEnabled: 1
-  health: 20
+  health: 15
+  flowchart: {fileID: 0}
 --- !u!114 &7675099706927450468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,3 +214,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   knockbackValue: 40
+--- !u!114 &5151411046256496919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7675099706927450476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fa19f5129749e64d8bd99029d4bf6d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0

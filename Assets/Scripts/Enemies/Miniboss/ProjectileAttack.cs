@@ -42,7 +42,7 @@ public class ProjectileAttack : MonoBehaviour
                 spawnLocations[spawnLocations.Length - i - 1].transform.position.y - 20f), Quaternion.identity);
             i++;
 
-            yield return new WaitForSeconds(0.25f);
+            yield return new WaitForSeconds(1f);
 
             Destroy(warningObj);
             Destroy(warningObj1);
@@ -58,14 +58,16 @@ public class ProjectileAttack : MonoBehaviour
 
             if(i == 0)
             {
-                yield return new WaitForSeconds(0.25f);
+                yield return new WaitForSeconds(1f);
             }
 
-            GameObject projectileObj = Instantiate(projectile, spawnLocations[i].transform.position, Quaternion.identity);
-            GameObject projectileObj1 = Instantiate(projectile, spawnLocations[spawnLocations.Length - i - 1].transform.position, Quaternion.identity);
+            GameObject projectileObj = Instantiate(projectile, new Vector3(spawnLocations[i].transform.position.x, spawnLocations[i].transform.position.y, 0),
+                Quaternion.identity);
+            GameObject projectileObj1 = Instantiate(projectile, new Vector3(spawnLocations[spawnLocations.Length - i - 1].transform.position.x,
+                spawnLocations[spawnLocations.Length - i - 1].transform.position.y, 0), Quaternion.identity);
             i++;
 
-            yield return new WaitForSeconds(0.25f);
+            yield return new WaitForSeconds(1f);
         }
     }
 }

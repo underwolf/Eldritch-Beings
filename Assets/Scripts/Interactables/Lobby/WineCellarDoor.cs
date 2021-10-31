@@ -10,7 +10,10 @@ public class WineCellarDoor : Interactable
     public override void Interact()
     {
         if (PlayerPrefs.GetInt("WineCellarSeal") == 1)
-            Debug.Log("I'm still feeling a bit woozy, I'm not sure why...");
+        {
+            SceneManager.GetComponent<GetRoomText>().SetNote(4);
+            SceneManager.GetComponent<LobbyDoorClosed>().DoorClosedDialogue(SceneManager.GetComponent<GetRoomText>().currentNoteText);
+        } 
         else
             SceneManager.GetComponent<ScreenManager>().LoadLevel(target);
 
