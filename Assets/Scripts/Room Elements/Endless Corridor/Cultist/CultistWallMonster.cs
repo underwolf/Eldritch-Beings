@@ -6,9 +6,9 @@ using UnityEngine;
 public class CultistWallMonster : MonoBehaviour
 {
     public bool isActive;
-    public float speed = 20.0f;
+    public float speed;
     public float dist;
-    private int health = 5;
+    private int health = 3;
 
     private Rigidbody2D rb;
     public GameObject startPosition, limitPosition;
@@ -22,7 +22,9 @@ public class CultistWallMonster : MonoBehaviour
 
     private void Start()
     {
+        speed = 5.0f;
         gameObject.transform.position = startPosition.transform.position;
+        GetComponent<HealthManager>().SetHealth(health);
     }
 
     private void Update()
@@ -35,6 +37,9 @@ public class CultistWallMonster : MonoBehaviour
         {
             ResetPosition();
         }
+
+        if (GetComponent<HealthManager>().health <= 0)
+            Destroy(gameObject);
     }
 
     public void Activate()
@@ -53,15 +58,10 @@ public class CultistWallMonster : MonoBehaviour
         if(collision.tag == "Bullet")
         {
             StartCoroutine(StaggerSequence());
-
-            health--;
-
-            if(health <= 0)
-            {
-                Destroy(gameObject);
-            }
         }
     }
+
+
 
     private IEnumerator StaggerSequence()
     {

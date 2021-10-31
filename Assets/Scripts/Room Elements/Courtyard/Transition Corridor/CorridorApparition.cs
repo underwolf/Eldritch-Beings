@@ -15,6 +15,8 @@ public class CorridorApparition : MonoBehaviour
     private GameObject player;
     private SpriteRenderer sr;
 
+    public GameObject detectiveMode;
+
     public GameObject sceneManager;
     private UIFXManager scaryUIFXScript;
 
@@ -51,6 +53,7 @@ public class CorridorApparition : MonoBehaviour
     private void MoveAwayFromPlayer()
     {
         sr.flipX = true;
+        detectiveMode.GetComponent<SpriteRenderer>().flipX = true;
         speed = 10.0f;
         rb.velocity = new Vector2(speed, 0);
     }
@@ -58,6 +61,7 @@ public class CorridorApparition : MonoBehaviour
     private void MoveTowardsPlayer()
     {
         sr.flipX = false;
+        detectiveMode.GetComponent<SpriteRenderer>().flipX = false;
         speed = 10.0f;
         rb.velocity = new Vector2(-speed, 0);
     }
@@ -72,7 +76,8 @@ public class CorridorApparition : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             scaryUIFXScript.DisableEffects();
-            Destroy(gameObject);
+            gameObject.SetActive(false);
+            //Destroy(gameObject);
         }
             
     }

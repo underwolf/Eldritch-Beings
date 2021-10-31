@@ -10,7 +10,10 @@ public class CourtyardDoor : Interactable
     public override void Interact()
     {
         if (PlayerPrefs.GetInt("CourtyardSeal") == 1)
-            Debug.Log("I'm not going back out there. Those things can't die...");
+        {
+            SceneManager.GetComponent<GetRoomText>().SetNote(2);
+            SceneManager.GetComponent<LobbyDoorClosed>().DoorClosedDialogue(SceneManager.GetComponent<GetRoomText>().currentNoteText);
+        }
         else
             SceneManager.GetComponent<ScreenManager>().LoadLevel(target);
 

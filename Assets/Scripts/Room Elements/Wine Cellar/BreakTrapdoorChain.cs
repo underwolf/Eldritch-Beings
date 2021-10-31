@@ -6,7 +6,8 @@ public class BreakTrapdoorChain : Interactable
 {
     public override void Interact()
     {
-        Destroy(gameObject);
+        gameObject.SetActive(false);
+        //Destroy(gameObject);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

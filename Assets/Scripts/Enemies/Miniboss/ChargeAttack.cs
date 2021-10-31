@@ -33,7 +33,7 @@ public class ChargeAttack : MonoBehaviour
         }
         else
         {
-            StartCoroutine(LerpPosition(new Vector2(chargeStartRight.transform.position.x, chargeStartRight.transform.position.y + 13f), 1.5f));
+            StartCoroutine(LerpPosition(new Vector2(chargeStartRight.transform.position.x, chargeStartRight.transform.position.y + 13f), 1.5f)) ;
             startLeft = false;
         }
 
@@ -59,11 +59,11 @@ public class ChargeAttack : MonoBehaviour
     {
         if (startLeft)
         {
-            StartCoroutine(Charge(chargeStartRight.transform.position, 2.0f));
+            StartCoroutine(Charge(chargeStartRight.transform.position, 7.0f));
         }
         else
         {
-            StartCoroutine(Charge(chargeStartLeft.transform.position, 2.0f));
+            StartCoroutine(Charge(chargeStartLeft.transform.position, 7.0f));
         }
     }
 

@@ -10,7 +10,10 @@ public class AtticDoor : Interactable
     public override void Interact()
     {
         if (PlayerPrefs.GetInt("AtticSeal") == 1)
-            Debug.Log("What if that thing in the attic escapes? Better not go back");
+        {
+            SceneManager.GetComponent<GetRoomText>().SetNote(3);
+            SceneManager.GetComponent<LobbyDoorClosed>().DoorClosedDialogue(SceneManager.GetComponent<GetRoomText>().currentNoteText);
+        }
         else
             SceneManager.GetComponent<ScreenManager>().LoadLevel(target);
 

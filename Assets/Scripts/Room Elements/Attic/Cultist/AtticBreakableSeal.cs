@@ -10,6 +10,8 @@ public class AtticBreakableSeal : MonoBehaviour
 
     private BoxCollider2D bc;
 
+    public GameObject exitDoor;
+
     public float m_Size = 0.5f;
     public float m_Time = 0.3f;
     public AnimationCurve m_Curve = new AnimationCurve(new Keyframe(0, 0), new Keyframe(1, 1));
@@ -40,6 +42,8 @@ public class AtticBreakableSeal : MonoBehaviour
                 }
 
                 PlayerPrefs.SetInt("AtticSeal", 0);
+
+                exitDoor.GetComponent<BoxCollider2D>().enabled = true;
 
                 Destroy(gameObject);
 

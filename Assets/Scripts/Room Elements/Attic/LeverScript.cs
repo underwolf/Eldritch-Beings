@@ -7,6 +7,7 @@ public class LeverScript : Interactable
     public Sprite open, closed;
     private SpriteRenderer sRenderer;
     public bool isOpen;
+    public GameObject detectiveMode;
 
     public List<GameObject> slidingObstacles = new List<GameObject>();
     public override void Interact()
@@ -14,11 +15,12 @@ public class LeverScript : Interactable
         if (isOpen)
         {
             sRenderer.sprite = closed;
+            detectiveMode.GetComponent<SpriteRenderer>().sprite = closed;
         }
-            
         else
         {
             sRenderer.sprite = open;
+            detectiveMode.GetComponent<SpriteRenderer>().sprite = open;
         }
 
         ActivateObstacle();
