@@ -22,7 +22,7 @@ public class BulletCultistTest : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-
+        
         EnemiesCultist enemy = collision.GetComponent<EnemiesCultist>();
         if (enemy != null)
         {
