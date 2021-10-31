@@ -7,11 +7,16 @@ public class PlayerMovement : MonoBehaviour
     public CharacterController2D controller;
     public float speed = 40f;
     public GameObject aimObj,playerAimSprites,playerNormalSprites;
-    public bool useAnimator;
+    public bool useAnimator, canMove = true;
     public Animator animator;
     public bool directionWasFacing;
     float horizontal = 0f;
-    bool jump = false,crouch=false,canMove=true;
+    bool jump = false,crouch=false;
+
+    [Header("CUTSCENE TOGGLE")]
+    public bool isCutscene = false;
+    [Header("HEALTH PLAYER STUFF")]
+    public bool isAiming=false;
 
 
     private void Awake()
@@ -22,34 +27,42 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        if (Input.GetButtonDown("Fire2"))
+        if (!isCutscene)
         {
-            controller.CancelMovement();
-            canMove = false;
-            controller.canMove = false;
-            controller.isAiming = true;
-            aimObj.SetActive(true);
-            playerAimSprites.SetActive(true);
-            playerNormalSprites.SetActive(false); 
-            useAnimator = false;           
-            FindObjectOfType<CharacterController2D>().useAnimator = false;
+            if (Input.GetButtonDown("Fire2"))
+            {
+                controller.CancelMovement();
+                canMove = false;
+                controller.canMove = false;
+                controller.isAiming = true;
+                aimObj.SetActive(true);
+                playerAimSprites.SetActive(true);
+                playerNormalSprites.SetActive(false);
+                useAnimator = false;
+                controller.useAnimator = false;
+                isAiming = true;
+            }
+            if (Input.GetButtonUp("Fire2"))
+            {
+                canMove = true;
+                controller.canMove = true;
+                controller.isAiming = false;
+                aimObj.SetActive(false);
+                playerAimSprites.SetActive(false);
+                playerNormalSprites.SetActive(true);
+                useAnimator = true;
+                controller.useAnimator = true;
+                isAiming = true;
+            }
+            Movement();
+            if (!canMove)
+            {
+                controller.Move(0.0f, false, false);
+                controller.CancelMovement();
+                controller.canMove = false;
+            }
         }
-        if (Input.GetButtonUp("Fire2"))
-        {
-            canMove = true;
-            controller.canMove = true;
-            controller.isAiming = false;
-            aimObj.SetActive(false);
-            playerAimSprites.SetActive(false);
-            playerNormalSprites.SetActive(true);
-            useAnimator = true;
-            
-            FindObjectOfType<CharacterController2D>().useAnimator = true;
-        }
-        Movement();
 
-        
     }
     private void Movement()
     {

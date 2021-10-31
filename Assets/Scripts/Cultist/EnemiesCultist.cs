@@ -41,7 +41,6 @@ public class EnemiesCultist : MonoBehaviour
         {
             case DamageType.Star:
                 enemyHitType.sprite = possibleTypes[0];
-                
                 break;
             case DamageType.Circle:
                 enemyHitType.sprite = possibleTypes[1];
@@ -55,6 +54,11 @@ public class EnemiesCultist : MonoBehaviour
             default:
                 break;
         }
+    }
+
+    public void SetDamageTypeStar()
+    {
+        SetDamageType(DamageType.Star);
     }
     public DamageType GetDamageType() {
         return damageType;
