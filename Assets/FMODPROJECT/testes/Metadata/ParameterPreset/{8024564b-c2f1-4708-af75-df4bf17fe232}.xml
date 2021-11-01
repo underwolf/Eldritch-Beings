@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{8024564b-c2f1-4708-af75-df4bf17fe232}">
+		<property name="name">
+			<value>PuzzleComplete</value>
+		</property>
+		<relationship name="folder">
+			<destination>{42549a41-c36c-466f-9a54-f6cd587792b5}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{576d5fbf-451e-4fa9-83e1-481603951968}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{576d5fbf-451e-4fa9-83e1-481603951968}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>0.18999999761581421</value>
+		</property>
+	</object>
+</objects>

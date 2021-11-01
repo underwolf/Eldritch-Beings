@@ -8,8 +8,8 @@ public class LibraryPuzzleManager : MonoBehaviour
     public int[] puzzleSequence = { 1, 2, 3, 4};
     public bool[] puzzleStateBool = { false, false, false, false};
     public bool puzzleState;
+    public GameObject azathotSeal, particleHolder;
 
-    public GameObject azathotSeal;
 
     private void Awake()
     {
@@ -46,10 +46,8 @@ public class LibraryPuzzleManager : MonoBehaviour
 
         if (puzzleState)
         {
-            foreach (GameObject trophy in puzzleTrophies)
-            {
-                trophy.transform.GetChild(0).gameObject.GetComponent<ParticleSystem>().Play();
-            }
+            particleHolder.SetActive(true);
+            FindObjectOfType<FMODUnity.StudioEventEmitter>().SetParameter("PuzzleComplete",1,false);
             azathotSeal.GetComponent<LibraryAzathothSeal>().PuzzleSucceed();
         }
         else

@@ -11,10 +11,13 @@ public class CultistMovement : MonoBehaviour
     public Animator animator;
     public bool directionWasFacing;
     public float dashDistance;
-
+   
     private bool isDashing;
     float horizontal = 0f;
     bool jump = false, crouch = false, canMove = true;
+
+    [Header("CUTSCENE STUFF")]
+    public bool isCutscene;
 
 
     private void Awake()
@@ -25,19 +28,22 @@ public class CultistMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!isCutscene)
+        {
+            if (Input.GetButtonDown("Fire2"))
+            {
+                drawObject.SetActive(true);
+                Time.timeScale = 0.5f;
+            }
+            if (Input.GetKeyDown(KeyCode.LeftShift) && !isDashing)
+            {
+                Debug.Log("TRIED TO DASH");
+                controller.Dash(dashDistance);
+                StartCoroutine(dashCount());
+            }
+            Movement();
+        }
 
-        if (Input.GetButtonDown("Fire2"))
-        {
-            drawObject.SetActive(true);
-            Time.timeScale = 0.5f;
-        }
-        if (Input.GetKeyDown(KeyCode.LeftShift) && !isDashing)
-        {
-            Debug.Log("TRIED TO DASH");
-            controller.Dash(dashDistance);
-            StartCoroutine(dashCount());
-        }
-        Movement();
     }
 
     public void DisableDrawObject()

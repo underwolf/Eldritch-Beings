@@ -22,6 +22,22 @@ public class HurtPlayer : MonoBehaviour
                 player.knockFromRight = false;
         }
     }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            //do damage idk how that gonna work yet
+            FindObjectOfType<HealthPlayer>().DamagePlayer(amountToDamage);
+            var player = collision.gameObject.GetComponent<ApplyKnockback>();
+            player.knockback = knockbackValue;
+            player.knockbackCount = player.knockbackLength;
+
+            if (collision.transform.position.x < transform.position.x)
+                player.knockFromRight = true;
+            else
+                player.knockFromRight = false;
+        }
+    }
 
     public void Hurt(Collider2D c)
     {
