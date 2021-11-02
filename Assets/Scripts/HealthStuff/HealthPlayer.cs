@@ -25,11 +25,17 @@ public class HealthPlayer : MonoBehaviour
     public Material screeneffect;
     public RawImage screenImage;
     public float fade;
+
+    [Header("CULTIST")]
+    public bool isCultist;
     private void Start()
     {
         screeneffect = screenImage.material;
         m_CurrentHealth = m_MaxHealth;
-        playerMoveScript = FindObjectOfType<PlayerMovement>();
+        if (!isCultist)
+        {
+            playerMoveScript = FindObjectOfType<PlayerMovement>();
+        }
         Physics2D.IgnoreLayerCollision(playerLayer, EnemyLayer, false);
     }
     private void Update()
@@ -89,7 +95,10 @@ public class HealthPlayer : MonoBehaviour
     {
         Debug.ClearDeveloperConsole();
         FindObjectOfType<CharacterController2D>().Die();
-        playerMoveScript.canMove = false;
+        if (!isCultist)
+        {
+            playerMoveScript.canMove = false;
+        }
         shouldHeal = false;
         shouldUpdate = false;
         Physics2D.IgnoreLayerCollision(playerLayer, EnemyLayer, true);
@@ -103,13 +112,17 @@ public class HealthPlayer : MonoBehaviour
         Physics2D.IgnoreLayerCollision(playerLayer, EnemyLayer, true);
         for (int i = 0; i < numberOfFlahses; i++)
         {
-            if (!playerMoveScript.isAiming)
+            if (!isCultist)
             {
-                foreach (SpriteRenderer sprite in m_Renderer)
+                if (!playerMoveScript.isAiming)
                 {
-                    sprite.color = m_HurtColor;
+                    foreach (SpriteRenderer sprite in m_Renderer)
+                    {
+                        sprite.color = m_HurtColor;
+                    }
                 }
             }
+
             else
             {
                 foreach (SpriteRenderer sprite in m_RendererAim)
@@ -118,11 +131,14 @@ public class HealthPlayer : MonoBehaviour
                 }
             }
             yield return new WaitForSeconds(IframeTime/(numberOfFlahses*2));
-            if (!playerMoveScript.isAiming)
+            if (!isCultist)
             {
-                foreach (SpriteRenderer sprite in m_Renderer)
+                if (!playerMoveScript.isAiming)
                 {
-                    sprite.color = Color.white;
+                    foreach (SpriteRenderer sprite in m_Renderer)
+                    {
+                        sprite.color = Color.white;
+                    }
                 }
             }
             else
