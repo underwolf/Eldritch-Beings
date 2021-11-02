@@ -75,10 +75,10 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -6
-  m_Sprite: {fileID: 21300000, guid: 5c33d0e9fef199c41ad3717c0ac71fd9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ea13d7cf251766446a3cbfbcf6670514, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
-  m_FlipY: 1
+  m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1.14, y: 2.27}
   m_AdaptiveModeThreshold: 0.5
@@ -132,18 +132,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.29765117}
+  m_Offset: {x: 0, y: 0.37031102}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.14, y: 2.27}
+    oldSize: {x: 1.02, y: 3.58}
     newSize: {x: 1.14, y: 2.27}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.14, y: 1.6746976}
+  m_Size: {x: 1.14, y: 2.8009248}
   m_EdgeRadius: 0
 --- !u!114 &6401478093521990057
 MonoBehaviour:
@@ -158,3 +158,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   knockbackValue: 30
+  amountToDamage: 10

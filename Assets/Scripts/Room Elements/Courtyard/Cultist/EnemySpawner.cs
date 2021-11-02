@@ -36,8 +36,8 @@ public class EnemySpawner : MonoBehaviour
 
         GameObject entityObj = Instantiate(courtyardEntity, spawnPosition, Quaternion.identity);
         enemiesList.Add(entityObj);
-        entityObj.GetComponent<CultistCourtyardEntity>().target = player.transform;
-        entityObj.GetComponent<CultistCourtyardEntity>().enemySpawner = gameObject;
+        entityObj.transform.GetChild(0).GetComponent<CultistCourtyardEntity>().target = player.transform;
+        entityObj.transform.GetChild(0).GetComponent<CultistCourtyardEntity>().enemySpawner = gameObject;
 
         yield return new WaitForSeconds(8f);
 
