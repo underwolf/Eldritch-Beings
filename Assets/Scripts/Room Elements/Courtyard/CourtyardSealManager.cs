@@ -8,7 +8,6 @@ public class CourtyardSealManager : MonoBehaviour
     public GameObject[] courtyardEntities;
     public GameObject exitDoorSeal;
 
-
     private void Awake()
     {
         courtyardEntities = GameObject.FindGameObjectsWithTag("Enemy");
