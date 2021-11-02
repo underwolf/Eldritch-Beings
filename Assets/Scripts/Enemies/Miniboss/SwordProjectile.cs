@@ -31,9 +31,9 @@ public class SwordProjectile : MonoBehaviour
 
     private IEnumerator FadeOutProjectile()
     {
-        for (float f = 0; f < 2; f += Time.deltaTime)
+        for (float f = 0; f < 1f; f += Time.deltaTime)
         {
-            sr.color = new Color(1, 1, 1, Mathf.Lerp(1.5f, 0, f));
+            sr.color = new Color(1, 1, 1, Mathf.Lerp(1.5f, 0.7f, f));
             yield return null;
         }
         Destroy(gameObject);

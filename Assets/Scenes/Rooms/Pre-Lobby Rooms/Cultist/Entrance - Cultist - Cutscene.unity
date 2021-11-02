@@ -428,6 +428,8 @@ GameObject:
   - component: {fileID: 182015217}
   - component: {fileID: 182015218}
   - component: {fileID: 182015219}
+  - component: {fileID: 182015221}
+  - component: {fileID: 182015220}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -531,7 +533,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 182015212}
   selectedCommands:
-  - {fileID: 182015216}
+  - {fileID: 182015220}
   variables:
   - {fileID: 182015206}
   - {fileID: 182015208}
@@ -903,6 +905,8 @@ MonoBehaviour:
   - {fileID: 182015219}
   - {fileID: 182015210}
   - {fileID: 182015213}
+  - {fileID: 182015221}
+  - {fileID: 182015220}
   - {fileID: 182015216}
   - {fileID: 182015214}
   - {fileID: 182015215}
@@ -1188,6 +1192,60 @@ MonoBehaviour:
     booleanVal: 1
   animatorOLD: {fileID: 0}
   parameterNameOLD: 
+--- !u!114 &182015220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182015197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 15
+  indentLevel: 0
+  storyText: "Quebre os quatro selos para acord\xE1-lo"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &182015221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182015197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 14
+  indentLevel: 0
+  storyText: "Os selos podem ser quebrados por qualquer feiti\xE7o"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1 &245266745
 GameObject:
   m_ObjectHideFlags: 0
@@ -2608,7 +2666,7 @@ PrefabInstance:
       objectReference: {fileID: 1232046969}
     - target: {fileID: 5210140223468903787, guid: b13f5f715fbfe404386e1b25bff5fb27, type: 3}
       propertyPath: isCutscene
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5210140223468903789, guid: b13f5f715fbfe404386e1b25bff5fb27, type: 3}
       propertyPath: m_RootOrder
@@ -9846,7 +9904,7 @@ Transform:
   m_GameObject: {fileID: 1629865406}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -8.2, y: 2.7, z: 0}
-  m_LocalScale: {x: 3, y: 5, z: 1}
+  m_LocalScale: {x: 3, y: 4, z: 1}
   m_Children: []
   m_Father: {fileID: 1968754641}
   m_RootOrder: 4
@@ -9882,7 +9940,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.88, y: 2.56}
+    oldSize: {x: 2.01, y: 2.85}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -9931,7 +9989,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -3
-  m_Sprite: {fileID: 21300000, guid: 310191e4ad38c51489490a9466d22f04, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c933e96a0d2150c43bb86352de4b282f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -10833,8 +10891,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2067273972}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 39.5, y: 2.7, z: 0}
-  m_LocalScale: {x: 3, y: 5, z: 1}
+  m_LocalPosition: {x: 39.5, y: 2.41, z: 0}
+  m_LocalScale: {x: 3, y: 4, z: 1}
   m_Children: []
   m_Father: {fileID: 1968754641}
   m_RootOrder: 5
@@ -10870,7 +10928,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.88, y: 2.56}
+    oldSize: {x: 2.01, y: 2.85}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -10919,7 +10977,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -3
-  m_Sprite: {fileID: 21300000, guid: 310191e4ad38c51489490a9466d22f04, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c933e96a0d2150c43bb86352de4b282f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
