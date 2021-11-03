@@ -216,7 +216,7 @@ GameObject:
   m_Component:
   - component: {fileID: 138078332}
   - component: {fileID: 138078333}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: DetectiveMode
   m_TagString: Clue
   m_Icon: {fileID: 0}
@@ -576,7 +576,7 @@ GameObject:
   m_Component:
   - component: {fileID: 168766341}
   - component: {fileID: 168766342}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: DetectiveMode
   m_TagString: Clue
   m_Icon: {fileID: 0}
@@ -721,7 +721,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 326851574}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.542012, y: -0.86352587, z: -0.8214035}
+  m_LocalPosition: {x: -8.541311, y: -0.86352587, z: -0.8214035}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 17372334}
@@ -812,7 +812,7 @@ GameObject:
   m_Component:
   - component: {fileID: 466843359}
   - component: {fileID: 466843360}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1208,7 +1208,7 @@ GameObject:
   m_Component:
   - component: {fileID: 662960750}
   - component: {fileID: 662960751}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Square (1)
   m_TagString: Clue
   m_Icon: {fileID: 0}
@@ -1290,7 +1290,7 @@ GameObject:
   m_Component:
   - component: {fileID: 708702519}
   - component: {fileID: 708702520}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Square
   m_TagString: Clue
   m_Icon: {fileID: 0}
@@ -1817,7 +1817,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 873074107}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Map
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1861,7 +1861,7 @@ GameObject:
   - component: {fileID: 898017675}
   - component: {fileID: 898017677}
   - component: {fileID: 898017676}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: WallLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1968,7 +1968,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 944779374}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallMonsterStartPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2002,7 +2002,7 @@ GameObject:
   - component: {fileID: 976173208}
   - component: {fileID: 976173207}
   - component: {fileID: 976173206}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EndlessDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2017,8 +2017,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 976173204}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 83, y: 2.7, z: 0}
-  m_LocalScale: {x: 3, y: 5, z: 1}
+  m_LocalPosition: {x: 83, y: 0.6386, z: 0}
+  m_LocalScale: {x: 3, y: 3.5535, z: 1}
   m_Children: []
   m_Father: {fileID: 873074107}
   m_RootOrder: 4
@@ -2054,7 +2054,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.88, y: 2.56}
+    oldSize: {x: 2.01, y: 2.85}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -2103,7 +2103,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -3
-  m_Sprite: {fileID: 21300000, guid: 310191e4ad38c51489490a9466d22f04, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c933e96a0d2150c43bb86352de4b282f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2612,7 +2612,7 @@ GameObject:
   - component: {fileID: 1311234350}
   - component: {fileID: 1311234352}
   - component: {fileID: 1311234351}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: ceiling
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2765,7 +2765,7 @@ GameObject:
   - component: {fileID: 1323379281}
   - component: {fileID: 1323379283}
   - component: {fileID: 1323379282}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2955,7 +2955,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1406032461}
   - component: {fileID: 1406032462}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Square (1)
   m_TagString: Clue
   m_Icon: {fileID: 0}
@@ -3193,7 +3193,7 @@ GameObject:
   - component: {fileID: 1535702013}
   - component: {fileID: 1535702012}
   - component: {fileID: 1535702011}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SecretDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3445,7 +3445,7 @@ GameObject:
   - component: {fileID: 1710884866}
   - component: {fileID: 1710884865}
   - component: {fileID: 1710884864}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SwitchRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8471,7 +8471,7 @@ GameObject:
   - component: {fileID: 1730517066}
   - component: {fileID: 1730517065}
   - component: {fileID: 1730517064}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SwitchLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8690,7 +8690,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1775908079}
   - component: {fileID: 1775908080}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8899,7 +8899,7 @@ GameObject:
   - component: {fileID: 1879603793}
   - component: {fileID: 1879603795}
   - component: {fileID: 1879603794}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: WallRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9008,7 +9008,7 @@ GameObject:
   - component: {fileID: 1913913244}
   - component: {fileID: 1913913246}
   - component: {fileID: 1913913245}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: StartDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9023,8 +9023,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1913913243}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.5, y: 2.7, z: 0}
-  m_LocalScale: {x: 3, y: 5, z: 1}
+  m_LocalPosition: {x: -8.5, y: 0.4787, z: 0}
+  m_LocalScale: {x: 3, y: 3.441, z: 1}
   m_Children: []
   m_Father: {fileID: 873074107}
   m_RootOrder: 5
@@ -9046,7 +9046,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.88, y: 2.56}
+    oldSize: {x: 2.01, y: 2.85}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -9095,7 +9095,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -3
-  m_Sprite: {fileID: 21300000, guid: 310191e4ad38c51489490a9466d22f04, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c933e96a0d2150c43bb86352de4b282f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9198,7 +9198,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1959997854}
   - component: {fileID: 1959997855}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Square (1)
   m_TagString: Clue
   m_Icon: {fileID: 0}
@@ -9408,7 +9408,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2032791169}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.542012, y: -0.86352587, z: -0.8214035}
+  m_LocalPosition: {x: -8.541311, y: -0.86352587, z: -0.8214035}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 581631429}
@@ -9506,7 +9506,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2092728797}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallMonsterLimitPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}

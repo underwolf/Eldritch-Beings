@@ -569,7 +569,6 @@ GameObject:
   - component: {fileID: 2442982429620768113}
   - component: {fileID: 8415758923378335523}
   - component: {fileID: 8415758923378335522}
-  - component: {fileID: 1893423453}
   m_Layer: 0
   m_Name: PlayerCutscene
   m_TagString: Player
@@ -657,8 +656,11 @@ MonoBehaviour:
   playerAimSprites: {fileID: 2442982431412915957}
   playerNormalSprites: {fileID: 2442982431297069467}
   useAnimator: 1
+  canMove: 1
   animator: {fileID: 8415758923363521616}
   directionWasFacing: 0
+  isCutscene: 1
+  isAiming: 0
 --- !u!114 &2442982429620768108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -802,27 +804,6 @@ MonoBehaviour:
   knockbackLength: 0.2
   knockbackCount: -1
   knockFromRight: 0
---- !u!114 &1893423453
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2442982429620768114}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b03cf310980ec1459cfc1d1ab68b3db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FootstepEvent:
-    Guid:
-      Data1: -237619395
-      Data2: 1133792042
-      Data3: 313158832
-      Data4: 1644758122
-    Path: event:/PLAYER/FOOTSTEPS
-  stepRandom: 0
-  stepDistance: 2
 --- !u!95 &8415758923363521616
 Animator:
   serializedVersion: 3
@@ -871,6 +852,25 @@ MonoBehaviour:
     showGizmo: 1
   - color: {r: 0, g: 1, b: 0, a: 1}
     showGizmo: 1
+--- !u!114 &7957933003921402238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2442982431297069467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b03cf310980ec1459cfc1d1ab68b3db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FootstepEvent:
+    Guid:
+      Data1: -237619395
+      Data2: 1133792042
+      Data3: 313158832
+      Data4: 1644758122
+    Path: event:/PLAYER/FOOTSTEPS
 --- !u!1 &2442982431412915957
 GameObject:
   m_ObjectHideFlags: 0
@@ -4101,13 +4101,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -7489599724692763049, guid: 5612c699e7bd2bd48a26aefe8c1b16f1, type: 3}
   m_PrefabInstance: {fileID: 8415758923363521627}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &6418561980890262313 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3303839183535259506, guid: 5612c699e7bd2bd48a26aefe8c1b16f1, type: 3}
-  m_PrefabInstance: {fileID: 8415758923363521627}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2442982431297069467 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3085529016295000640, guid: 5612c699e7bd2bd48a26aefe8c1b16f1, type: 3}
+  m_PrefabInstance: {fileID: 8415758923363521627}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6418561980890262313 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3303839183535259506, guid: 5612c699e7bd2bd48a26aefe8c1b16f1, type: 3}
   m_PrefabInstance: {fileID: 8415758923363521627}
   m_PrefabAsset: {fileID: 0}

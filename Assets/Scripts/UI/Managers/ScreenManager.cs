@@ -36,6 +36,23 @@ public class ScreenManager : MonoBehaviour
         StartCoroutine(ChangeScene(nextSceneName, true));
     }
 
+    public void StartLevelCultist(string nextSceneName)
+    {
+        PlayerPrefs.SetInt("LibrarySeal", 1);
+        PlayerPrefs.SetInt("CourtyardSeal", 1);
+        PlayerPrefs.SetInt("WineCellarSeal", 1);
+        PlayerPrefs.SetInt("AtticSeal", 1);
+        StartCoroutine(ChangeScene(nextSceneName, false));
+    }
+    public void StartLevelInvestigador(string nextSceneName)
+    {
+        PlayerPrefs.SetInt("LibrarySeal", 0);
+        PlayerPrefs.SetInt("CourtyardSeal", 0);
+        PlayerPrefs.SetInt("WineCellarSeal", 0);
+        PlayerPrefs.SetInt("AtticSeal", 0);
+        StartCoroutine(ChangeScene(nextSceneName, false));
+    }
+
     private IEnumerator ChangeScene(string nextSceneName, bool loading)
     {
         List<BehaviorUI> list = Helper.FindAll<BehaviorUI>();
@@ -47,7 +64,7 @@ public class ScreenManager : MonoBehaviour
 
         if (nextSceneName.Equals("Quit"))
         {
-            //QuitGame();
+            Application.Quit();
         }
         else
         {

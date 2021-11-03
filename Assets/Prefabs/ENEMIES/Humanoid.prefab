@@ -163,8 +163,8 @@ MonoBehaviour:
   - {fileID: 996127743485688942}
   - {fileID: 3820288395416492552}
   m_Bounds:
-    m_Center: {x: -0.059818983, y: 0.0021301508, z: 0}
-    m_Extent: {x: 0.38518488, y: 1.0178804, z: 0}
+    m_Center: {x: -0.05981517, y: 0.0021291971, z: 0}
+    m_Extent: {x: 0.38518488, y: 1.0178809, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!1 &1555464487445500014
@@ -269,8 +269,8 @@ MonoBehaviour:
   - {fileID: 4170469536456596268}
   - {fileID: 8423522476870877539}
   m_Bounds:
-    m_Center: {x: -0.000000059604645, y: 0.0018298626, z: 0}
-    m_Extent: {x: 0.57500005, y: 0.9281704, z: 0}
+    m_Center: {x: -0.000000059604645, y: 0.001832068, z: 0}
+    m_Extent: {x: 0.57500005, y: 0.9281702, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!1 &1895671027929909926
@@ -740,8 +740,8 @@ MonoBehaviour:
   - {fileID: 7756049407934512415}
   - {fileID: 7706249179119443761}
   m_Bounds:
-    m_Center: {x: 0.0036500096, y: -0.00000035762787, z: 0}
-    m_Extent: {x: 0.6186799, y: 0.64999974, z: 0}
+    m_Center: {x: 0.0036500096, y: -0.0000014305115, z: 0}
+    m_Extent: {x: 0.6186799, y: 0.64999926, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!1 &4874080062484202790
@@ -846,8 +846,8 @@ MonoBehaviour:
   - {fileID: 6869552823915895823}
   - {fileID: 8423522476870877539}
   m_Bounds:
-    m_Center: {x: -0.00000014901161, y: 0.0013000965, z: 0}
-    m_Extent: {x: 0.32999998, y: 0.8586998, z: 0}
+    m_Center: {x: -0.00000014901161, y: 0.0013020039, z: 0}
+    m_Extent: {x: 0.32999998, y: 0.85870004, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!1 &5345512473300500885
@@ -951,8 +951,8 @@ MonoBehaviour:
   - {fileID: 7756049407934512415}
   - {fileID: 7706249179119443761}
   m_Bounds:
-    m_Center: {x: 0.0012701154, y: 0.000114917755, z: 0}
-    m_Extent: {x: 0.81873006, y: 1.0233952, z: 0}
+    m_Center: {x: 0.0012701154, y: 0.00011587143, z: 0}
+    m_Extent: {x: 0.81873006, y: 1.0233942, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!1 &7566232045466199657
@@ -1089,7 +1089,7 @@ MonoBehaviour:
   - {fileID: 6953588130494331168}
   - {fileID: 6672029813412140878}
   m_Bounds:
-    m_Center: {x: -0.0000038146973, y: 0.0004902482, z: 0}
+    m_Center: {x: 0, y: 0.00048834085, z: 0}
     m_Extent: {x: 0.6550002, y: 0.54608, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -1164,6 +1164,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1723140683564328611}
     m_Modifications:
+    - target: {fileID: 7675099706927450468, guid: 70a264e1aac9e7e48a8ddc112e8cd1be, type: 3}
+      propertyPath: knockbackValue
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7675099706927450472, guid: 70a264e1aac9e7e48a8ddc112e8cd1be, type: 3}
       propertyPath: m_Size.x
       value: 2.0233078

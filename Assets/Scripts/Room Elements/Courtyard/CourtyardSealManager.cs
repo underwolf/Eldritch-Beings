@@ -18,20 +18,20 @@ public class CourtyardSealManager : MonoBehaviour
         if (azathotSeal.GetComponent<SwitchScript>().switchState)
         {
             PlayerPrefs.SetInt("CourtyardSeal", 1);
-            azathotSeal.gameObject.SetActive(false);
+
 
             GetComponent<UIFXManager>().scaryUIFXColor.a = 1f;
             GetComponent<UIFXManager>().scaryUIFX.color = GetComponent<UIFXManager>().scaryUIFXColor;
 
             exitDoorSeal.SetActive(false);
-
             foreach (GameObject entity in courtyardEntities)
             {
-                entity.GetComponent<CourtyardEntity>().speed = 1300f;
-                entity.GetComponent<CourtyardEntity>().activateDistance = 1000f;
-                entity.GetComponent<CourtyardEntity>().jumpNodeHeightRequirement = 0.3f;
+                entity.transform.GetChild(0).GetComponent<CourtyardEntity>().speed = 1300f;
+                entity.transform.GetChild(0).GetComponent<CourtyardEntity>().activateDistance = 1000f;
+                entity.transform.GetChild(0).GetComponent<CourtyardEntity>().jumpNodeHeightRequirement = 0.3f;
 
             }
+            azathotSeal.gameObject.SetActive(false);
 
         }
     }

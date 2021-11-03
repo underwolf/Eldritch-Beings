@@ -72,8 +72,8 @@ public class HealthPlayer : MonoBehaviour
 
     public void DamagePlayer(float amountDamaged)
     {
-        shouldHeal = false;
         StartCoroutine(Iframe());
+        shouldHeal = false;
         SetLife(-amountDamaged, 0.0f, m_MaxHealth);
         m_StartHealing = Time.time + m_HealTimer;
         if (m_CurrentHealth <= 0)
@@ -114,26 +114,22 @@ public class HealthPlayer : MonoBehaviour
         {
             if (!isCultist)
             {
-                if (!playerMoveScript.isAiming)
+                if (playerMoveScript.isAiming)
                 {
-                    foreach (SpriteRenderer sprite in m_Renderer)
+                    foreach (SpriteRenderer sprite in m_RendererAim)
                     {
                         sprite.color = m_HurtColor;
                     }
                 }
             }
-
-            else
+            foreach (SpriteRenderer sprite in m_Renderer)
             {
-                foreach (SpriteRenderer sprite in m_RendererAim)
-                {
                     sprite.color = m_HurtColor;
-                }
             }
             yield return new WaitForSeconds(IframeTime/(numberOfFlahses*2));
             if (!isCultist)
             {
-                if (!playerMoveScript.isAiming)
+                if (playerMoveScript.isAiming)
                 {
                     foreach (SpriteRenderer sprite in m_Renderer)
                     {
@@ -141,12 +137,10 @@ public class HealthPlayer : MonoBehaviour
                     }
                 }
             }
-            else
+
+            foreach (SpriteRenderer sprite in m_Renderer)
             {
-                foreach (SpriteRenderer sprite in m_RendererAim)
-                {
                     sprite.color = Color.white;
-                }
             }
             yield return new WaitForSeconds(IframeTime / (numberOfFlahses * 2));
         }

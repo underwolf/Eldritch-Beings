@@ -21,8 +21,9 @@ public class CraftBullet : MonoBehaviour
             {
                 for (int i = 0; i < 30; i++)
                 {
-                    bulletNewPos = new Vector3(BulletPos.position.x, BulletPos.position.y, 0);
+                    bulletNewPos = new Vector3(BulletPos.position.x, BulletPos.position.y, BulletPos.position.z);
                     var bulletParent = Instantiate(bullet, bulletNewPos, Quaternion.identity);
+                    bulletParent.transform.localScale = new Vector3(2, 2, 0);
                     bulletParent.transform.parent = BulletPos;
                 }
             }
@@ -43,9 +44,10 @@ public class CraftBullet : MonoBehaviour
             
             if (Time.deltaTime >= finishCrafting  && GameObject.Find("BulletOriginalPos").transform.childCount<=10 && filledBar==false)
             {
-                bulletNewPos = new Vector3(BulletPos.position.x, BulletPos.position.y, 0);
+                bulletNewPos = new Vector3(BulletPos.position.x, BulletPos.position.y, BulletPos.position.z);
                 var bulletParent = Instantiate(bullet, bulletNewPos, Quaternion.identity);
                 bulletParent.transform.parent = BulletPos;
+                bulletParent.transform.localScale = new Vector3(2, 2, 0);
                 startTime = 0;
                 Debug.Log("CRAFTED BULLET");
                 FindObjectOfType<FMODFire>().FMODCRAFT();
@@ -58,9 +60,10 @@ public class CraftBullet : MonoBehaviour
 
     public void ForceCraft()
     {
-        bulletNewPos = new Vector3(BulletPos.position.x, BulletPos.position.y, 0);
+        bulletNewPos = new Vector3(BulletPos.position.x, BulletPos.position.y, BulletPos.position.z);
         var bulletParent = Instantiate(bullet, bulletNewPos, Quaternion.identity);
         bulletParent.transform.parent = BulletPos;
+        bulletParent.transform.localScale = new Vector3(2, 2, 0);
         startTime = 0;
         GameObject.Find("CraftingCanvas").GetComponent<ProgressBar>().fillBar = false;
         GameObject.Find("CraftingCanvas").GetComponent<ProgressBar>().hideCraft();
