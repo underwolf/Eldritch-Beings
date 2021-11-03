@@ -15,5 +15,6 @@ public class SwitchScript : MonoBehaviour
     private void Update()
     {
         switchState = openableScript.isOpen;
+
     }
 }

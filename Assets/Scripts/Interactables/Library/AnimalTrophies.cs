@@ -5,6 +5,7 @@ using UnityEngine;
 public class AnimalTrophies : Interactable
 {
     private SpriteRenderer sr;
+    public GameObject trophySprite;
     public Sprite activated, deactivated;
 
     public int puzzleId;
@@ -12,7 +13,7 @@ public class AnimalTrophies : Interactable
 
     private void Start()
     {
-        sr = GetComponent<SpriteRenderer>();
+        sr = trophySprite.GetComponent<SpriteRenderer>();
     }
 
     public override void Interact()

@@ -33,10 +33,10 @@ public class AtticEnemySpawner : MonoBehaviour
 
         GameObject entityObj = Instantiate(courtyardEntity, spawnPosition, Quaternion.identity);
         enemiesList.Add(entityObj);
-        entityObj.GetComponent<CultistCourtyardEntity>().target = player.transform;
-        entityObj.GetComponent<CultistCourtyardEntity>().enemySpawner = gameObject;
-        entityObj.GetComponent<CultistCourtyardEntity>().jumpEnabled = false;
-        entityObj.GetComponent<Rigidbody2D>().gravityScale = 3f;
+        entityObj.transform.GetChild(0).GetComponent<CultistCourtyardEntity>().target = player.transform;
+        entityObj.transform.GetChild(0).GetComponent<CultistCourtyardEntity>().enemySpawner = gameObject;
+        entityObj.transform.GetChild(0).GetComponent<CultistCourtyardEntity>().jumpEnabled = false;
+        entityObj.transform.GetChild(0).GetComponent<Rigidbody2D>().gravityScale = 3f;
         entityObj.transform.localScale = new Vector3(2f, 2f);
 
         yield return new WaitForSeconds(2f);

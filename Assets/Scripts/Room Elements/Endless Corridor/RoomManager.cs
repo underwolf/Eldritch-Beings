@@ -12,8 +12,12 @@ public class RoomManager : MonoBehaviour
     public GameObject switchR;
     public Flowchart flowchart;
 
+    public GameObject player;
+
     private FakeDoor fakeDoorScript;
     private WallMonsterScript wallMonsterScript;
+
+    public GameObject fakeSwitchL, fakeSwitchR;
 
     private void Awake()
     {
@@ -21,6 +25,7 @@ public class RoomManager : MonoBehaviour
         switchR.SetActive(false);
         fakeDoorScript = fakeDoor.GetComponent<FakeDoor>();
         wallMonsterScript = wallMonster.GetComponent<WallMonsterScript>();
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     private void Update()
@@ -28,6 +33,8 @@ public class RoomManager : MonoBehaviour
         if (fakeDoorScript.timesInteracted == 2)
         {
             fakeDoorScript.timesInteracted++;
+
+            player.GetComponent<PlayerMovement>().isCutscene = true;
             //play dialogue
             flowchart.enabled = true;
             flowchart.ExecuteBlock("NyarlathotepDialogue1");   
@@ -42,6 +49,9 @@ public class RoomManager : MonoBehaviour
         {
             flowchart.SendFungusMessage(fungusMessage);
 
+            player.GetComponent<PlayerMovement>().isCutscene = false;
+            fakeSwitchL.SetActive(false);
+            fakeSwitchR.SetActive(false);
             switchL.SetActive(true);
             switchR.SetActive(true);
 
