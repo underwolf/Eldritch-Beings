@@ -1,23 +1,35 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class CourtyardDoor : Interactable
 {
     public string target;
-    public GameObject SceneManager;
+    public string currentScene;
+    public GameObject sceneManager;
+    public LoadNewScene loader;
 
+    public UnloadSceneNew unloader;
+    private void Start()
+    {
+        sceneManager = GameObject.Find("SceneManager");
+        loader = FindObjectOfType<LoadNewScene>();
+        unloader = FindObjectOfType<UnloadSceneNew>();
+    }
     public override void Interact()
     {
         if (PlayerPrefs.GetInt("CourtyardSeal") == 1)
         {
-            SceneManager.GetComponent<GetRoomText>().SetNote(2);
-            SceneManager.GetComponent<LobbyDoorClosed>().DoorClosedDialogue(SceneManager.GetComponent<GetRoomText>().currentNoteText);
+            sceneManager.GetComponent<GetRoomText>().SetNote(2);
+            sceneManager.GetComponent<LobbyDoorClosed>().DoorClosedDialogue(sceneManager.GetComponent<GetRoomText>().currentNoteText);
         }
         else
-            SceneManager.GetComponent<ScreenManager>().LoadLevel(target);
+        {
+            loader.LoadSceneKeepingGun(target);
+            unloader.UnloadSceneNewWithGun(currentScene);
+        }
+
 
         //SceneControl.Transitionplayer(target.transform.position);
-
     }
 }

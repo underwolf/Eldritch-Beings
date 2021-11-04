@@ -8,7 +8,7 @@ public class PlayerFire : MonoBehaviour
     public GameObject aimObj;
     private GameObject firepoint;
     public GameObject bulletPrefab;
-    public LineRenderer lineRenderer;
+    //public LineRenderer lineRenderer;
 
     bool canfire = false;
     // Update is called once per frame
@@ -32,18 +32,18 @@ public class PlayerFire : MonoBehaviour
             if (hit)
             {
                 Debug.Log(hit.transform.name);
-                lineRenderer.SetPosition(0, firepoint.transform.position);
-                lineRenderer.SetPosition(1, hit.point);
+                //lineRenderer.SetPosition(0, firepoint.transform.position);
+                //lineRenderer.SetPosition(1, hit.point);
             }
             else
             {
-                lineRenderer.SetPosition(0, firepoint.transform.position);
-                lineRenderer.SetPosition(1, firepoint.transform.position + firepoint.transform.right * 100);
+                //lineRenderer.SetPosition(0, firepoint.transform.position);
+                //lineRenderer.SetPosition(1, firepoint.transform.position + firepoint.transform.right * 100);
             }
-            lineRenderer.enabled = true;
+            //lineRenderer.enabled = true;
             Instantiate(bulletPrefab, firepoint.transform.position, firepoint.transform.rotation);
             yield return 0;
-            lineRenderer.enabled = false;
+            //lineRenderer.enabled = false;
         }
         else
         {

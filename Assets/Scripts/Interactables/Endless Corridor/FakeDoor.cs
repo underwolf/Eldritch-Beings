@@ -10,6 +10,9 @@ public class FakeDoor : Interactable
     public override void Interact()
     {
         timesInteracted++;
-        SceneControl.Transitionplayer(target.transform.position);
+        FindObjectOfType<SceneControl>().Transitionplayer(target.transform.position);
+        
     }
+
+
 }

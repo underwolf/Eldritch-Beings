@@ -131,7 +131,7 @@ public class HealthPlayer : MonoBehaviour
             {
                 if (playerMoveScript.isAiming)
                 {
-                    foreach (SpriteRenderer sprite in m_Renderer)
+                    foreach (SpriteRenderer sprite in m_RendererAim)
                     {
                         sprite.color = Color.white;
                     }

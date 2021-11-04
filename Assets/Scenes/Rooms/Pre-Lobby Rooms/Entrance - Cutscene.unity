@@ -745,7 +745,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 214.5329
     y: -8.022423
-    width: 128.94734
+    width: 131.81818
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -769,11 +769,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 190.40092, y: 41.728264}
+  scrollPos: {x: -355.2662, y: 92.68298}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 280
-  zoom: 0.7600002
+  zoom: 0.8800001
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -781,8 +781,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 383687407}
-  selectedCommands: []
+  - {fileID: 383687436}
+  selectedCommands:
+  - {fileID: 383687437}
   variables:
   - {fileID: 383687424}
   - {fileID: 383687432}
@@ -866,7 +867,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 529.61334
     y: -13.501697
-    width: 102.63156
+    width: 106.81818
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -895,7 +896,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 366.92606
     y: -17.299175
-    width: 110.5263
+    width: 114.77272
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1039,7 +1040,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 703.51996
     y: -13.463799
-    width: 155.26312
+    width: 161.36362
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1134,7 +1135,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 713.6463
     y: 89.067825
-    width: 167.10522
+    width: 173.86362
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1620,7 +1621,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 513.64636
     y: 95.39694
-    width: 118.421036
+    width: 123.863625
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1684,7 +1685,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 508.58282
     y: 176.40962
-    width: 127.63155
+    width: 132.95453
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1794,7 +1795,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 682.0009
     y: 171.34627
-    width: 103.94736
+    width: 105.68181
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1826,7 +1827,7 @@ MonoBehaviour:
   indentLevel: 0
   _sceneName:
     stringRef: {fileID: 0}
-    stringVal: Entrance
+    stringVal: BulletsScene
   loadingImage: {fileID: 0}
   sceneNameOLD: 
 --- !u!114 &383687438
@@ -4687,7 +4688,7 @@ MonoBehaviour:
   m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 40
-    OrthographicSize: 15
+    OrthographicSize: 18
     NearClipPlane: 0.1
     FarClipPlane: 5000
     Dutch: 0
@@ -4971,7 +4972,7 @@ Camera:
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 15
+  orthographic size: 18
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

@@ -568,7 +568,7 @@ MonoBehaviour:
   parameterNameOLD: 
 --- !u!114 &165874752
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -610,12 +610,12 @@ MonoBehaviour:
   indentLevel: 0
   _sceneName:
     stringRef: {fileID: 0}
-    stringVal: Entrance - Cultist
+    stringVal: Entrance - Cultist - Cutscene
   loadingImage: {fileID: 0}
   sceneNameOLD: 
 --- !u!114 &165874754
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -642,7 +642,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 1913010474}
 --- !u!114 &165874755
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -677,7 +677,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 882.00073
     y: 65.01715
-    width: 110.759476
+    width: 105.68181
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -694,7 +694,7 @@ MonoBehaviour:
   suppressAllAutoSelections: 0
 --- !u!114 &165874758
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -721,7 +721,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 1913010474}
 --- !u!114 &165874759
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -763,7 +763,7 @@ MonoBehaviour:
   value: 0
 --- !u!114 &165874764
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -791,7 +791,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 1913010474}
 --- !u!114 &165874765
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -819,7 +819,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 1913010474}
 --- !u!114 &165874766
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1013,7 +1013,7 @@ MonoBehaviour:
   value: 0
 --- !u!114 &165874770
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1108,7 +1108,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 665.5451
     y: 106.78934
-    width: 177.84807
+    width: 173.86362
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1257,7 +1257,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 703.51996
     y: -13.463799
-    width: 166.45566
+    width: 161.36362
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1353,7 +1353,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 529.61334
     y: -13.501697
-    width: 106.962006
+    width: 106.81818
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1447,7 +1447,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 366.92606
     y: -17.299175
-    width: 115.82277
+    width: 114.77272
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1492,7 +1492,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 214.5329
     y: -8.022423
-    width: 133.54428
+    width: 131.81818
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1516,11 +1516,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 77.492836, y: 69.15999}
+  scrollPos: {x: -347.4594, y: 80.2043}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 280
-  zoom: 0.7900002
+  zoom: 0.8800001
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -1528,8 +1528,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 165874773}
-  selectedCommands: []
+  - {fileID: 165874757}
+  selectedCommands:
+  - {fileID: 165874753}
   variables:
   - {fileID: 165874768}
   - {fileID: 165874762}
@@ -1559,7 +1560,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &165874792
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1586,7 +1587,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 1913010474}
 --- !u!114 &165874793
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1613,7 +1614,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 1913010474}
 --- !u!114 &165874794
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1640,7 +1641,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 1913010474}
 --- !u!114 &165874795
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1667,7 +1668,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 1913010474}
 --- !u!114 &165874796
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1694,7 +1695,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 1913010474}
 --- !u!114 &165874797
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1721,7 +1722,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 1913010474}
 --- !u!114 &165874798
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1748,7 +1749,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 1913010474}
 --- !u!114 &165874799
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1775,7 +1776,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 1913010474}
 --- !u!114 &165874800
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1802,7 +1803,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 1913010474}
 --- !u!114 &165874801
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1829,7 +1830,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 1913010474}
 --- !u!114 &165874802
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1856,7 +1857,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 1913010474}
 --- !u!114 &165874803
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1883,7 +1884,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 1913010474}
 --- !u!114 &165874804
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1911,7 +1912,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 1913010474}
 --- !u!114 &165874805
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -5986,7 +5987,7 @@ MonoBehaviour:
   m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 40
-    OrthographicSize: 17
+    OrthographicSize: 12.71
     NearClipPlane: 0.1
     FarClipPlane: 5000
     Dutch: 0
@@ -7054,7 +7055,7 @@ Camera:
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 17
+  orthographic size: 12.71
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

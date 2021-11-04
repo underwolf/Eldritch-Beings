@@ -17,9 +17,6 @@ public class ControlCorridorParameters : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        instance = FMODUnity.RuntimeManager.CreateInstance(fmodEvent);
-        instance.start();
-
     }
 
     void Update()
@@ -32,6 +29,7 @@ public class ControlCorridorParameters : MonoBehaviour
         {
             distance = 100;
         }
-        instance.setParameterByName("CorridorDistance", distance);
+        FindObjectOfType<FMODUnity.StudioEventEmitter>().SetParameter("CorridorDistance", distance, false);
+
     }
 }
