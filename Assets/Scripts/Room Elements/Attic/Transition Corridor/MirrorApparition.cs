@@ -23,7 +23,7 @@ public class MirrorApparition : MonoBehaviour
 
     private void Update()
     {
-        transform.position = new Vector2(player.transform.position.x - 3f, player.transform.position.y);
+        transform.position = new Vector2(player.transform.position.x - 1.5f, player.transform.position.y);
 
         if(player.GetComponent<PlayerMovement>().speed > 0.05f)
         {

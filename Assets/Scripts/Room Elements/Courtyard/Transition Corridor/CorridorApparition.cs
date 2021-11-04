@@ -75,9 +75,9 @@ public class CorridorApparition : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            scaryUIFXScript.DisableEffects();
-            gameObject.SetActive(false);
-            //Destroy(gameObject);
+               scaryUIFXScript.DisableEffects();
+               gameObject.SetActive(false);
+               Destroy(gameObject);
         }
             
     }

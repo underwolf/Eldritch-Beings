@@ -6,13 +6,18 @@ public class CraftBullet : MonoBehaviour
     public GameObject bullet;
     public Transform BulletPos;
     private Vector3 bulletNewPos;
-    public float timeToCraft = 0.3f;
+    public float timeToCraft;
     public float amountCrafted = 2.0f;
     private float finishCrafting=0;
     float startTime,progress;
     bool filledBar = false;
     public bool infiniteAmmo = true;
     // Update is called once per frame
+
+    private void Start()
+    {
+        BulletPos = GameObject.FindGameObjectWithTag("BulletPos").transform;
+    }
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.R))
@@ -21,10 +26,7 @@ public class CraftBullet : MonoBehaviour
             {
                 for (int i = 0; i < 30; i++)
                 {
-                    bulletNewPos = new Vector3(BulletPos.position.x, BulletPos.position.y, BulletPos.position.z);
-                    var bulletParent = Instantiate(bullet, bulletNewPos, Quaternion.identity);
-                    bulletParent.transform.localScale = new Vector3(2, 2, 0);
-                    bulletParent.transform.parent = BulletPos;
+                    GenerateBullet();
                 }
             }
             if(GameObject.Find("BulletOriginalPos").transform.childCount >= 10)
@@ -44,10 +46,7 @@ public class CraftBullet : MonoBehaviour
             
             if (Time.deltaTime >= finishCrafting  && GameObject.Find("BulletOriginalPos").transform.childCount<=10 && filledBar==false)
             {
-                bulletNewPos = new Vector3(BulletPos.position.x, BulletPos.position.y, BulletPos.position.z);
-                var bulletParent = Instantiate(bullet, bulletNewPos, Quaternion.identity);
-                bulletParent.transform.parent = BulletPos;
-                bulletParent.transform.localScale = new Vector3(2, 2, 0);
+                GenerateBullet();
                 startTime = 0;
                 Debug.Log("CRAFTED BULLET");
                 FindObjectOfType<FMODFire>().FMODCRAFT();
@@ -60,10 +59,7 @@ public class CraftBullet : MonoBehaviour
 
     public void ForceCraft()
     {
-        bulletNewPos = new Vector3(BulletPos.position.x, BulletPos.position.y, BulletPos.position.z);
-        var bulletParent = Instantiate(bullet, bulletNewPos, Quaternion.identity);
-        bulletParent.transform.parent = BulletPos;
-        bulletParent.transform.localScale = new Vector3(2, 2, 0);
+        GenerateBullet();
         startTime = 0;
         GameObject.Find("CraftingCanvas").GetComponent<ProgressBar>().fillBar = false;
         GameObject.Find("CraftingCanvas").GetComponent<ProgressBar>().hideCraft();
@@ -72,6 +68,15 @@ public class CraftBullet : MonoBehaviour
         FindObjectOfType<FMODFire>().FMODCRAFT();
     }
 
+
+    public void GenerateBullet()
+    {
+        bulletNewPos = new Vector3(BulletPos.position.x, BulletPos.position.y, BulletPos.position.z);
+        Quaternion spawnRotation = Quaternion.Euler(0, 0, 90);
+        var bulletParent = Instantiate(bullet, bulletNewPos, spawnRotation);
+        bulletParent.transform.parent = BulletPos;
+        bulletParent.transform.localScale = new Vector3(1.5f, 1.5f, 0);
+    }
 
 
 

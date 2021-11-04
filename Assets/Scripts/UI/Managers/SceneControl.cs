@@ -6,29 +6,19 @@ using UnityEngine.UI;
 public class SceneControl : MonoBehaviour
 {
     public Image fader;
-    private static SceneControl instance;
-
     private GameObject player;
-
-    private void Awake()
-    {
-        if (instance == null)
-            instance = this;
-        else
-            Destroy(gameObject);
-    }
 
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
     }
 
-    public static void Transitionplayer(Vector3 pos)
+    public void Transitionplayer(Vector3 pos)
     {
-        instance.StartCoroutine(instance.Transition(pos));
+        StartCoroutine(Transition(pos));
     }
 
-    private IEnumerator Transition(Vector3 pos)
+    public IEnumerator Transition(Vector3 pos)
     {
         fader.gameObject.SetActive(true);
 

@@ -1,15 +1,48 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class Door : Interactable
 {
     public string target;
-    public GameObject SceneManager;
+    public string currentScene;
+    public GameObject managerDeCena;
+    public LoadNewScene loader;
 
+    public UnloadSceneNew unloader;
+    public bool UsedByCultist;
+    private void Start()
+    {
+        managerDeCena=GameObject.Find("SceneManager");
+        loader = FindObjectOfType<LoadNewScene>();
+        unloader = FindObjectOfType<UnloadSceneNew>();
+        if (GameObject.Find("CultistPlayer"))
+        {
+            UsedByCultist = true;
+        }
+        else
+        {
+            
+            UsedByCultist=false;
+        }
+    }
     public override void Interact()
     {
-        //SceneControl.Transitionplayer(target.transform.position);
-        SceneManager.GetComponent<ScreenManager>().LoadLevel(target);
+        if (UsedByCultist)
+        {
+
+            managerDeCena.GetComponent<ScreenManager>().LoadLevel(target);
+        }
+        else
+        {
+            if (loader == null || unloader==null || managerDeCena==null)
+            {
+                managerDeCena = GameObject.Find("SceneManager");
+                loader = FindObjectOfType<LoadNewScene>();
+                unloader = FindObjectOfType<UnloadSceneNew>();
+            }
+            loader.LoadSceneKeepingGun(target);
+            unloader.UnloadSceneNewWithGun(currentScene);
+        }
     }
 }

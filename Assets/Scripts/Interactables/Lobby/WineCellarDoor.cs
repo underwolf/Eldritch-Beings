@@ -5,17 +5,30 @@ using UnityEngine;
 public class WineCellarDoor : Interactable
 {
     public string target;
-    public GameObject SceneManager;
+    public string currentScene;
+    public GameObject sceneManager;
+    public LoadNewScene loader;
 
+    public UnloadSceneNew unloader;
+
+    private void Start()
+    {
+        sceneManager = GameObject.Find("sceneManager");
+        loader = FindObjectOfType<LoadNewScene>();
+    }
     public override void Interact()
     {
         if (PlayerPrefs.GetInt("WineCellarSeal") == 1)
         {
-            SceneManager.GetComponent<GetRoomText>().SetNote(4);
-            SceneManager.GetComponent<LobbyDoorClosed>().DoorClosedDialogue(SceneManager.GetComponent<GetRoomText>().currentNoteText);
-        } 
+            sceneManager.GetComponent<GetRoomText>().SetNote(4);
+            sceneManager.GetComponent<LobbyDoorClosed>().DoorClosedDialogue(sceneManager.GetComponent<GetRoomText>().currentNoteText);
+        }
         else
-            SceneManager.GetComponent<ScreenManager>().LoadLevel(target);
+        {
+            unloader.UnloadSceneNewWithGun(currentScene);
+            loader.LoadSceneKeepingGun(target);
+        }
+            
 
         //SceneControl.Transitionplayer(target.transform.position);
 

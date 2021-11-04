@@ -15,7 +15,7 @@ public class ScreenManager : MonoBehaviour
         }
         else if (Instance != this)
         {
-            Destroy(gameObject);
+           //
         }
     }
 
@@ -79,6 +79,7 @@ public class ScreenManager : MonoBehaviour
             AsyncOperation asyncScene = SceneManager.LoadSceneAsync(nextSceneName);
             asyncScene.allowSceneActivation = false;
 
+
             while (!asyncScene.isDone)
             {
                 if (asyncScene.progress >= 0.9f)
@@ -94,6 +95,7 @@ public class ScreenManager : MonoBehaviour
                     }
 
                     asyncScene.allowSceneActivation = true;
+  
                 }
 
                 yield return null;

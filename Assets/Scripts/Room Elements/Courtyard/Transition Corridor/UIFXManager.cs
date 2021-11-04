@@ -14,6 +14,7 @@ public class UIFXManager : MonoBehaviour
     public GameObject proximityPoint;
     private GameObject player;
 
+    public bool isCorridor=true;
     //this is the distance where the FX start to go up
     public float proximity = 100.0f;
 
@@ -25,13 +26,18 @@ public class UIFXManager : MonoBehaviour
 
     private void Update()
     {
-        dist = proximityPoint.transform.position.x - player.transform.position.x;
+        if (isCorridor)
+        {
+            dist = proximityPoint.transform.position.x - player.transform.position.x;
+            //this will regulate the volume of the audio based on proximity
+            scaryUIFXColor.a = Mathf.InverseLerp(proximity, 0.0f,
+                Vector3.Distance(proximityPoint.transform.position, player.transform.position));
 
-        //this will regulate the volume of the audio based on proximity
-        scaryUIFXColor.a = Mathf.InverseLerp(proximity, 0.0f,
-            Vector3.Distance(proximityPoint.transform.position, player.transform.position));
+            scaryUIFX.color = scaryUIFXColor;
+        }
 
-        scaryUIFX.color = scaryUIFXColor;
+
+
     }
 
     //use this function to disable the audio
