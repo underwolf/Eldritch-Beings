@@ -1377,7 +1377,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 295678900}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.87547, y: 5.0096126, z: 0.1490097}
+  m_LocalPosition: {x: -4.876463, y: 5.0096126, z: 0.1490097}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 344645666}
@@ -5809,7 +5809,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1054204778}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.87547, y: 5.0096126, z: 0.1490097}
+  m_LocalPosition: {x: -4.876463, y: 5.0096126, z: 0.1490097}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 887858380}
@@ -9202,7 +9202,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: Transition Corridor - Library
   currentScene: Lobby
-  sceneManager: {fileID: 0}
+  sceneManager: {fileID: 1888042971}
   loader: {fileID: 0}
   unloader: {fileID: 1254657960}
 --- !u!1 &1588336285
@@ -10953,9 +10953,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: Transition Corridor - Courtyard
   currentScene: Lobby
-  sceneManager: {fileID: 0}
+  sceneManager: {fileID: 1888042971}
   loader: {fileID: 0}
-  unloader: {fileID: 0}
+  unloader: {fileID: 1254657960}
 --- !u!61 &1822266587
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12339,7 +12339,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &2097241511
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12347,7 +12347,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2097241510}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
