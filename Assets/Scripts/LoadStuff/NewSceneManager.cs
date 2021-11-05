@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Experimental.Rendering.Universal;
 public class NewSceneManager : MonoBehaviour
 {
     public static NewSceneManager newManager;
@@ -23,6 +24,17 @@ public class NewSceneManager : MonoBehaviour
         rendererCanvas = GetComponent<Canvas>();
         rendererCanvas.worldCamera = Camera.main;
     }
+
+    public void ReloadScene(string sceneToLoad)
+    {
+        GameObject.FindObjectOfType<Light2D>().enabled = false;
+        GameObject.Find("Player").tag = "test";
+        UnloadScene(sceneToLoad);
+
+        SceneManager.LoadSceneAsync(sceneToLoad, LoadSceneMode.Additive);
+
+    }
+
     private void Update()
     {
         if (rendererCanvas.worldCamera == null)
