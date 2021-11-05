@@ -294,6 +294,22 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0.42967543
       objectReference: {fileID: 0}
+    - target: {fileID: 5361726673250835424, guid: 0a96ee9cb5375854ba4abb62c0db2436, type: 3}
+      propertyPath: target
+      value: Entrance
+      objectReference: {fileID: 0}
+    - target: {fileID: 5361726673250835424, guid: 0a96ee9cb5375854ba4abb62c0db2436, type: 3}
+      propertyPath: unloader
+      value: 
+      objectReference: {fileID: 474365561}
+    - target: {fileID: 5361726673250835424, guid: 0a96ee9cb5375854ba4abb62c0db2436, type: 3}
+      propertyPath: currentScene
+      value: Entrance
+      objectReference: {fileID: 0}
+    - target: {fileID: 5361726673250835424, guid: 0a96ee9cb5375854ba4abb62c0db2436, type: 3}
+      propertyPath: managerDeCena
+      value: 
+      objectReference: {fileID: 1752665849}
     - target: {fileID: 6418561980359034816, guid: 0a96ee9cb5375854ba4abb62c0db2436, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -3207,6 +3223,11 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 8397076493729776953, guid: 3f5508585a065a545bb4dbcbaef0ff1a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3f5508585a065a545bb4dbcbaef0ff1a, type: 3}
+--- !u!1 &1752665849 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8397076493729776954, guid: 3f5508585a065a545bb4dbcbaef0ff1a, type: 3}
+  m_PrefabInstance: {fileID: 1752665848}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1791258708
 GameObject:
   m_ObjectHideFlags: 0

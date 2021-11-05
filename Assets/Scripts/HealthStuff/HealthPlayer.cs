@@ -6,11 +6,18 @@ using UnityEngine.SceneManagement;
 public class HealthPlayer : MonoBehaviour
 {
 
-    public int playerLayer, EnemyLayer, numberOfFlahses;
- 
- 
+    [Header("LOADING STUFF")]
+    public GameObject managerDeCena;
+    public bool UsedByCultist;
+
+
+    [Header("FRAMES LAYERS AND RENDERING STUFF ")]
+    public int playerLayer;
+    public int EnemyLayer;
+    public int numberOfFlahses;
     public float IframeTime;
-    public SpriteRenderer[] m_Renderer,m_RendererAim;
+    public SpriteRenderer[] m_Renderer;
+    public SpriteRenderer[] m_RendererAim;
     public Color m_HurtColor;
 
     [Header("HEALTH STUFF")]
@@ -18,18 +25,28 @@ public class HealthPlayer : MonoBehaviour
     public float m_HealTimer=1.0f,m_HealAmount;
     private float m_CurrentHealth, m_StartHealing;
     private bool shouldHeal,shouldUpdate=true;
-
+    [HideInInspector]
+    public string objectID;
     private PlayerMovement playerMoveScript;
 
     [Header("SCREEN EFFECTS")]
     public Material screeneffect;
     public RawImage screenImage;
     public float fade;
-
+    
     [Header("CULTIST")]
     public bool isCultist;
+
+    private bool shouldLoad;
+    private bool shouldCheckLife;
+
+    private void Awake()
+    {
+        objectID = name + transform.position.ToString() + transform.eulerAngles.ToString();
+    }
     private void Start()
     {
+        shouldCheckLife = true;
         screeneffect = screenImage.material;
         m_CurrentHealth = m_MaxHealth;
         if (!isCultist)
@@ -37,19 +54,45 @@ public class HealthPlayer : MonoBehaviour
             playerMoveScript = FindObjectOfType<PlayerMovement>();
         }
         Physics2D.IgnoreLayerCollision(playerLayer, EnemyLayer, false);
+        managerDeCena = GameObject.Find("SceneManager");
+        //LOADING STUFF
+        if (GameObject.Find("CultistPlayer"))
+        {
+            UsedByCultist = true;
+        }
+        else
+        {
+
+            UsedByCultist = false;
+        }
     }
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            FindObjectOfType<CharacterController2D>().Die();
+            if (!isCultist)
+            {
+                playerMoveScript.canMove = false;
+            }
+            shouldHeal = false;
+            shouldUpdate = false;
+            Physics2D.IgnoreLayerCollision(playerLayer, EnemyLayer, true);
+            shouldLoad = true;
+            ReloadScene();
+            Debug.Log("DIE");
+        }
         if (shouldUpdate)
         {
             fade = Mathf.Lerp(m_CurrentHealth, m_MaxHealth, Time.deltaTime);
-            Debug.Log(fade * 0.01f);
+
             screeneffect.SetFloat("_FadeController", fade * 0.01f);
         }
 
         
-        if (m_CurrentHealth <= 0 )
+        if (m_CurrentHealth <= 0 && shouldCheckLife == true)
         {
+            shouldCheckLife = false;
             shouldHeal = false;
             die();
         }
@@ -76,10 +119,7 @@ public class HealthPlayer : MonoBehaviour
         shouldHeal = false;
         SetLife(-amountDamaged, 0.0f, m_MaxHealth);
         m_StartHealing = Time.time + m_HealTimer;
-        if (m_CurrentHealth <= 0)
-        {
-            die();
-        }
+
     }
     public void Recover(float value)
     {
@@ -93,7 +133,7 @@ public class HealthPlayer : MonoBehaviour
 
     public void die()
     {
-        Debug.ClearDeveloperConsole();
+        shouldCheckLife = false;
         FindObjectOfType<CharacterController2D>().Die();
         if (!isCultist)
         {
@@ -102,11 +142,29 @@ public class HealthPlayer : MonoBehaviour
         shouldHeal = false;
         shouldUpdate = false;
         Physics2D.IgnoreLayerCollision(playerLayer, EnemyLayer, true);
-        Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
-        
+        shouldLoad = true;
+        ReloadScene();
+
         Debug.Log("DIE");
 
     }
+
+    public void ReloadScene()
+    {
+        if (UsedByCultist)
+        {
+            managerDeCena = GameObject.Find("SceneManager");
+            managerDeCena.GetComponent<ScreenManager>().LoadLevel(SceneManager.GetActiveScene().name);
+        }
+        if (shouldLoad && !UsedByCultist)
+        {
+            FindObjectOfType<NewSceneManager>().ReloadScene(SceneManager.GetSceneAt(SceneManager.sceneCount - 1).name);
+            
+            shouldLoad = false;
+        }
+    }
+
+
     private IEnumerator Iframe()
     {
         Physics2D.IgnoreLayerCollision(playerLayer, EnemyLayer, true);

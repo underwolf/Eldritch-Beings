@@ -40,22 +40,26 @@ public class RoomManager : MonoBehaviour
             flowchart.ExecuteBlock("NyarlathotepDialogue1");   
         }
 
-        if (flowchart.GetBooleanVariable("TutorialComplete") && Input.GetKey(KeyCode.E))
+        if (!GameObject.Find("CultistPlayer"))
         {
-            flowchart.SetBooleanVariable("TutorialComplete2", true);
+            if (flowchart.GetBooleanVariable("TutorialComplete") && Input.GetKey(KeyCode.E))
+            {
+                flowchart.SetBooleanVariable("TutorialComplete2", true);
+            }
+
+            if (flowchart.GetBooleanVariable("TutorialComplete2"))
+            {
+                flowchart.SendFungusMessage(fungusMessage);
+
+                player.GetComponent<PlayerMovement>().isCutscene = false;
+                fakeSwitchL.SetActive(false);
+                fakeSwitchR.SetActive(false);
+                switchL.SetActive(true);
+                switchR.SetActive(true);
+
+                wallMonsterScript.Activate();
+            }
         }
 
-        if (flowchart.GetBooleanVariable("TutorialComplete2"))
-        {
-            flowchart.SendFungusMessage(fungusMessage);
-
-            player.GetComponent<PlayerMovement>().isCutscene = false;
-            fakeSwitchL.SetActive(false);
-            fakeSwitchR.SetActive(false);
-            switchL.SetActive(true);
-            switchR.SetActive(true);
-
-            wallMonsterScript.Activate();
-        }
     }
 }
