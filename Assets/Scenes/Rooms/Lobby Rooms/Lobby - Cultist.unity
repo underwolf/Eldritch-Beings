@@ -1063,6 +1063,10 @@ PrefabInstance:
       value: UI FX Canvas
       objectReference: {fileID: 0}
     - target: {fileID: 921762835027322414, guid: d5d69a13949bbe245bac655b9a3642b6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 921762835027322414, guid: d5d69a13949bbe245bac655b9a3642b6, type: 3}
       propertyPath: m_TagString
       value: test
       objectReference: {fileID: 0}
@@ -4223,7 +4227,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: Descent - Cultist
-  SceneManager: {fileID: 1222210312}
+  currentScene: 
+  managerDeCena: {fileID: 0}
+  loader: {fileID: 0}
+  unloader: {fileID: 0}
+  UsedByCultist: 0
 --- !u!61 &1026209129
 BoxCollider2D:
   m_ObjectHideFlags: 0

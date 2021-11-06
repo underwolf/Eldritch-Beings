@@ -30,7 +30,7 @@ public class Door : Interactable
     {
         if (UsedByCultist)
         {
-
+            Time.timeScale = 1.0f;
             managerDeCena.GetComponent<ScreenManager>().LoadLevel(target);
         }
         else

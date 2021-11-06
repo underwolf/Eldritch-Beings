@@ -19,5 +19,6 @@ public class SelectedElementDisplay : MonoBehaviour
     public void setSprite(int element)
     {
         m_Renderer.sprite = m_Elements[element];
+        FindObjectOfType<ShowChossenSimbol>().showSymbol(element);
     }
 }

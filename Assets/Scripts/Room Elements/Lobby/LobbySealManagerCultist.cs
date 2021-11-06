@@ -17,10 +17,10 @@ public class LobbySealManagerCultist : MonoBehaviour
             atticSeal.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 0f, 1f);
 
         if (PlayerPrefs.GetInt("CourtyardSeal") == 1)
-            wineCellarSeal.GetComponent<SpriteRenderer>().color = new Color(0f, 1f, 0f, 1f);
+            courtyardSeal.GetComponent<SpriteRenderer>().color = new Color(0f, 0f, 1f, 1f);
 
         if (PlayerPrefs.GetInt("WineCellarSeal") == 1)
-            courtyardSeal.GetComponent<SpriteRenderer>().color = new Color(0f, 0f, 1f, 1f);
+            wineCellarSeal.GetComponent<SpriteRenderer>().color = new Color(0f, 1f, 0f, 1f);
 
 
 
@@ -31,10 +31,10 @@ public class LobbySealManagerCultist : MonoBehaviour
             atticSeal.GetComponent<SpriteRenderer>().color = new Color(0f, 0f, 0f, 1f);
 
         if (PlayerPrefs.GetInt("CourtyardSeal") == 0)
-            wineCellarSeal.GetComponent<SpriteRenderer>().color = new Color(0f, 0f, 0f, 1f);
+            courtyardSeal.GetComponent<SpriteRenderer>().color = new Color(0f, 0f, 0f, 1f);
 
         if (PlayerPrefs.GetInt("WineCellarSeal") == 0)
-            courtyardSeal.GetComponent<SpriteRenderer>().color = new Color(0f, 0f, 0f, 1f);
+            wineCellarSeal.GetComponent<SpriteRenderer>().color = new Color(0f, 0f, 0f, 1f);
 
         if (PlayerPrefs.GetInt("LibrarySeal") == 0
             && PlayerPrefs.GetInt("AtticSeal") == 0

@@ -31,7 +31,6 @@ public class EnterDetectiveMode : MonoBehaviour
             {
                 ativadores.SetActive(true);
             }
-            SetObjectColors("#00FFFA");
             isActive = true;
         }
         else if(isActive)
@@ -41,7 +40,6 @@ public class EnterDetectiveMode : MonoBehaviour
             {
                 ativadores.SetActive(false);
             }
-            SetObjectColors("#FDF400");
             isActive = false;
 
         }
@@ -91,12 +89,4 @@ public class EnterDetectiveMode : MonoBehaviour
         }
     }
 
-    public void SetObjectColors(string colorHex)
-    {
-        foreach (var sprite in GameObject.FindGameObjectsWithTag("Clue"))
-        {
-            ColorUtility.TryParseHtmlString(colorHex, out now);
-            sprite.gameObject.GetComponent<SpriteRenderer>().color = now;
-        }
-    }
 }
