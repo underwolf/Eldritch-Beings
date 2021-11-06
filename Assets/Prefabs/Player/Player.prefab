@@ -628,7 +628,7 @@ MonoBehaviour:
   isCultist: 0
   movementSpeed: 40
   groundCollider: {fileID: 0}
-  slopeCheckDistance: 1
+  slopeCheckDistance: 2
   slopeSideAngle: 0
   onSlopeMaterial: {fileID: 6200000, guid: 688cfaf43e877ff4fabe49dbb9fc0910, type: 2}
   OfSlopeMaterial: {fileID: 6200000, guid: 1c1228c73ca766942b5dd4735257561b, type: 2}
@@ -816,6 +816,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc8f3fdd4c0497f478150761b2063451, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  managerDeCena: {fileID: 0}
+  UsedByCultist: 0
   playerLayer: 6
   EnemyLayer: 7
   numberOfFlahses: 3
@@ -849,6 +851,7 @@ MonoBehaviour:
   m_MaxHealth: 100
   m_HealTimer: 5
   m_HealAmount: 0.5
+  objectID: 
   screeneffect: {fileID: 0}
   screenImage: {fileID: 2166621594049115209}
   fade: 0
