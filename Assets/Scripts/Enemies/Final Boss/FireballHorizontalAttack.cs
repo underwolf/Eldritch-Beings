@@ -51,12 +51,18 @@ public class FireballHorizontalAttack : MonoBehaviour
         int i = 0;
 
         GameObject warningObj = Instantiate(projectileWarning, new Vector2(spawnLocations[i].transform.position.x + 20f,
-                spawnLocations[2].transform.position.y), Quaternion.identity);
+                spawnLocations[0].transform.position.y), Quaternion.identity);
 
         GameObject warningObj1 = Instantiate(projectileWarning, new Vector2(spawnLocations[i].transform.position.x + 20f,
-                spawnLocations[5].transform.position.y), Quaternion.identity);
+                spawnLocations[2].transform.position.y), Quaternion.identity);
 
         GameObject warningObj2 = Instantiate(projectileWarning, new Vector2(spawnLocations[i].transform.position.x + 20f,
+                spawnLocations[4].transform.position.y), Quaternion.identity);
+
+        GameObject warningObj3 = Instantiate(projectileWarning, new Vector2(spawnLocations[i].transform.position.x + 20f,
+                spawnLocations[6].transform.position.y), Quaternion.identity);
+
+        GameObject warningObj4 = Instantiate(projectileWarning, new Vector2(spawnLocations[i].transform.position.x + 20f,
                 spawnLocations[8].transform.position.y), Quaternion.identity);
 
 
@@ -65,6 +71,8 @@ public class FireballHorizontalAttack : MonoBehaviour
         Destroy(warningObj);
         Destroy(warningObj1);
         Destroy(warningObj2);
+        Destroy(warningObj3);
+        Destroy(warningObj4);
     }
 
     private IEnumerator SpawnProjectiles()

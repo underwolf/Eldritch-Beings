@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MinibossBreakableSealManager : MonoBehaviour
 {
-    private int health = 50;
+    private int health = 75;
     public bool isHealthy = true;
 
     public GameObject azathothSeal;
