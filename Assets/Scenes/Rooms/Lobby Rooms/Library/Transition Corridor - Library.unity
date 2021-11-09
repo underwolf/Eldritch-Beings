@@ -148,7 +148,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 522605852}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.66131, y: -0.40352583, z: 0.1490097}
+  m_LocalPosition: {x: -9.662011, y: -0.40352583, z: 0.1490097}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1028654145}
@@ -192,7 +192,7 @@ GameObject:
   - component: {fileID: 605463310}
   - component: {fileID: 605463312}
   - component: {fileID: 605463311}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: EnterDoor
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -1379,7 +1379,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1087233196}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.66131, y: -0.40352583, z: 0.1490097}
+  m_LocalPosition: {x: -9.662011, y: -0.40352583, z: 0.1490097}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1379269096}
@@ -1507,7 +1507,7 @@ GameObject:
   - component: {fileID: 1158203342}
   - component: {fileID: 1158203341}
   - component: {fileID: 1158203340}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: ExitDoor
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -1542,7 +1542,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: Library
   currentScene: Transition Corridor - Library
-  sceneManager: {fileID: 0}
+  managerDeCena: {fileID: 0}
   loader: {fileID: 0}
   unloader: {fileID: 2139828919}
   UsedByCultist: 0

@@ -275,7 +275,7 @@ GameObject:
   - component: {fileID: 228814182}
   - component: {fileID: 228814184}
   - component: {fileID: 228814183}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: EnterDoor
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -780,7 +780,7 @@ GameObject:
   - component: {fileID: 782932528}
   - component: {fileID: 782932527}
   - component: {fileID: 782932526}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: ExitDoor
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -815,7 +815,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: Wine Cellar
   currentScene: Transition Corridor - Wine Cellar
-  sceneManager: {fileID: 0}
+  managerDeCena: {fileID: 0}
   loader: {fileID: 0}
   unloader: {fileID: 1266335776}
   UsedByCultist: 0
@@ -2617,7 +2617,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1918399947}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.851309, y: -0.35352612, z: 0.1490097}
+  m_LocalPosition: {x: -8.85201, y: -0.35352612, z: 0.1490097}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1458105922}
@@ -2775,7 +2775,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2144454706}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.851309, y: -0.35352612, z: 0.1490097}
+  m_LocalPosition: {x: -8.85201, y: -0.35352612, z: 0.1490097}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 306629406}

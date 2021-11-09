@@ -912,11 +912,6 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 8397076493729776953, guid: 3f5508585a065a545bb4dbcbaef0ff1a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3f5508585a065a545bb4dbcbaef0ff1a, type: 3}
---- !u!1 &294438576 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8397076493729776954, guid: 3f5508585a065a545bb4dbcbaef0ff1a, type: 3}
-  m_PrefabInstance: {fileID: 294438575}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &304789279
 GameObject:
   m_ObjectHideFlags: 0
@@ -1368,7 +1363,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 414671918}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 45.950005, y: -8.513826, z: -0.8214035}
+  m_LocalPosition: {x: 45.94901, y: -8.513826, z: -0.8214035}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 810856121}
@@ -7390,7 +7385,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 857281615}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 45.950005, y: -8.513826, z: -0.8214035}
+  m_LocalPosition: {x: 45.94901, y: -8.513826, z: -0.8214035}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 315105945}
@@ -9109,7 +9104,7 @@ GameObject:
   - component: {fileID: 1403600536}
   - component: {fileID: 1403600535}
   - component: {fileID: 1403600534}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: ExitDoor
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -9143,7 +9138,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: Lobby - Cultist
-  SceneManager: {fileID: 294438576}
+  currentScene: 
+  managerDeCena: {fileID: 0}
+  loader: {fileID: 0}
+  unloader: {fileID: 0}
+  UsedByCultist: 0
 --- !u!61 &1403600535
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -243,7 +243,7 @@ GameObject:
   - component: {fileID: 30700747}
   - component: {fileID: 30700749}
   - component: {fileID: 30700748}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: EnterDoor
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -715,7 +715,7 @@ GameObject:
   - component: {fileID: 120304624}
   - component: {fileID: 120304623}
   - component: {fileID: 120304622}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: ExitDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -968,7 +968,7 @@ GameObject:
   - component: {fileID: 180588017}
   - component: {fileID: 180588019}
   - component: {fileID: 180588018}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: EnterDoor
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -1468,7 +1468,7 @@ GameObject:
   - component: {fileID: 558027339}
   - component: {fileID: 558027338}
   - component: {fileID: 558027337}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: ExitDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1794,7 +1794,7 @@ GameObject:
   - component: {fileID: 696674690}
   - component: {fileID: 696674689}
   - component: {fileID: 696674688}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: ExitDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2761,7 +2761,7 @@ GameObject:
   - component: {fileID: 990026843}
   - component: {fileID: 990026845}
   - component: {fileID: 990026844}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: EnterDoor
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -2870,7 +2870,7 @@ GameObject:
   - component: {fileID: 1034999222}
   - component: {fileID: 1034999224}
   - component: {fileID: 1034999223}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: EnterDoor
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -3683,7 +3683,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 921762835027322415, guid: d5d69a13949bbe245bac655b9a3642b6, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 921762835027322415, guid: d5d69a13949bbe245bac655b9a3642b6, type: 3}
       propertyPath: m_AnchorMax.x
@@ -4683,7 +4683,7 @@ GameObject:
   - component: {fileID: 1672134350}
   - component: {fileID: 1672134352}
   - component: {fileID: 1672134351}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: EnterDoor
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -4806,7 +4806,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1809569325}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.66131, y: -114.94352, z: 0.1490097}
+  m_LocalPosition: {x: -9.662011, y: -114.94352, z: 0.1490097}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1634534196}
@@ -5144,7 +5144,7 @@ GameObject:
   - component: {fileID: 1916293590}
   - component: {fileID: 1916293589}
   - component: {fileID: 1916293588}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: ExitDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5398,7 +5398,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: Final Boss
   currentScene: Descent
-  sceneManager: {fileID: 0}
+  managerDeCena: {fileID: 0}
   loader: {fileID: 0}
   unloader: {fileID: 966227917}
   UsedByCultist: 0
@@ -5631,7 +5631,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1973263212}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.66131, y: -114.94352, z: 0.1490097}
+  m_LocalPosition: {x: -9.662011, y: -114.94352, z: 0.1490097}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 145261271}

@@ -10079,7 +10079,7 @@ GameObject:
   - component: {fileID: 1629865410}
   - component: {fileID: 1629865409}
   - component: {fileID: 1629865408}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: OutsideDoor
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -10113,7 +10113,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: Outside - Cultist
-  SceneManager: {fileID: 1645965437}
+  currentScene: 
+  managerDeCena: {fileID: 0}
+  loader: {fileID: 0}
+  unloader: {fileID: 0}
+  UsedByCultist: 0
 --- !u!61 &1629865409
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11015,7 +11019,7 @@ GameObject:
   - component: {fileID: 2067273976}
   - component: {fileID: 2067273975}
   - component: {fileID: 2067273974}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: EndlessCorridorDoor
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -11049,7 +11053,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: Endless Corridor - Cultist
-  SceneManager: {fileID: 1645965437}
+  currentScene: 
+  managerDeCena: {fileID: 0}
+  loader: {fileID: 0}
+  unloader: {fileID: 0}
+  UsedByCultist: 0
 --- !u!61 &2067273975
 BoxCollider2D:
   m_ObjectHideFlags: 0

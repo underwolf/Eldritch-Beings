@@ -1025,7 +1025,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 463581900}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.05131, y: 0.17647362, z: 0.1490097}
+  m_LocalPosition: {x: -10.052011, y: 0.17647362, z: 0.1490097}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1436181786}
@@ -1349,7 +1349,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 515352962}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.05131, y: 0.17647362, z: 0.1490097}
+  m_LocalPosition: {x: -10.052011, y: 0.17647362, z: 0.1490097}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 799209551}
@@ -1429,7 +1429,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: Attic
   currentScene: Transition Corridor - Attic
-  sceneManager: {fileID: 1051366256}
+  managerDeCena: {fileID: 0}
   loader: {fileID: 0}
   unloader: {fileID: 1994530925}
   UsedByCultist: 0
@@ -1521,7 +1521,7 @@ GameObject:
   - component: {fileID: 617646058}
   - component: {fileID: 617646060}
   - component: {fileID: 617646059}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: EnterDoor
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -2656,11 +2656,6 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 8397076493729776953, guid: 3f5508585a065a545bb4dbcbaef0ff1a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3f5508585a065a545bb4dbcbaef0ff1a, type: 3}
---- !u!1 &1051366256 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8397076493729776954, guid: 3f5508585a065a545bb4dbcbaef0ff1a, type: 3}
-  m_PrefabInstance: {fileID: 1051366255}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1220150724
 GameObject:
   m_ObjectHideFlags: 0

@@ -6933,7 +6933,7 @@ GameObject:
   - component: {fileID: 1288369744}
   - component: {fileID: 1288369746}
   - component: {fileID: 1288369745}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: EnterDoor
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -8122,7 +8122,7 @@ GameObject:
   - component: {fileID: 1712843656}
   - component: {fileID: 1712843655}
   - component: {fileID: 1712843654}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: ExitDoor
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -8156,7 +8156,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: Library
-  SceneManager: {fileID: 1693424679}
+  currentScene: 
+  managerDeCena: {fileID: 0}
+  loader: {fileID: 0}
+  unloader: {fileID: 0}
+  UsedByCultist: 0
 --- !u!61 &1712843655
 BoxCollider2D:
   m_ObjectHideFlags: 0

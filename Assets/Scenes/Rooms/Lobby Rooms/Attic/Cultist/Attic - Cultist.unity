@@ -1039,7 +1039,7 @@ GameObject:
   - component: {fileID: 422654469}
   - component: {fileID: 422654471}
   - component: {fileID: 422654470}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: EnterDoor
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -3111,7 +3111,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: Lobby - Cultist
-  SceneManager: {fileID: 799544402}
+  currentScene: 
+  managerDeCena: {fileID: 0}
+  loader: {fileID: 0}
+  unloader: {fileID: 0}
+  UsedByCultist: 0
 --- !u!61 &1143275514
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3394,7 +3398,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1281881037}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.165471, y: 0.8896127, z: -0.8214035}
+  m_LocalPosition: {x: -8.166464, y: 0.8896127, z: -0.8214035}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1002467760}
@@ -11211,7 +11215,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2120264905}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.165471, y: 0.8896127, z: -0.8214035}
+  m_LocalPosition: {x: -8.166464, y: 0.8896127, z: -0.8214035}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1574687779}

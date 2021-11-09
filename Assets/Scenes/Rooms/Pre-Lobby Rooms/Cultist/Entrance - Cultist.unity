@@ -261,7 +261,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3408727}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.541311, y: -0.86352587, z: -0.8214035}
+  m_LocalPosition: {x: -8.542012, y: -0.86352587, z: -0.8214035}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 279893680}
@@ -6577,7 +6577,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1070041419}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.541311, y: -0.86352587, z: -0.8214035}
+  m_LocalPosition: {x: -8.542012, y: -0.86352587, z: -0.8214035}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1944606262}
@@ -6890,7 +6890,7 @@ GameObject:
   - component: {fileID: 1270509175}
   - component: {fileID: 1270509174}
   - component: {fileID: 1270509173}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: EndlessCorridorDoor
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -6925,11 +6925,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: Endless Corridor - Cultist
   currentScene: 
-  sceneManager: {fileID: 0}
+  managerDeCena: {fileID: 0}
   loader: {fileID: 0}
   unloader: {fileID: 0}
   UsedByCultist: 0
-  useNewLoading: 0
 --- !u!61 &1270509174
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7802,7 +7801,7 @@ GameObject:
   - component: {fileID: 2143396189}
   - component: {fileID: 2143396188}
   - component: {fileID: 2143396187}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: OutsideDoor
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -7837,11 +7836,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: Outside - Cultist
   currentScene: 
-  sceneManager: {fileID: 0}
+  managerDeCena: {fileID: 0}
   loader: {fileID: 0}
   unloader: {fileID: 0}
   UsedByCultist: 0
-  useNewLoading: 0
 --- !u!61 &2143396188
 BoxCollider2D:
   m_ObjectHideFlags: 0
