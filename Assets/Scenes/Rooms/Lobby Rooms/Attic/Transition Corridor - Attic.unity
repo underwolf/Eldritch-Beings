@@ -1429,7 +1429,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: Attic
   currentScene: Transition Corridor - Attic
-  sceneManager: {fileID: 1051366256}
+  managerDeCena: {fileID: 0}
   loader: {fileID: 0}
   unloader: {fileID: 1994530925}
   UsedByCultist: 0
@@ -2656,11 +2656,6 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 8397076493729776953, guid: 3f5508585a065a545bb4dbcbaef0ff1a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3f5508585a065a545bb4dbcbaef0ff1a, type: 3}
---- !u!1 &1051366256 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8397076493729776954, guid: 3f5508585a065a545bb4dbcbaef0ff1a, type: 3}
-  m_PrefabInstance: {fileID: 1051366255}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1220150724
 GameObject:
   m_ObjectHideFlags: 0

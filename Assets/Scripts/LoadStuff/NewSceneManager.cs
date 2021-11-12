@@ -9,6 +9,7 @@ public class NewSceneManager : MonoBehaviour
     bool gameStart;
     public Canvas rendererCanvas;
     public string scenetoLoad;
+    private bool PauseMenuOpen;
 
     private void Awake()
     {
@@ -40,6 +41,22 @@ public class NewSceneManager : MonoBehaviour
         if (rendererCanvas.worldCamera == null)
         {
             rendererCanvas.worldCamera = Camera.main;
+        }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (PauseMenuOpen)
+            {
+                UnloadScene("PauseMenu");
+                PauseMenuOpen = false;
+                Time.timeScale = 1;
+            }
+            else
+            {
+                PauseMenuOpen = true;
+                SceneManager.LoadSceneAsync("PauseMenu", LoadSceneMode.Additive);
+                Time.timeScale = 0;
+            }
+
         }
     }
     public void UnloadScene(string scenetoUnload)
