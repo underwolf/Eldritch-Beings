@@ -6,10 +6,21 @@ public class ResetBell : Interactable
 {
     public string target;
     public GameObject SceneManager;
+    public string currentScene;
+    public LoadNewScene loader;
+
+    public UnloadSceneNew unloader;
+
+    private void Start()
+    {
+        SceneManager = GameObject.Find("SceneManager");
+        loader = FindObjectOfType<LoadNewScene>();
+    }
 
     public override void Interact()
     {
-        SceneManager.GetComponent<ScreenManager>().LoadLevel(target);
+        unloader.UnloadSceneNewWithGun(currentScene);
+        loader.LoadSceneKeepingGun(target);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
