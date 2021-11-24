@@ -24406,8 +24406,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1256356050}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.5, y: 0.7186, z: 0}
-  m_LocalScale: {x: 3, y: 3.6095, z: 1}
+  m_LocalPosition: {x: -8.5, y: -0.18, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 438554084}
   m_RootOrder: 3
@@ -28360,8 +28360,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1450372876}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 76, y: 0.4251, z: 0}
-  m_LocalScale: {x: 3, y: 3.4035, z: 1}
+  m_LocalPosition: {x: 76, y: -0.18, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 438554084}
   m_RootOrder: 4
@@ -36441,6 +36441,10 @@ PrefabInstance:
     - target: {fileID: 921762835027322414, guid: d5d69a13949bbe245bac655b9a3642b6, type: 3}
       propertyPath: m_Name
       value: UI FX Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 921762835027322414, guid: d5d69a13949bbe245bac655b9a3642b6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 921762835027322415, guid: d5d69a13949bbe245bac655b9a3642b6, type: 3}
       propertyPath: m_Pivot.x

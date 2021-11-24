@@ -283,8 +283,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 139637179}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.5, y: 0.8473, z: 0}
-  m_LocalScale: {x: 3, y: 3.7, z: 1}
+  m_LocalPosition: {x: -8.5, y: -0.14, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 1403468247}
   m_RootOrder: 3
@@ -1400,11 +1400,6 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 8397076493729776953, guid: 3f5508585a065a545bb4dbcbaef0ff1a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3f5508585a065a545bb4dbcbaef0ff1a, type: 3}
---- !u!1 &456385335 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8397076493729776954, guid: 3f5508585a065a545bb4dbcbaef0ff1a, type: 3}
-  m_PrefabInstance: {fileID: 456385334}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &478236579
 GameObject:
   m_ObjectHideFlags: 1
@@ -7001,7 +6996,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 760740752}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.541311, y: -0.86352587, z: -0.8214035}
+  m_LocalPosition: {x: -8.426857, y: -0.86352587, z: -0.8214035}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 927960948}
@@ -7644,8 +7639,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1225576448}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 76, y: 1.2534, z: 0}
-  m_LocalScale: {x: 3, y: 3.985, z: 1}
+  m_LocalPosition: {x: 76, y: -0.16, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 1403468247}
   m_RootOrder: 4
@@ -7663,7 +7658,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: Attic - Cultist
-  SceneManager: {fileID: 456385335}
+  currentScene: 
+  managerDeCena: {fileID: 0}
+  loader: {fileID: 0}
+  unloader: {fileID: 0}
+  UsedByCultist: 0
 --- !u!61 &1225576451
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9048,7 +9047,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1713583867}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.541311, y: -0.86352587, z: -0.8214035}
+  m_LocalPosition: {x: -8.426857, y: -0.86352587, z: -0.8214035}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1110222295}
