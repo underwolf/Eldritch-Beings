@@ -53,10 +53,14 @@
 			<destination>{88851822-8b25-4418-ba86-84e8a762ebd3}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{c2dbba42-3e60-4024-a2bc-9f1155ca0418}</destination>
+			<destination>{ccb54ffc-c890-45b2-8fcf-c7956adc241b}</destination>
 		</relationship>
 	</object>
-	<object class="EventAutomatableProperties" id="{5570e62d-5e54-413a-93e9-61ed95c4d6bd}" />
+	<object class="EventAutomatableProperties" id="{5570e62d-5e54-413a-93e9-61ed95c4d6bd}">
+		<property name="maxVoices">
+			<value>2</value>
+		</property>
+	</object>
 	<object class="MarkerTrack" id="{49b6f5dd-1571-488b-9b25-0a3fb471853e}" />
 	<object class="GroupTrack" id="{11c5f93e-ef13-48d0-b5a8-1db87417b5ab}">
 		<relationship name="modules">
@@ -89,8 +93,14 @@
 	</object>
 	<object class="MixerBusPanner" id="{88851822-8b25-4418-ba86-84e8a762ebd3}" />
 	<object class="MultiSound" id="{535a508a-6e75-40e8-9fb5-a6e251b07cc2}">
+		<property name="triggerProbability">
+			<value>40</value>
+		</property>
 		<property name="length">
 			<value>8.4581632653061227</value>
+		</property>
+		<property name="playlistMode">
+			<value>1</value>
 		</property>
 		<relationship name="modulators">
 			<destination>{1f743a6d-99de-4cff-b958-9c801f033c32}</destination>
