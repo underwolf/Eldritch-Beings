@@ -13,6 +13,9 @@ public class LeapAttack : MonoBehaviour
     public GameObject projectileWarning;
     public GameObject leapPosition;
 
+    public Animator anim;
+
+
     public void Attack()
     {
         player = GameObject.FindGameObjectWithTag("Player");
@@ -85,7 +88,7 @@ public class LeapAttack : MonoBehaviour
     {
         rb.constraints = RigidbodyConstraints2D.None;
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;
-
+        anim.SetTrigger("Jump");
         rb.velocity = new Vector2(0, -14f);
     }
 }

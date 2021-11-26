@@ -12,6 +12,9 @@ public class ChargeAttack : MonoBehaviour
     [Header("Testing")]
     public bool testAttack = false;
 
+    public Animator anim;
+
+
     private void Update()
     {
         if (testAttack)
@@ -74,7 +77,7 @@ public class ChargeAttack : MonoBehaviour
         yield return new WaitForSeconds(2f);
 
         transform.GetChild(0).gameObject.GetComponent<ParticleSystem>().Stop();
-
+        anim.SetTrigger("Charge");
         float time = 0;
 
         while (time < duration)
@@ -87,5 +90,6 @@ public class ChargeAttack : MonoBehaviour
         transform.position = targetPosition;
 
         yield return new WaitForSeconds(1.5f);
+        anim.SetTrigger("ChargeEnd");
     }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FinalBossHealthManager : MonoBehaviour
 {
-    public int health = 100;
+    public int health = 120;
     public bool isHealthy = false;
 
     public GameObject sceneManager;

@@ -12,6 +12,7 @@ public class NoteText : MonoBehaviour
     private string currentNoteText;
     private Note notesStruct;
     public TMP_Text notesTextUI;
+    public TMP_Text notesIdUI;
 
     private void Awake()
     {
@@ -25,14 +26,15 @@ public class NoteText : MonoBehaviour
             if(note.id == id)
             {
                 currentNoteText = note.noteText;
-                UpdateNote(currentNoteText);
+                UpdateNote(currentNoteText, id);
             }
         }
     }
 
-    public void UpdateNote(string text)
+    public void UpdateNote(string text, int id)
     {
         notesTextUI.text = text;
+        notesIdUI.text = id.ToString();
     }
 
     private Note LoadNote()

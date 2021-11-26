@@ -9,6 +9,7 @@ public class ProjectileAttack : MonoBehaviour
     public GameObject projectileWarning;
 
     public bool testAttack = false;
+    public Animator anim;
 
     private void Start()
     {
@@ -26,6 +27,7 @@ public class ProjectileAttack : MonoBehaviour
 
     public void Attack() 
     {
+        anim.SetTrigger("Fall");
         StartCoroutine(ShowWarning());
         StartCoroutine(SpawnProjectiles());
     }
@@ -38,9 +40,12 @@ public class ProjectileAttack : MonoBehaviour
         {
             GameObject warningObj = Instantiate(projectileWarning, new Vector2(spawnLocations[i].transform.position.x,
                 spawnLocations[i].transform.position.y - 20f), Quaternion.identity);
+            warningObj.transform.parent = this.transform;
+
             GameObject warningObj1 = Instantiate(projectileWarning, new Vector2(spawnLocations[spawnLocations.Length - i - 1].transform.position.x,
                 spawnLocations[spawnLocations.Length - i - 1].transform.position.y - 20f), Quaternion.identity);
             i++;
+            warningObj1.transform.parent = this.transform;
 
             yield return new WaitForSeconds(1f);
 
@@ -68,6 +73,8 @@ public class ProjectileAttack : MonoBehaviour
             i++;
 
             yield return new WaitForSeconds(1f);
+
         }
+        anim.SetTrigger("Fall2");
     }
 }

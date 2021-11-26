@@ -8,11 +8,11 @@ tree("Root")
 tree "ChargeAttack"
 	sequence
 		ChargeAttack
-		Wait 10.0
+		Wait 6.0
 		Succeed
 
 tree "SlashAttack"
 	sequence
 		SlashAttack
-		Wait 7.0
+		Wait 4.0
 		Succeed
