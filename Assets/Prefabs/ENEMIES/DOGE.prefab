@@ -959,6 +959,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3360984551420274935}
+  - component: {fileID: 8778144931377807209}
   m_Layer: 0
   m_Name: DOGE
   m_TagString: Untagged
@@ -981,6 +982,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &8778144931377807209
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6345744980204566421}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 57a8e3b1dc2cfac48bc6711cd9302c73, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6412276717120977955
 GameObject:
   m_ObjectHideFlags: 0
@@ -1534,6 +1554,30 @@ PrefabInstance:
     - target: {fileID: 3312424166177303339, guid: b596374d4a6321748aeaba0dec838df6, type: 3}
       propertyPath: knockbackValue
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3840185571428729001, guid: b596374d4a6321748aeaba0dec838df6, type: 3}
+      propertyPath: possibleTypes.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 4f004587b1bf1454c8a480350ef1483d, type: 3}
+    - target: {fileID: 3840185571428729001, guid: b596374d4a6321748aeaba0dec838df6, type: 3}
+      propertyPath: possibleTypes.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 3f969dbdfb009374fb0f9ac7fec47a8c, type: 3}
+    - target: {fileID: 3840185571428729001, guid: b596374d4a6321748aeaba0dec838df6, type: 3}
+      propertyPath: possibleTypes.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: 1c8b57c680b566046b35e851ccd5f4e0, type: 3}
+    - target: {fileID: 3840185571428729001, guid: b596374d4a6321748aeaba0dec838df6, type: 3}
+      propertyPath: possibleTypes.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: bf231b7ea31089249b445305ab970de0, type: 3}
+    - target: {fileID: 4524391810351974208, guid: b596374d4a6321748aeaba0dec838df6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524391810351974208, guid: b596374d4a6321748aeaba0dec838df6, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3312424166177303337, guid: b596374d4a6321748aeaba0dec838df6, type: 3}
