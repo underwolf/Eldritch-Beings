@@ -31,7 +31,7 @@ public class FireballProjectile : MonoBehaviour
 
     private IEnumerator LingerFlames()
     {
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(0.5f);
         Destroy(gameObject);
     }
 

@@ -414,7 +414,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aimObj: {fileID: 757050782}
   bulletPrefab: {fileID: 1463703181186281316, guid: 315d9f7d84c813143be9d9eaacf2a821, type: 3}
-  lineRenderer: {fileID: 845260103}
 --- !u!114 &53008843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8417,10 +8416,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 0}
-      propertyPath: stepDistance
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 2013257163, guid: 0a96ee9cb5375854ba4abb62c0db2436, type: 3}
       propertyPath: m_Layer
       value: 6

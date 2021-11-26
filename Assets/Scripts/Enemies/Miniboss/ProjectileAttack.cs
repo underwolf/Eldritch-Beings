@@ -9,6 +9,7 @@ public class ProjectileAttack : MonoBehaviour
     public GameObject projectileWarning;
 
     public bool testAttack = false;
+    public Animator anim;
 
     private void Start()
     {
@@ -26,6 +27,7 @@ public class ProjectileAttack : MonoBehaviour
 
     public void Attack() 
     {
+        anim.SetTrigger("Fall");
         StartCoroutine(ShowWarning());
         StartCoroutine(SpawnProjectiles());
     }
@@ -71,6 +73,8 @@ public class ProjectileAttack : MonoBehaviour
             i++;
 
             yield return new WaitForSeconds(1f);
+
         }
+        anim.SetTrigger("Fall2");
     }
 }

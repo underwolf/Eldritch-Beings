@@ -13,6 +13,9 @@ public class SlashAttack : MonoBehaviour
     public Sprite attackSprite, idleSprite;
     private SpriteRenderer sr;
 
+    public Animator anim;
+
+
     private void Update()
     {
         if (testAttack)
@@ -37,8 +40,7 @@ public class SlashAttack : MonoBehaviour
 
         transform.GetChild(0).gameObject.GetComponent<ParticleSystem>().Stop();
 
-        sr.sprite = attackSprite;
-
+        anim.SetTrigger("Slash");
         Collider2D[] colliders = Physics2D.OverlapCircleAll(attackPoint.transform.position, 15f, playerLayer);
 
         foreach (Collider2D c in colliders)
@@ -49,7 +51,7 @@ public class SlashAttack : MonoBehaviour
 
         yield return new WaitForSeconds(1.5f);
 
-        sr.sprite = idleSprite;
+       
     }
 
     private void OnDrawGizmosSelected()
