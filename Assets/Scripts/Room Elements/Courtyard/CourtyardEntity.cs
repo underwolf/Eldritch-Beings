@@ -97,10 +97,12 @@ public class CourtyardEntity : MonoBehaviour
         //Change direction when moving
         if (directionLookEnabled)
         {
-            if (rb.velocity.x > 0.05f)
-                transform.localScale = new Vector3(-1f * Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
-            else if(rb.velocity.x < -0.05f)
-                transform.localScale = new Vector3(-1f * Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+            //if (rb.velocity.x > 0.05f)
+            if (target.transform.position.x > transform.position.x)
+                transform.localScale = new Vector3(1, transform.localScale.y, transform.localScale.z);
+            //else if(rb.velocity.x < -0.05f)
+            else
+                transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z);
         }
     }
 
